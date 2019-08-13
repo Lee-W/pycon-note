@@ -12,7 +12,7 @@ from pelicanconf import *
 
 
 SITEURL = 'https://lee-w.github.io/PyCon-Note'
-SITELOGO = '/travlog/images/avatar.jpg'
+SITELOGO = '/PyCon-Note/images/avatar.jpg'
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
@@ -22,7 +22,8 @@ DELETE_OUTPUT_DIRECTORY = False
 
 
 MENUITEMS = (
-    ('Archives', '/travlog/archives.html'),
-    ('Categories', '/travlog/categories.html'),
-    ('Tags', '/travlog/tags.html')
+    ('About', '/PyCon-Note/about.html'),
+    ('Archives', '/PyCon-Note/archives.html'),
+    ('Categories', '/PyCon-Note/categories.html'),
+    ('Tags', '/PyCon-Note/tags.html')
 )
