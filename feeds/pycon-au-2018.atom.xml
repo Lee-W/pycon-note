@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>PyCon Note - PyCon AU 2018</title><link href="https://lee-w.github.io/travlog/PyCon-Note/" rel="alternate"></link><link href="https://lee-w.github.io/travlog/PyCon-Note/feeds/pycon-au-2018.atom.xml" rel="self"></link><id>https://lee-w.github.io/travlog/PyCon-Note/</id><updated>2019-08-13T15:20:00+08:00</updated><entry><title>Solve Your Problem With Sloppy Python</title><link href="https://lee-w.github.io/travlog/PyCon-Note/posts/pycon-au-2018/2019/08/solve-your-problem-with-sloppy-python" rel="alternate"></link><published>2019-08-13T15:20:00+08:00</published><updated>2019-08-13T15:20:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-08-13:/travlog/PyCon-Note/posts/pycon-au-2018/2019/08/solve-your-problem-with-sloppy-python</id><summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=Jd8ulMb6_ls&amp;amp;feature=youtu.be"&gt;video&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="personal-description"&gt;Personal Description&lt;/h3&gt;
+&lt;p&gt;It's an introduction for how to use python as the shell script&lt;/p&gt;
+&lt;h3 id="the-rules"&gt;The rules&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;fail early and noisily&lt;/li&gt;
+&lt;li&gt;stop writing the shell script&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="the-guidelines"&gt;The guidelines&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;try automating even more&lt;/li&gt;
+&lt;li&gt;try new libraries/technologies&lt;/li&gt;
+&lt;/ul&gt;</summary><content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=Jd8ulMb6_ls&amp;amp;feature=youtu.be"&gt;video&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="personal-description"&gt;Personal Description&lt;/h3&gt;
+&lt;p&gt;It's an introduction for how to use python as the shell script&lt;/p&gt;
+&lt;h3 id="the-rules"&gt;The rules&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;fail early and noisily&lt;/li&gt;
+&lt;li&gt;stop writing the shell script&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="the-guidelines"&gt;The guidelines&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;try automating even more&lt;/li&gt;
+&lt;li&gt;try new libraries/technologies&lt;/li&gt;
+&lt;/ul&gt;</content><category term="automation"></category></entry><entry><title>Watch out for Safety Bandits!</title><link href="https://lee-w.github.io/travlog/PyCon-Note/posts/pycon-au-2018/2019/08/watch-out-for-safety-bandits" rel="alternate"></link><published>2019-08-13T15:20:00+08:00</published><updated>2019-08-13T15:20:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-08-13:/travlog/PyCon-Note/posts/pycon-au-2018/2019/08/watch-out-for-safety-bandits</id><summary type="html">&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://2018.pycon-au.org/talks/43518-watch-out-for-safety-bandits/"&gt;video&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The "Essential Two" security problems&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Problems someone else made&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/pyupio/safety"&gt;safety&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Problems you made&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/PyCQA/bandit"&gt;bandit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary><content type="html">&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://2018.pycon-au.org/talks/43518-watch-out-for-safety-bandits/"&gt;video&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The "Essential Two" security problems&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Problems someone else made&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/pyupio/safety"&gt;safety&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Problems you made&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/PyCQA/bandit"&gt;bandit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content><category term="security"></category></entry><entry><title>Why you should care about types: How Python typing helped my team scale</title><link href="https://lee-w.github.io/travlog/PyCon-Note/posts/pycon-au-2018/2019/08/why-you-should-care-about-types" rel="alternate"></link><published>2019-08-13T15:20:00+08:00</published><updated>2019-08-13T15:20:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-08-13:/travlog/PyCon-Note/posts/pycon-au-2018/2019/08/why-you-should-care-about-types</id><summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://2018.pycon-au.org/talks/45224-why-you-should-care-about-types-how-python-typing-helped-my-team-scale/"&gt;video&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="are-python-types-pythonic"&gt;Are Python types Pythonic?&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;this&lt;/span&gt;
+
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;Explicit&lt;/span&gt; &lt;span class="ow"&gt;is&lt;/span&gt; &lt;span class="n"&gt;better&lt;/span&gt; &lt;span class="n"&gt;than&lt;/span&gt; &lt;span class="n"&gt;implicit&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;Readability&lt;/span&gt; &lt;span class="n"&gt;counts&lt;/span&gt;
+
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;In&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;face&lt;/span&gt; &lt;span class="n"&gt;of&lt;/span&gt; &lt;span class="n"&gt;ambiguity&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;refuse&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;temptation&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;guess&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;If nothing else, because Guido said so 😆&lt;/p&gt;
+&lt;h3 id="type-101"&gt;Type 101&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Collection, Union, Optional, Type&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;typing&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Type&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;TypeVar&lt;/span&gt;
+
+&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;BaseClass&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="k"&gt;pass&lt;/span&gt;
+
+&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;DerivedClass&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;BaseClass&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;pass&lt;/span&gt;
+
+&lt;span class="n"&gt;T …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://2018.pycon-au.org/talks/45224-why-you-should-care-about-types-how-python-typing-helped-my-team-scale/"&gt;video&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="are-python-types-pythonic"&gt;Are Python types Pythonic?&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;this&lt;/span&gt;
+
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;Explicit&lt;/span&gt; &lt;span class="ow"&gt;is&lt;/span&gt; &lt;span class="n"&gt;better&lt;/span&gt; &lt;span class="n"&gt;than&lt;/span&gt; &lt;span class="n"&gt;implicit&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;Readability&lt;/span&gt; &lt;span class="n"&gt;counts&lt;/span&gt;
+
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;In&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;face&lt;/span&gt; &lt;span class="n"&gt;of&lt;/span&gt; &lt;span class="n"&gt;ambiguity&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;refuse&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;temptation&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;guess&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;If nothing else, because Guido said so 😆&lt;/p&gt;
+&lt;h3 id="type-101"&gt;Type 101&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Collection, Union, Optional, Type&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;typing&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Type&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;TypeVar&lt;/span&gt;
+
+&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;BaseClass&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="k"&gt;pass&lt;/span&gt;
+
+&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;DerivedClass&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;BaseClass&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;pass&lt;/span&gt;
+
+&lt;span class="n"&gt;T&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;TypeVar&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;T&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;bound&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;BaseClass&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;factory&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;clazz&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Type&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;T&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;T&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;claszz&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3 id="tool"&gt;Tool&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://github.com/Instagram/MonkeyType"&gt;GitHub - Instagram/MonkeyType: A system for Python that generates static type annotations by collecting runtime types&lt;/a&gt;&lt;/p&gt;</content><category term="type annotation"></category></entry></feed>
