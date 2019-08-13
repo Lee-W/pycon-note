@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>PyCon Note - PyCon AU 2018</title><link href="https://lee-w.github.io/PyCon-Note/" rel="alternate"></link><link href="https://lee-w.github.io/PyCon-Note/feeds/pycon-au-2018.atom.xml" rel="self"></link><id>https://lee-w.github.io/PyCon-Note/</id><updated>2019-08-13T15:20:00+08:00</updated><entry><title>Solve Your Problem With Sloppy Python</title><link href="https://lee-w.github.io/PyCon-Note/posts/pycon-au-2018/2019/08/solve-your-problem-with-sloppy-python" rel="alternate"></link><published>2019-08-13T15:20:00+08:00</published><updated>2019-08-13T15:20:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-08-13:/PyCon-Note/posts/pycon-au-2018/2019/08/solve-your-problem-with-sloppy-python</id><summary type="html">&lt;ul&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>PyCon Note - PyCon AU 2018</title><link href="https://lee-w.github.io/pycon-note/" rel="alternate"></link><link href="https://lee-w.github.io/pycon-note/feeds/pycon-au-2018.atom.xml" rel="self"></link><id>https://lee-w.github.io/pycon-note/</id><updated>2019-08-13T15:20:00+08:00</updated><entry><title>Solve Your Problem With Sloppy Python</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-au-2018/2019/08/solve-your-problem-with-sloppy-python" rel="alternate"></link><published>2019-08-13T15:20:00+08:00</published><updated>2019-08-13T15:20:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-08-13:/pycon-note/posts/pycon-au-2018/2019/08/solve-your-problem-with-sloppy-python</id><summary type="html">&lt;h2 id="material"&gt;Material&lt;/h2&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=Jd8ulMb6_ls&amp;amp;feature=youtu.be"&gt;video&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id="note"&gt;Note&lt;/h2&gt;
 &lt;h3 id="personal-description"&gt;Personal Description&lt;/h3&gt;
 &lt;p&gt;It's an introduction for how to use python as the shell script&lt;/p&gt;
 &lt;h3 id="the-rules"&gt;The rules&lt;/h3&gt;
@@ -13,9 +15,11 @@
 &lt;ul&gt;
 &lt;li&gt;try automating even more&lt;/li&gt;
 &lt;li&gt;try new libraries/technologies&lt;/li&gt;
-&lt;/ul&gt;</summary><content type="html">&lt;ul&gt;
+&lt;/ul&gt;</summary><content type="html">&lt;h2 id="material"&gt;Material&lt;/h2&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=Jd8ulMb6_ls&amp;amp;feature=youtu.be"&gt;video&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id="note"&gt;Note&lt;/h2&gt;
 &lt;h3 id="personal-description"&gt;Personal Description&lt;/h3&gt;
 &lt;p&gt;It's an introduction for how to use python as the shell script&lt;/p&gt;
 &lt;h3 id="the-rules"&gt;The rules&lt;/h3&gt;
@@ -27,13 +31,13 @@
 &lt;ul&gt;
 &lt;li&gt;try automating even more&lt;/li&gt;
 &lt;li&gt;try new libraries/technologies&lt;/li&gt;
-&lt;/ul&gt;</content><category term="automation"></category></entry><entry><title>Watch out for Safety Bandits!</title><link href="https://lee-w.github.io/PyCon-Note/posts/pycon-au-2018/2019/08/watch-out-for-safety-bandits" rel="alternate"></link><published>2019-08-13T15:20:00+08:00</published><updated>2019-08-13T15:20:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-08-13:/PyCon-Note/posts/pycon-au-2018/2019/08/watch-out-for-safety-bandits</id><summary type="html">&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://2018.pycon-au.org/talks/43518-watch-out-for-safety-bandits/"&gt;video&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The "Essential Two" security problems&lt;/p&gt;
-&lt;ol&gt;
+&lt;/ul&gt;</content><category term="automation"></category></entry><entry><title>Watch out for Safety Bandits!</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-au-2018/2019/08/watch-out-for-safety-bandits" rel="alternate"></link><published>2019-08-13T15:20:00+08:00</published><updated>2019-08-13T15:20:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-08-13:/pycon-note/posts/pycon-au-2018/2019/08/watch-out-for-safety-bandits</id><summary type="html">&lt;h2 id="material"&gt;Material&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://2018.pycon-au.org/talks/43518-watch-out-for-safety-bandits/"&gt;video&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="note"&gt;Note&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The "Essential Two" security problems&lt;ol&gt;
 &lt;li&gt;Problems someone else made&lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/pyupio/safety"&gt;safety&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -44,13 +48,13 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</summary><content type="html">&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://2018.pycon-au.org/talks/43518-watch-out-for-safety-bandits/"&gt;video&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The "Essential Two" security problems&lt;/p&gt;
-&lt;ol&gt;
+&lt;/ul&gt;</summary><content type="html">&lt;h2 id="material"&gt;Material&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://2018.pycon-au.org/talks/43518-watch-out-for-safety-bandits/"&gt;video&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="note"&gt;Note&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The "Essential Two" security problems&lt;ol&gt;
 &lt;li&gt;Problems someone else made&lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/pyupio/safety"&gt;safety&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -61,9 +65,11 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content><category term="security"></category></entry><entry><title>Why you should care about types: How Python typing helped my team scale</title><link href="https://lee-w.github.io/PyCon-Note/posts/pycon-au-2018/2019/08/why-you-should-care-about-types" rel="alternate"></link><published>2019-08-13T15:20:00+08:00</published><updated>2019-08-13T15:20:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-08-13:/PyCon-Note/posts/pycon-au-2018/2019/08/why-you-should-care-about-types</id><summary type="html">&lt;ul&gt;
+&lt;/ul&gt;</content><category term="security"></category></entry><entry><title>Why you should care about types: How Python typing helped my team scale</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-au-2018/2019/08/why-you-should-care-about-types" rel="alternate"></link><published>2019-08-13T15:20:00+08:00</published><updated>2019-08-13T15:20:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-08-13:/pycon-note/posts/pycon-au-2018/2019/08/why-you-should-care-about-types</id><summary type="html">&lt;h2 id="material"&gt;Material&lt;/h2&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;a href="https://2018.pycon-au.org/talks/45224-why-you-should-care-about-types-how-python-typing-helped-my-team-scale/"&gt;video&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id="note"&gt;Note&lt;/h2&gt;
 &lt;h3 id="are-python-types-pythonic"&gt;Are Python types Pythonic?&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;this&lt;/span&gt;
 
@@ -85,12 +91,11 @@
 &lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;BaseClass&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
     &lt;span class="k"&gt;pass&lt;/span&gt;
 
-&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;DerivedClass&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;BaseClass&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="k"&gt;pass&lt;/span&gt;
-
-&lt;span class="n"&gt;T …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;ul&gt;
+&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;DerivedClass&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;BaseClass …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2 id="material"&gt;Material&lt;/h2&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;a href="https://2018.pycon-au.org/talks/45224-why-you-should-care-about-types-how-python-typing-helped-my-team-scale/"&gt;video&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id="note"&gt;Note&lt;/h2&gt;
 &lt;h3 id="are-python-types-pythonic"&gt;Are Python types Pythonic?&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;this&lt;/span&gt;
 
