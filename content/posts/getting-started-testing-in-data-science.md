@@ -5,9 +5,14 @@ Tags: data
 Slug: getting-started-testing-in-data-science
 Authors: Lee-W
 
+## Material
+
 * [video](https://www.youtube.com/watch?v=0ysyWk-ox-8)
 * [slide-origin](https://github.com/jesford/testing-in-data-science/blob/master/intro-to-testing-presentation.ipynb)
 * [slide-flatten](https://speakerdeck.com/pycon2019/jes-ford-getting-started-testing-in-data-science)
+
+
+## Note
 
 * Data Science Workflows
     1. One-off analysis

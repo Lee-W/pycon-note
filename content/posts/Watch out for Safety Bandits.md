@@ -5,7 +5,12 @@ Tags: security
 Slug: watch-out-for-safety-bandits
 Authors: Lee-W
 
+
+## Material
+
 * [video](https://2018.pycon-au.org/talks/43518-watch-out-for-safety-bandits/)
+
+## Note
 
 * The "Essential Two" security problems
     1. Problems someone else made

@@ -5,7 +5,11 @@ Tags: automation
 Slug: solve-your-problem-with-sloppy-python
 Authors: Lee-W
 
+## Material
+
 * [video](https://www.youtube.com/watch?v=Jd8ulMb6_ls&feature=youtu.be)
+
+## Note
 
 ### Personal Description
 

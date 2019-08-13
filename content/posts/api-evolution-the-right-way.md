@@ -5,8 +5,12 @@ Tags: api
 Slug: api-evolution-the-right-way
 Authors: Lee-W
 
+## Material
+
 * [video](https://www.youtube.com/watch?v=dqDnB6jKzcE)
 * [article](https://emptysqua.re/blog/api-evolution-the-right-way/)
+
+## Note
 
 1. Avoid Bad Features
 2. Minimize Features

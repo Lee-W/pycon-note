@@ -5,8 +5,12 @@ Tags: core
 Slug: scraping-a-million-pokemon-battles-distributed-systems-by-example
 Authors: Lee-W
 
+## Material
+
 * [video](https://www.youtube.com/watch?v=QvZqttX9uXc)
 * [slide](https://docs.google.com/presentation/d/14v2huYsC5rJYUR3sWBXu0YN33b6tWRFraEgf9FwRPiE/edit#slide=id.g56f736b0fc_1_545)
+
+## Note
 
 * Scalability and 3 "Pillars"
     * Concurrency of Resources

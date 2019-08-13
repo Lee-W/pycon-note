@@ -5,7 +5,11 @@ Tags: team
 Slug: the-zen-of-python-teams
 Authors: Lee-W
 
+## Material
+
 * [video](https://www.youtube.com/watch?v=WZ8FEB4J8-c)
+
+## Note
 
 * Beautiful is better than ugly.
     * Be kind
