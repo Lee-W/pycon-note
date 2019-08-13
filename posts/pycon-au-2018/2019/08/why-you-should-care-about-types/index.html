@@ -12,7 +12,7 @@
 <meta name="keywords" content="type annotation, PyCon AU 2018, " />
 
 <meta property="og:title" content="Why you should care about types: How Python typing helped my team scale "/>
-<meta property="og:url" content="https://lee-w.github.io/travlog/PyCon-Note/posts/pycon-au-2018/2019/08/why-you-should-care-about-types" />
+<meta property="og:url" content="https://lee-w.github.io/PyCon-Note/posts/pycon-au-2018/2019/08/why-you-should-care-about-types" />
 <meta property="og:description" content="video Are Python types Pythonic? import this &gt;&gt;&gt; Explicit is better than implicit. &gt;&gt;&gt; Readability counts &gt;&gt;&gt; In the face of ambiguity, refuse the temptation to guess. If nothing else, because Guido said so 😆 Type 101 Collection, Union, Optional, Type from typing import Type, TypeVar class BaseClass: pass class DerivedClass(BaseClass): pass T …" />
 <meta property="og:site_name" content="PyCon Note" />
 <meta property="og:article:author" content="Lee-W" />
@@ -25,12 +25,12 @@
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
-        <link rel="stylesheet" type="text/css" href="https://lee-w.github.io/travlog/PyCon-Note/theme/css/pygments.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="https://lee-w.github.io/travlog/PyCon-Note/theme/tipuesearch/tipuesearch.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="https://lee-w.github.io/travlog/PyCon-Note/theme/css/elegant.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="https://lee-w.github.io/travlog/PyCon-Note/theme/css/admonition.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="https://lee-w.github.io/travlog/PyCon-Note/theme/css/custom.css" media="screen">
-        <link href="https://lee-w.github.io/travlog/PyCon-Note/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="PyCon Note - Full Atom Feed" />
+        <link rel="stylesheet" type="text/css" href="https://lee-w.github.io/PyCon-Note/theme/css/pygments.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://lee-w.github.io/PyCon-Note/theme/tipuesearch/tipuesearch.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://lee-w.github.io/PyCon-Note/theme/css/elegant.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://lee-w.github.io/PyCon-Note/theme/css/admonition.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://lee-w.github.io/PyCon-Note/theme/css/custom.css" media="screen">
+        <link href="https://lee-w.github.io/PyCon-Note/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="PyCon Note - Full Atom Feed" />
 
 
 
@@ -45,14 +45,14 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    <a class="brand" href="https://lee-w.github.io/travlog/PyCon-Note/"><span class=site-name>PyCon Note</span></a>
+                    <a class="brand" href="https://lee-w.github.io/PyCon-Note/"><span class=site-name>PyCon Note</span></a>
                     <div class="nav-collapse collapse">
                         <ul class="nav pull-right top-menu">
-                            <li ><a href="https://lee-w.github.io/travlog/PyCon-Note">Home</a></li>
-                            <li ><a href="https://lee-w.github.io/travlog/PyCon-Note/categories">Categories</a></li>
-                            <li ><a href="https://lee-w.github.io/travlog/PyCon-Note/tags">Tags</a></li>
-                            <li ><a href="https://lee-w.github.io/travlog/PyCon-Note/archives">Archives</a></li>
-                            <li><form class="navbar-search" action="https://lee-w.github.io/travlog/PyCon-Note/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                            <li ><a href="https://lee-w.github.io/PyCon-Note">Home</a></li>
+                            <li ><a href="https://lee-w.github.io/PyCon-Note/categories">Categories</a></li>
+                            <li ><a href="https://lee-w.github.io/PyCon-Note/tags">Tags</a></li>
+                            <li ><a href="https://lee-w.github.io/PyCon-Note/archives">Archives</a></li>
+                            <li><form class="navbar-search" action="https://lee-w.github.io/PyCon-Note/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
                         </ul>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
 <article itemscope>
 <div class="row-fluid">
     <header class="page-header span10 offset2">
-    <h1><a href="https://lee-w.github.io/travlog/PyCon-Note/posts/pycon-au-2018/2019/08/why-you-should-care-about-types"> Why you should care about types: How Python typing helped my team scale  </a></h1>
+    <h1><a href="https://lee-w.github.io/PyCon-Note/posts/pycon-au-2018/2019/08/why-you-should-care-about-types"> Why you should care about types: How Python typing helped my team scale  </a></h1>
     </header>
 </div>
 
@@ -115,11 +115,11 @@
             <section>
     <p id="post-share-links">
     Share on:
-    <a href="https://twitter.com/intent/tweet?text=Why%20you%20should%20care%20about%20types%3A%20How%20Python%20typing%20helped%20my%20team%20scale&url=https%3A//lee-w.github.io/travlog/PyCon-Note/posts/pycon-au-2018/2019/08/why-you-should-care-about-types&hashtags=type-annotation" target="_blank" title="Share on Twitter">Twitter</a>
+    <a href="https://twitter.com/intent/tweet?text=Why%20you%20should%20care%20about%20types%3A%20How%20Python%20typing%20helped%20my%20team%20scale&url=https%3A//lee-w.github.io/PyCon-Note/posts/pycon-au-2018/2019/08/why-you-should-care-about-types&hashtags=type-annotation" target="_blank" title="Share on Twitter">Twitter</a>
     ❄
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//lee-w.github.io/travlog/PyCon-Note/posts/pycon-au-2018/2019/08/why-you-should-care-about-types" target="_blank" title="Share on Facebook">Facebook</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//lee-w.github.io/PyCon-Note/posts/pycon-au-2018/2019/08/why-you-should-care-about-types" target="_blank" title="Share on Facebook">Facebook</a>
     ❄
-    <a href="mailto:?subject=Why%20you%20should%20care%20about%20types%3A%20How%20Python%20typing%20helped%20my%20team%20scale&amp;body=https%3A//lee-w.github.io/travlog/PyCon-Note/posts/pycon-au-2018/2019/08/why-you-should-care-about-types" target="_blank" title="Share via Email">Email</a>
+    <a href="mailto:?subject=Why%20you%20should%20care%20about%20types%3A%20How%20Python%20typing%20helped%20my%20team%20scale&amp;body=https%3A//lee-w.github.io/PyCon-Note/posts/pycon-au-2018/2019/08/why-you-should-care-about-types" target="_blank" title="Share via Email">Email</a>
     </p>
 </section>
 
@@ -128,7 +128,7 @@
             <aside>
             <nav>
             <ul class="articles-timeline">
-                <li class="next-article"><a href="https://lee-w.github.io/travlog/PyCon-Note/posts/pycon-au-2018/2019/08/watch-out-for-safety-bandits" title="Next: Watch out for Safety Bandits!">Watch out for Safety Bandits!</a> »</li>
+                <li class="next-article"><a href="https://lee-w.github.io/PyCon-Note/posts/pycon-au-2018/2019/08/watch-out-for-safety-bandits" title="Next: Watch out for Safety Bandits!">Watch out for Safety Bandits!</a> »</li>
             </ul>
             </nav>
             </aside>
@@ -140,10 +140,10 @@
                 <h4>Read Time</h4>
                  1 min
             <h4>Category</h4>
-            <a class="category-link" href="https://lee-w.github.io/travlog/PyCon-Note/categories.html#pycon-au-2018-ref">PyCon AU 2018</a>
+            <a class="category-link" href="https://lee-w.github.io/PyCon-Note/categories.html#pycon-au-2018-ref">PyCon AU 2018</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
-                <li><a href="https://lee-w.github.io/travlog/PyCon-Note/tags#type-annotation-ref">type annotation
+                <li><a href="https://lee-w.github.io/PyCon-Note/tags#type-annotation-ref">type annotation
                     <span>1</span>
 </a></li>
             </ul>
