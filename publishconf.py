@@ -11,7 +11,7 @@ sys.path.append(os.curdir)
 from pelicanconf import *
 
 
-SITEURL = 'https://lee-w.github.io/PyCon-Note'
+SITEURL = 'https://lee-w.github.io/pycon-note'
 SITELOGO = '/PyCon-Note/images/avatar.jpg'
 RELATIVE_URLS = False
 
@@ -22,8 +22,8 @@ DELETE_OUTPUT_DIRECTORY = False
 
 
 MENUITEMS = (
-    ('About', '/PyCon-Note/about.html'),
-    ('Archives', '/PyCon-Note/archives.html'),
-    ('Categories', '/PyCon-Note/categories.html'),
-    ('Tags', '/PyCon-Note/tags.html')
+    ('About', '/pycon-note/about.html'),
+    ('Archives', '/pycon-note/archives.html'),
+    ('Categories', '/pycon-note/categories.html'),
+    ('Tags', '/pycon-note/tags.html')
 )
