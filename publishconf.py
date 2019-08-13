@@ -11,10 +11,18 @@ sys.path.append(os.curdir)
 from pelicanconf import *
 
 
-SITEURL = 'https://lee-w.github.io/travlog/PyCon-Note'
+SITEURL = 'https://lee-w.github.io/PyCon-Note'
+SITELOGO = '/travlog/images/avatar.jpg'
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = False
+
+
+MENUITEMS = (
+    ('Archives', '/travlog/archives.html'),
+    ('Categories', '/travlog/categories.html'),
+    ('Tags', '/travlog/tags.html')
+)
