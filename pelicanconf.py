@@ -63,7 +63,7 @@ MARKDOWN = {
         'markdown.extensions.extra': {},
         'markdown.extensions.codehilite': {'css_class': 'highlight'},
         'markdown.extensions.nl2br': {},
-        'del_ins': {},
+        'mdx_del_ins': {},
         'toc': {},
     },
     'output_format': 'html5'

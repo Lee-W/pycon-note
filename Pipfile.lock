@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "98d96dbda2699235cc8f6a0be0a014988a22efb374ab764f5c18e5e438ec68a0"
+            "sha256": "c527a3edc865f6c848022b1f47159ec15efd5a07ba718ed87733ae36ba5cbe40"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -67,10 +67,11 @@
         },
         "markdown": {
             "hashes": [
-                "sha256:0ac8a81e658167da95d063a9279c9c1b2699f37c7c4153256a458b3a43860e33"
+                "sha256:2e50876bcdd74517e7b71f3e7a76102050edec255b3983403f1a63e7c8a41e7a",
+                "sha256:56a46ac655704b91e5b7e6326ce43d5ef72411376588afa1dd90e881b83c7e8c"
             ],
             "index": "pypi",
-            "version": "==2.6.8"
+            "version": "==3.1.1"
         },
         "markupsafe": {
             "hashes": [
@@ -106,11 +107,9 @@
             "version": "==1.1.1"
         },
         "mdx-del-ins": {
-            "hashes": [
-                "sha256:7c41f2940dc4f5da22d6fbc8c5318b133e5290b17bd6291d92ce473a1a79f963"
-            ],
-            "index": "pypi",
-            "version": "==1.0"
+            "editable": true,
+            "git": "https://github.com/Lee-W/mdx_del_ins",
+            "ref": "707028ef6b119449ea563269990c5924e9e9d8ee"
         },
         "pelican": {
             "hashes": [
@@ -163,10 +162,10 @@
         },
         "soupsieve": {
             "hashes": [
-                "sha256:72b5f1aea9101cf720a36bb2327ede866fd6f1a07b1e87c92a1cc18113cbc946",
-                "sha256:e4e9c053d59795e440163733a7fec6c5972210e1790c507e4c7b051d6c5259de"
+                "sha256:605f89ad5fdbfefe30cdc293303665eff2d188865d4dbe4eb510bba1edfbfce3",
+                "sha256:b91d676b330a0ebd5b21719cb6e9b57c57d433671f65b9c28dd3461d9a1ed0b6"
             ],
-            "version": "==1.9.2"
+            "version": "==1.9.4"
         },
         "typogrify": {
             "hashes": [

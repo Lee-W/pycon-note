@@ -6,13 +6,13 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
+markdown = "*"
 pelican = "==4.0.1"
-ghp-import = "*"
-markdown = "==2.6.8"
 bs4 = "*"
-typogrify = "==2.0.7"
-mdx-del-ins = "*"
 python-gettext = "*"
+ghp-import = "*"
+typogrify = "*"
+mdx-del-ins = {editable = true,git = "https://github.com/Lee-W/mdx_del_ins"}
 
 [requires]
 python_version = "3.7"
