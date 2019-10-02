@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 PATH = 'content'
 
 # Blog Conf
-AUTHOR = 'Wei Lee'
+AUTHOR = 'Lee-W'
 SITENAME = 'PyCon Note'
 SITEURL = 'http://localhost:8000'
 SITETITLE = AUTHOR
@@ -63,8 +63,8 @@ MARKDOWN = {
         'markdown.extensions.extra': {},
         'markdown.extensions.codehilite': {'css_class': 'highlight'},
         'markdown.extensions.nl2br': {},
+        'markdown.extensions.toc': {'toc_depth': '1-3'},
         'mdx_del_ins': {},
-        'toc': {},
     },
     'output_format': 'html5'
 }
