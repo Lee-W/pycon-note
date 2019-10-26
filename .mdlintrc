@@ -1,0 +1,15 @@
+{
+    "default": true,
+    "no-duplicate-header": false,
+    "line-length": {
+        "code_blocks": false,
+        "headings": false,
+        "tables": false
+    },
+    "no-hard-tabs": false,
+    "MD007": { "indent": 4 },
+    "MD026": false,
+    "MD022": false,
+    "MD032": false,
+    "MD041": false
+}
