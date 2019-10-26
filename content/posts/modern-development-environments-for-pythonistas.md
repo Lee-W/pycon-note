@@ -22,12 +22,11 @@ Authors: Lee-W
 
 * Focus: anything that's not code and will be check into code base
 
-
 ## dev, test environment
 
 > Your development environment.
 > "But it works on my machine"
-> 
+>
 > You laptop is not production.
 
 * Problem: `virtualenv` only isolate Python. Platform-level stuff are still shared.
@@ -38,10 +37,8 @@ Authors: Lee-W
         * docker-compose
 
 ## A modern workflow for dependencies
-
-
 * Problems: When install a new package and it depends on newer version of old dependency, it might upgrade unnoticeably.
-    
+
 * Don't `pip freeze > requirements.txt` anymore
     * Bad
         * Get everything from your system
@@ -50,7 +47,6 @@ Authors: Lee-W
         * Managing sub-dependencies
 
 ### pip-tools
-
 * [pip-tools](https://github.com/jazzband/pip-tools/)
 
 * Pin and compile the dependencies and sub-dependencies
@@ -65,7 +61,7 @@ Authors: Lee-W
 
 ### When / How to upgrade dependencies
 * When: early and often
-* How: automated dependency services → scan you repo and see your deps 
+* How: automated dependency services → scan you repo and see your deps
     * [pyup.io](https://pyup.io)
     * [dependabot](https://dependabot.com)
 
@@ -83,7 +79,6 @@ Through services that supports deployment through container
  for auto-upgrade deps
 5. Use [dependabot](https://dependabot.com)
 6. Deploy your docker container to prod
-
 
 ## Q & A
 * Q: pipenv, poetry or pip-tools

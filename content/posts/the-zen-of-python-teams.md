@@ -6,11 +6,9 @@ Slug: the-zen-of-python-teams
 Authors: Lee-W
 
 ## Material
-
 * [video](https://www.youtube.com/watch?v=WZ8FEB4J8-c)
 
 ## Note
-
 * Beautiful is better than ugly.
     * Be kind
     * [Accelerate](https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations-ebook/dp/B07B9F83WM/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=)

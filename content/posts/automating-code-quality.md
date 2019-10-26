@@ -6,7 +6,6 @@ Slug: automating-code-quality
 Authors: Lee-W
 
 ## Materials
-
 * [video](https://www.youtube.com/watch?v=G1lDk_WKXvY)
 
 ## Note
@@ -32,7 +31,6 @@ Authors: Lee-W
         * `requirements-prod.txt`
 
 ![pylint-vs-flake8]({static}/images/post-images/automating-code-quality/15698391534086.jpg)
-
 
 * Best practices
     1. Always improve quality check

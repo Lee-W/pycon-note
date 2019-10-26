@@ -6,12 +6,10 @@ Slug: is-your-dev-env-alright
 Authors: Lee-W
 
 ## Material
-
 * [video](https://www.youtube.com/watch?v=6Nl0IYkU0hU&t=204s)
 * [slide](https://speakerdeck.com/uranusjr/zhe-yang-de-kai-fa-huan-jing-mei-wen-ti-ma)
 
 ## Note
-
 * interpreter → tools → dependencies → application
 
 ### Dependencies

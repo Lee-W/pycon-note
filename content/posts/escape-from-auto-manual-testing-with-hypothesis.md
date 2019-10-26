@@ -6,20 +6,16 @@ Slug: escape-from-auto-manual-testing-with-yypothesis
 Authors: Lee-W
 
 ## Material
-
 * [video](https://www.youtube.com/watch?v=KcyGUVzL7HA)
 * [slide](https://speakerdeck.com/pycon2019/zac-hatfield-dodds-escape-from-auto-manual-testing-with-hypothesis)
 
 ## Note
-
 ### Property-based testing
-
 * User
     * Describes valid input
     * Writes tests that passes for any valid input
 
 ### Strategies and Tactics
-
 * strategies (`st`)
     * values
     * collections
@@ -46,7 +42,6 @@ Authors: Lee-W
         * `RuleBasedStateMachine`
 
 ### Observability
-
 * `--hypothesis-show-statistics`
     * timing stats
     * perf breakdown
