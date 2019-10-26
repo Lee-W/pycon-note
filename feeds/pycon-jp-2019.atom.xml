@@ -125,7 +125,7 @@
 &lt;h3 id="when-how-to-upgrade-dependencies"&gt;When / How to upgrade dependencies&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;When: early and often&lt;/li&gt;
-&lt;li&gt;How: automated dependency services → scan you repo and see your deps &lt;ul&gt;
+&lt;li&gt;How: automated dependency services → scan you repo and see your deps&lt;ul&gt;
 &lt;li&gt;&lt;a href="https://pyup.io"&gt;pyup.io&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://dependabot.com"&gt;dependabot&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
