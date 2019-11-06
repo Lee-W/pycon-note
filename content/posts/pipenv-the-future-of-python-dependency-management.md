@@ -1,7 +1,7 @@
 Title: Pipenv: The Future of Python Dependency Management
 Date: 2019-11-06 13:21
-Category: PyCon JP 2019
-Tags: dependencies
+Category: PyCon US 2018
+Tags: dependencies, virtual environment
 Slug: pipenv-the-future-of-python-dependency-management
 Authors: Lee-W
 

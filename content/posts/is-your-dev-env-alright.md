@@ -1,7 +1,7 @@
 Title: 這樣的開發環境沒問題嗎？
 Date: 2019-10-18 23:59
 Category: PyCon TW 2018
-Tags: virtual-env
+Tags: virtual environment
 Slug: is-your-dev-env-alright
 Authors: Lee-W
 

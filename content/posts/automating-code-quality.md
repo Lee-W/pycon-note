@@ -1,7 +1,7 @@
 Title: Automating Code Quality
 Date: 2019-09-30 18:55
 Category: PyCon US 2018
-Tags: Code Quality, Automation
+Tags: code quality, qutomation
 Slug: automating-code-quality
 Authors: Lee-W
 
