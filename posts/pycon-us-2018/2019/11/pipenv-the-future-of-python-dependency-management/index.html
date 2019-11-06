@@ -9,18 +9,18 @@
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="code quality, qutomation, PyCon US 2018, " />
+<meta name="keywords" content="dependencies, virtual environment, PyCon US 2018, " />
 
-<meta property="og:title" content="Automating Code Quality "/>
-<meta property="og:url" content="https://lee-w.github.io/pycon-note/posts/pycon-us-2018/2019/09/automating-code-quality" />
-<meta property="og:description" content="Materials video Note example aws/chalice Steps to automation tools flake8 pycodestyle → style pyflakes → bug mccabe → complexity flake8 --max-complexity ... pylint similar but stricter and more optional than flake8 coverage other tools: mypy, doc8, pydocstyle automation on local env Makefile requirements-dev.txt atuomation on prod env Makefile requirements-prod.txt Best practices …" />
+<meta property="og:title" content="Pipenv: The Future of Python Dependency Management "/>
+<meta property="og:url" content="https://lee-w.github.io/pycon-note/posts/pycon-us-2018/2019/11/pipenv-the-future-of-python-dependency-management" />
+<meta property="og:description" content="Material video Note Packaging History unzip and install from setup.py easy_install pip, virtualenv, requirements.txt Python has no lock files! Pipenv Pipfile TOML: easy to read/ write manually Two groups: [package], [dev-package] Pipfile.lock JSON: machine readible transitive dependencies pinned with all acceptable hashes for each releases Two groups …" />
 <meta property="og:site_name" content="PyCon Note" />
 <meta property="og:article:author" content="Lee-W" />
-<meta property="og:article:published_time" content="2019-09-30T18:55:00+08:00" />
-<meta name="twitter:title" content="Automating Code Quality ">
-<meta name="twitter:description" content="Materials video Note example aws/chalice Steps to automation tools flake8 pycodestyle → style pyflakes → bug mccabe → complexity flake8 --max-complexity ... pylint similar but stricter and more optional than flake8 coverage other tools: mypy, doc8, pydocstyle automation on local env Makefile requirements-dev.txt atuomation on prod env Makefile requirements-prod.txt Best practices …">
+<meta property="og:article:published_time" content="2019-11-06T13:21:00+08:00" />
+<meta name="twitter:title" content="Pipenv: The Future of Python Dependency Management ">
+<meta name="twitter:description" content="Material video Note Packaging History unzip and install from setup.py easy_install pip, virtualenv, requirements.txt Python has no lock files! Pipenv Pipfile TOML: easy to read/ write manually Two groups: [package], [dev-package] Pipfile.lock JSON: machine readible transitive dependencies pinned with all acceptable hashes for each releases Two groups …">
 
-        <title>Automating Code Quality  · PyCon Note
+        <title>Pipenv: The Future of Python Dependency Management  · PyCon Note
 </title>
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -71,8 +71,8 @@
 <div class="row-fluid">
     <header class="page-header span10 offset2">
         <h1>
-            <a href="https://lee-w.github.io/pycon-note/posts/pycon-us-2018/2019/09/automating-code-quality">
-                Automating Code Quality
+            <a href="https://lee-w.github.io/pycon-note/posts/pycon-us-2018/2019/11/pipenv-the-future-of-python-dependency-management">
+                Pipenv: The Future of Python Dependency Management
             </a>
         </h1>
     </header>
@@ -81,70 +81,63 @@
 <div class="row-fluid">
         <div class="span8 offset2 article-content">
             
-            <h2 id="materials">Materials</h2>
+            <h2 id="material">Material</h2>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=G1lDk_WKXvY">video</a></li>
+<li><a href="https://www.youtube.com/watch?v=GBQAKldqgZs">video</a></li>
 </ul>
 <h2 id="note">Note</h2>
 <ul>
-<li>
-<p>example</p>
-<ul>
-<li><a href="https://github.com/aws/chalice">aws/chalice</a></li>
-</ul>
-</li>
-<li>
-<p>Steps to automation</p>
-<ol>
-<li>tools<ul>
-<li>flake8<ul>
-<li>pycodestyle → style</li>
-<li>pyflakes → bug</li>
-<li>mccabe → complexity<ul>
-<li><code>flake8 --max-complexity ...</code></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>pylint<ul>
-<li>similar but stricter and more optional than flake8</li>
-</ul>
-</li>
-<li>coverage</li>
-<li>other tools: <code>mypy</code>, <code>doc8</code>, <code>pydocstyle</code></li>
-</ul>
-</li>
-<li>automation on local env<ul>
-<li><code>Makefile</code></li>
-<li><code>requirements-dev.txt</code></li>
-</ul>
-</li>
-<li>atuomation on prod env<ul>
-<li><code>Makefile</code></li>
-<li><code>requirements-prod.txt</code></li>
-</ul>
-</li>
+<li>Packaging History<ol>
+<li>unzip and install from <code>setup.py</code></li>
+<li><code>easy_install</code></li>
+<li><code>pip</code>, <code>virtualenv</code>, <code>requirements.txt</code></li>
 </ol>
 </li>
+<li>Python has no lock files!</li>
+<li><a href="https://pipenv-fork.readthedocs.io/en/latest/">Pipenv</a><ul>
+<li>Pipfile<ul>
+<li>TOML: easy to read/ write manually</li>
+<li>Two groups: <code>[package]</code>, <code>[dev-package]</code></li>
 </ul>
-<p><img alt="pylint-vs-flake8" src="https://lee-w.github.io/pycon-note/images/post-images/automating-code-quality/15698391534086.jpg"></p>
-<ul>
-<li>Best practices<ol>
-<li>Always improve quality check</li>
-<li>Avoid compromising existing quality checks</li>
-<li>Be aware automated quality checks does not guarantee code quality</li>
-</ol>
+</li>
+<li>Pipfile.lock<ul>
+<li>JSON: machine readible</li>
+<li>transitive dependencies pinned with all acceptable hashes for each releases</li>
+<li>Two groups: <code>default</code>, <code>develop</code></li>
+</ul>
+</li>
+<li>Install packages concurrently</li>
+<li>Support multiple source</li>
+<li><code>pipenv --venv</code>: show you the venv created</li>
+<li><code>pipenv --graph</code>: show dependency tree</li>
+<li><code>pipenv check</code>: check the vulnerability of packages<ul>
+<li>e.g., <code>pipenv install django==1.4.2</code></li>
+</ul>
+</li>
+<li><code>pipenv install --deploy</code></li>
+<li><code>pipenv install --ignore-pipfile</code></li>
+<li><code>pipenv --python &lt;version&gt;</code>: automatically install certain python version if you have <a href="https://github.com/pyenv/pyenv">pyenv</a> installed</li>
+<li><code>pipenv lock -r</code>: generate <code>requirements.txt</code></li>
+<li>We should put the lock file on source control.</li>
+<li><code>pipenv uninstall</code> uninstall only the package. <code>pipenv sync</code> is needed to uninstall all its transitive dependencies.</li>
+<li>Pipenv finds created venv through path of the directory. Thus, if you move the directory, you'll have to create a new virtual environment.</li>
+<li>Pipenv won't be a replacement for <code>setup.py</code><ul>
+<li>Pipenv is for application.</li>
+<li><code>setup.py</code> is for lib.</li>
+</ul>
+</li>
+</ul>
 </li>
 </ul>
 
 
                 <p id="post-share-links">
     Share on:
-    <a href="https://twitter.com/intent/tweet?text=Automating%20Code%20Quality&url=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2018/2019/09/automating-code-quality&hashtags=code-quality,qutomation" target="_blank" title="Share on Twitter">Twitter</a>
+    <a href="https://twitter.com/intent/tweet?text=Pipenv%3A%20The%20Future%20of%20Python%20Dependency%20Management&url=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2018/2019/11/pipenv-the-future-of-python-dependency-management&hashtags=dependencies,virtual-environment" target="_blank" title="Share on Twitter">Twitter</a>
     ❄
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2018/2019/09/automating-code-quality" target="_blank" title="Share on Facebook">Facebook</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2018/2019/11/pipenv-the-future-of-python-dependency-management" target="_blank" title="Share on Facebook">Facebook</a>
     ❄
-    <a href="mailto:?subject=Automating%20Code%20Quality&amp;body=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2018/2019/09/automating-code-quality" target="_blank" title="Share via Email">Email</a>
+    <a href="mailto:?subject=Pipenv%3A%20The%20Future%20of%20Python%20Dependency%20Management&amp;body=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2018/2019/11/pipenv-the-future-of-python-dependency-management" target="_blank" title="Share via Email">Email</a>
     </p>
 
             
@@ -159,8 +152,7 @@
             <aside>
             <nav>
             <ul class="articles-timeline">
-                <li class="previous-article">« <a href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/ace-your-technical-interview-using-python" title="Previous: Ace Your Technical Interview Using Python">Ace Your Technical Interview Using Python</a></li>
-                <li class="next-article"><a href="https://lee-w.github.io/pycon-note/posts/pycon-jp-2019/2019/10/modern-development-environments-for-pythonistas" title="Next: Modern development environments for Pythonistas">Modern development environments for Pythonistas</a> »</li>
+                <li class="previous-article">« <a href="https://lee-w.github.io/pycon-note/posts/swiss-python-summit-2016/2019/11/pytest-rapid-simple-testing" title="Previous: Pytest: Rapid Simple Testing">Pytest: Rapid Simple Testing</a></li>
             </ul>
             </nav>
             </aside>
@@ -168,18 +160,18 @@
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
             <h4>Published</h4>
-            <time itemprop="dateCreated" datetime="2019-09-30T18:55:00+08:00">2019/09/30 - 一</time>
+            <time itemprop="dateCreated" datetime="2019-11-06T13:21:00+08:00">2019/11/06 - 三</time>
                 <h4>Read Time</h4>
                  1 min
             <h4>Category</h4>
             <a class="category-link" href="https://lee-w.github.io/pycon-note/categories.html#pycon-us-2018-ref">PyCon US 2018</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
-                <li><a href="https://lee-w.github.io/pycon-note/tags.html#code-quality-ref">code quality
+                <li><a href="https://lee-w.github.io/pycon-note/tags.html#dependencies-ref">dependencies
                     <span>1</span>
 </a></li>
-                <li><a href="https://lee-w.github.io/pycon-note/tags.html#qutomation-ref">qutomation
-                    <span>1</span>
+                <li><a href="https://lee-w.github.io/pycon-note/tags.html#virtual-environment-ref">virtual environment
+                    <span>2</span>
 </a></li>
             </ul>
 <h4>Contact</h4>
