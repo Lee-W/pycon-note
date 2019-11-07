@@ -5,6 +5,9 @@ Tags: test
 Slug: escape-from-auto-manual-testing-with-yypothesis
 Authors: Lee-W
 
+## Speaker
+Zac Hatfield-Dodds
+
 ## Material
 * [video](https://www.youtube.com/watch?v=KcyGUVzL7HA)
 * [slide](https://speakerdeck.com/pycon2019/zac-hatfield-dodds-escape-from-auto-manual-testing-with-hypothesis)

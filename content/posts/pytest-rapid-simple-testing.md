@@ -5,6 +5,9 @@ Tags: test
 Slug: pytest-rapid-simple-testing
 Authors: Lee-W
 
+## Speaker
+Florian Bruhin
+
 ## Material
 * [video](https://www.youtube.com/watch?v=rCBHkQ_LVIs)
 

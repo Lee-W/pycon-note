@@ -5,12 +5,13 @@ Tags: automation
 Slug: break-the-cycle-three-excellent-python-tools-to-automate-repetitive-tasks
 Authors: Lee-W
 
-## Material
+## Speaker
+Thea Flowers
 
+## Material
 * [video](https://www.youtube.com/watch?v=-BHverY7IwU)
 
 ## Note
-
 * goal
     * reduce toil (redundant boring stuff)
 * tools

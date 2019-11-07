@@ -5,6 +5,9 @@ Tags: code quality, automation
 Slug: automating-code-quality
 Authors: Lee-W
 
+## Speaker
+Kyle Knapp
+
 ## Materials
 * [video](https://www.youtube.com/watch?v=G1lDk_WKXvY)
 

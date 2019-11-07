@@ -5,6 +5,9 @@ Tags: dependencies, virtual environment
 Slug: pipenv-the-future-of-python-dependency-management
 Authors: Lee-W
 
+## Speaker
+Kenneth Reitz
+
 ## Material
 * [video](https://www.youtube.com/watch?v=GBQAKldqgZs)
 

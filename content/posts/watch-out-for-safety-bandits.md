@@ -5,6 +5,9 @@ Tags: security
 Slug: watch-out-for-safety-bandits
 Authors: Lee-W
 
+## Speaker
+Tennessee Leeuwenburg
+
 ## Material
 * [video](https://2018.pycon-au.org/talks/43518-watch-out-for-safety-bandits/)
 

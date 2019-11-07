@@ -5,6 +5,9 @@ Tags: best practices
 Slug: modern-development-environments-for-pythonistas
 Authors: Lee-W
 
+## Speaker
+Dustin Ingram
+
 ## Material
 * [video](https://www.youtube.com/watch?v=d3cj4f63u-A)
 

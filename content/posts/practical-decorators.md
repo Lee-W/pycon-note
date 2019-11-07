@@ -5,12 +5,13 @@ Tags: api
 Slug: practical-decorators
 Authors: Lee-W
 
-## Material
+## Speaker
+Reuven M. Lerner
 
+## Material
 * [video](https://www.youtube.com/watch?v=MjHpMCIvwsY)
 
 ## Note
-
 * usage examples
     * timing
     * limited call (e.g., function can be called once per minute)

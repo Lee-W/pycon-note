@@ -5,6 +5,9 @@ Tags: security
 Slug: python-security-tool
 Authors: Lee-W
 
+## Speaker
+Terri Oda
+
 ## Material
 * [video](https://www.youtube.com/watch?v=e7zzdl8OXCU)
 

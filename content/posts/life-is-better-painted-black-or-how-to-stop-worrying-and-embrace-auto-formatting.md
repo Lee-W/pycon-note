@@ -5,6 +5,9 @@ Tags: code quality, automation
 Slug: life-is-better-painted-black-or-how-to-stop-worrying-and-embrace-auto-formatting
 Authors: Lee-W
 
+## Speaker
+Łukasz Langa
+
 ## Material
 * [video](https://www.youtube.com/watch?v=esZLCuWs_2Y)
 

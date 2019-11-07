@@ -5,6 +5,9 @@ Tags: team
 Slug: the-zen-of-python-teams
 Authors: Lee-W
 
+## Speaker
+Adrienne Lowe
+
 ## Material
 * [video](https://www.youtube.com/watch?v=WZ8FEB4J8-c)
 

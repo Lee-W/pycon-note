@@ -5,10 +5,10 @@ Tags: core
 Slug: time-to-take-out-the-rubbish-garbage-collector
 Authors: Lee-W
 
-## Material
+## Speaker
 
+## Material
 * [video](https://www.youtube.com/watch?v=CLW5Lyc1FN8)
 
 ## Note
-
 * We do not use `__del__()` to clean up. Use `with` instead

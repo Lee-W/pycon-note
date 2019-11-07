@@ -5,13 +5,14 @@ Tags: job
 Slug: ace-your-technical-interview-using-python
 Authors: Lee-W
 
-## Material
+## Speaker
+Erin Allard
 
+## Material
 * [video](https://www.youtube.com/watch?v=NltGUUi23zc)
 * [slide](https://docs.google.com/presentation/d/100ZV3WoR4xMH489AdGLNF6zejuq9o7rU4pZa8-jPZTE/edit#slide=id.p)
 
 ## Note
-
 * Technical Interview Process
     1. Recruiter phone screen
     2. Technical phone screen with an engineer

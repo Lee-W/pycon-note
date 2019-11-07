@@ -5,8 +5,10 @@ Tags: type annotation
 Slug: why-you-should-care-about-types
 Authors: Lee-W
 
-## Material
+## Speaker
+Luka Sterbic
 
+## Material
 * [video](https://2018.pycon-au.org/talks/45224-why-you-should-care-about-types-how-python-typing-helped-my-team-scale/)
 
 ## Note
@@ -26,7 +28,6 @@ import this
 If nothing else, because Guido said so 😆
 
 ### Type 101
-
 * Collection, Union, Optional, Type
 
 ```python
@@ -45,5 +46,4 @@ def factory(clazz: Type[T]) -> T:
 ```
 
 ### Tool
-
 [GitHub - Instagram/MonkeyType: A system for Python that generates static type annotations by collecting runtime types](https://github.com/Instagram/MonkeyType)
