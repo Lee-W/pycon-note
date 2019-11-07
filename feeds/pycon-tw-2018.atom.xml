@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>PyCon Note - PyCon TW 2018</title><link href="https://lee-w.github.io/pycon-note/" rel="alternate"></link><link href="https://lee-w.github.io/pycon-note/feeds/pycon-tw-2018.atom.xml" rel="self"></link><id>https://lee-w.github.io/pycon-note/</id><updated>2019-10-18T23:59:00+08:00</updated><entry><title>這樣的開發環境沒問題嗎？</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-tw-2018/2019/10/is-your-dev-env-alright" rel="alternate"></link><published>2019-10-18T23:59:00+08:00</published><updated>2019-10-18T23:59:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-10-18:/pycon-note/posts/pycon-tw-2018/2019/10/is-your-dev-env-alright</id><summary type="html">&lt;h2 id="material"&gt;Material&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>PyCon Note - PyCon TW 2018</title><link href="https://lee-w.github.io/pycon-note/" rel="alternate"></link><link href="https://lee-w.github.io/pycon-note/feeds/pycon-tw-2018.atom.xml" rel="self"></link><id>https://lee-w.github.io/pycon-note/</id><updated>2019-10-18T23:59:00+08:00</updated><entry><title>這樣的開發環境沒問題嗎？</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-tw-2018/2019/10/is-your-dev-env-alright" rel="alternate"></link><published>2019-10-18T23:59:00+08:00</published><updated>2019-10-18T23:59:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-10-18:/pycon-note/posts/pycon-tw-2018/2019/10/is-your-dev-env-alright</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+&lt;p&gt;Tzu-ping Chung&lt;/p&gt;
+&lt;h2 id="material"&gt;Material&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=6Nl0IYkU0hU&amp;amp;t=204s"&gt;video&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://speakerdeck.com/uranusjr/zhe-yang-de-kai-fa-huan-jing-mei-wen-ti-ma"&gt;slide&lt;/a&gt;&lt;/li&gt;
@@ -19,7 +21,9 @@
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;mkdir -p ~/.local/bin ~/.local/venvs
 python3 -m venv ~/.local/venvs/pipenv
 ~/.local/venvs/pipenv/bin/pip install pipenv
-ln -s ~/.local/venvs/pipenv …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2 id="material"&gt;Material&lt;/h2&gt;
+ln -s …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+&lt;p&gt;Tzu-ping Chung&lt;/p&gt;
+&lt;h2 id="material"&gt;Material&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=6Nl0IYkU0hU&amp;amp;t=204s"&gt;video&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://speakerdeck.com/uranusjr/zhe-yang-de-kai-fa-huan-jing-mei-wen-ti-ma"&gt;slide&lt;/a&gt;&lt;/li&gt;
