@@ -1,5 +1,5 @@
 Title: Programmatic Notebooks with papermill
-Date: 2019-11-43 11:45
+Date: 2019-11-07 11:45
 Category: PyCon US 2019
 Tags: data, jupyter
 Slug: programmatic-notebooks-with-papermill
