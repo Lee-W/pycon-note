@@ -1,6 +1,6 @@
 Title: Life Is Better Painted Black, or: How to Stop Worrying and Embrace Auto-Formatting
 Date: 2019-11-07 10:51
-Category: PyCon UW 2019
+Category: PyCon US 2019
 Tags: code quality, automation
 Slug: life-is-better-painted-black-or-how-to-stop-worrying-and-embrace-auto-formatting
 Authors: Lee-W
