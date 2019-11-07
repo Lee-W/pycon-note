@@ -8,6 +8,9 @@ Authors: Lee-W
 ## Speaker
 Adrienne Lowe
 
+* [Leading with Spoons](https://leadingwithspoons.com)
+* [adriennefriend](https://twitter.com/adriennefriend)
+
 ## Material
 * [video](https://www.youtube.com/watch?v=WZ8FEB4J8-c)
 
