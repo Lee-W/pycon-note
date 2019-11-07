@@ -4,7 +4,6 @@ Category: PyCon US 2019
 Tags: concurrency
 Slug: everything-at-once-python-s-many-concurrency-models
 Authors: Lee-W
-Status: draft
 
 ## Speaker
 Jess Shapiro
