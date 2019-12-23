@@ -9,18 +9,18 @@
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="database, efficiency, PyCon US 2019, " />
+<meta name="keywords" content="WIP, Machine Learning, PyCon CA 2019, " />
 
-<meta property="og:title" content="From days to minutes, from minutes to milliseconds with SQLAlchemy "/>
-<meta property="og:url" content="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/11/from-days-to-minutes-from-minutes-to-milliseconds-with-SQLAlchemy" />
-<meta property="og:description" content="Speaker Leonardo Rochael Almeida Material video Note SQLAlchemy SQL Expression Language (a Python DSL) Object Relational Mapper (ORM) The ORM Trap Sensible Python Code → Bad SQL access patterns unnoticeable at low data volumes e.g., dev and early production The Fix: Let the DB do its job Be aware of …" />
+<meta property="og:title" content="Understanding autistic children using BioSensors and Python! "/>
+<meta property="og:url" content="https://lee-w.github.io/pycon-note/posts/pycon-ca-2019/2019/12/understanding-autistic-children-using-bioSensors-and-python" />
+<meta property="og:description" content="Speaker Niharika Krishnan Her talk in PyCon India Note Emotion Recognition How others do? Facial Speech Both does not work for autism Facial: Difficulty in expressing Speech: Cannot be control Why not physiological signal → AutiGlove BioSensors → Capture Signal Galvanic Skin Response Pulse Sensor Experiment Play Emotional Video BioSPPy: BioSingal Processing …" />
 <meta property="og:site_name" content="PyCon Note" />
 <meta property="og:article:author" content="Lee-W" />
-<meta property="og:article:published_time" content="2019-11-07T11:48:00+08:00" />
-<meta name="twitter:title" content="From days to minutes, from minutes to milliseconds with SQLAlchemy ">
-<meta name="twitter:description" content="Speaker Leonardo Rochael Almeida Material video Note SQLAlchemy SQL Expression Language (a Python DSL) Object Relational Mapper (ORM) The ORM Trap Sensible Python Code → Bad SQL access patterns unnoticeable at low data volumes e.g., dev and early production The Fix: Let the DB do its job Be aware of …">
+<meta property="og:article:published_time" content="2019-12-23T11:48:00+08:00" />
+<meta name="twitter:title" content="Understanding autistic children using BioSensors and Python! ">
+<meta name="twitter:description" content="Speaker Niharika Krishnan Her talk in PyCon India Note Emotion Recognition How others do? Facial Speech Both does not work for autism Facial: Difficulty in expressing Speech: Cannot be control Why not physiological signal → AutiGlove BioSensors → Capture Signal Galvanic Skin Response Pulse Sensor Experiment Play Emotional Video BioSPPy: BioSingal Processing …">
 
-        <title>From days to minutes, from minutes to milliseconds with SQLAlchemy  · PyCon Note
+        <title>Understanding autistic children using BioSensors and Python!  · PyCon Note
 </title>
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -71,8 +71,8 @@
 <div class="row-fluid">
     <header class="page-header span10 offset2">
         <h1>
-            <a href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/11/from-days-to-minutes-from-minutes-to-milliseconds-with-SQLAlchemy">
-                From days to minutes, from minutes to milliseconds with SQLAlchemy
+            <a href="https://lee-w.github.io/pycon-note/posts/pycon-ca-2019/2019/12/understanding-autistic-children-using-bioSensors-and-python">
+                Understanding autistic children using BioSensors and Python!
             </a>
         </h1>
     </header>
@@ -82,39 +82,45 @@
         <div class="span8 offset2 article-content">
             
             <h2 id="speaker">Speaker</h2>
-<p>Leonardo Rochael Almeida</p>
-<h2 id="material">Material</h2>
+<p><a href="https://twitter.com/nihaaarika">Niharika Krishnan</a></p>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=kEShMV4VfWE">video</a></li>
+<li><a href="https://in.pycon.org/cfp/posters-2019/proposals/autiglove-understanding-autistic-children-using-biosensors-and-python~b25Pa/">Her talk in PyCon India</a></li>
 </ul>
 <h2 id="note">Note</h2>
 <ul>
-<li>
-<p>SQLAlchemy</p>
-<ul>
-<li>SQL Expression Language (a Python DSL)</li>
-<li>Object Relational Mapper (ORM)</li>
+<li>Emotion Recognition<ul>
+<li>How others do?<ul>
+<li>Facial</li>
+<li>Speech</li>
+</ul>
+</li>
+<li>Both does not work for autism<ul>
+<li>Facial: Difficulty in expressing</li>
+<li>Speech: Cannot be control</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Why not physiological signal → AutiGlove<ul>
+<li>BioSensors → Capture Signal<ul>
+<li>Galvanic Skin Response</li>
+<li>Pulse Sensor</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Experiment<ul>
+<li>Play Emotional Video</li>
 </ul>
 </li>
 <li>
-<p>The ORM Trap</p>
-<ul>
-<li>Sensible Python Code → Bad SQL access patterns</li>
-<li>unnoticeable at low data volumes<ul>
-<li>e.g., dev and early production</li>
-</ul>
-</li>
-</ul>
+<p><a href="https://biosppy.readthedocs.io/en/stable/">BioSPPy</a>: BioSingal Processing in Python</p>
 </li>
 <li>
-<p>The Fix: Let the DB do its job</p>
+<p>Q &amp; A</p>
 <ul>
-<li>Be aware of implicit queries<ul>
-<li>especially from relationships</li>
-</ul>
-</li>
-<li>Aim for O(1) queries per request/job/activity<ul>
-<li>Avoid looping through model instances</li>
+<li>How many people work on it?<ul>
+<li>Team of 2 computer science students</li>
 </ul>
 </li>
 </ul>
@@ -124,11 +130,11 @@
 
                 <p id="post-share-links">
     Share on:
-    <a href="https://twitter.com/intent/tweet?text=From%20days%20to%20minutes%2C%20from%20minutes%20to%20milliseconds%20with%20SQLAlchemy&url=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/11/from-days-to-minutes-from-minutes-to-milliseconds-with-SQLAlchemy&hashtags=database,efficiency" target="_blank" title="Share on Twitter">Twitter</a>
+    <a href="https://twitter.com/intent/tweet?text=Understanding%20autistic%20children%20using%20BioSensors%20and%20Python%21&url=https%3A//lee-w.github.io/pycon-note/posts/pycon-ca-2019/2019/12/understanding-autistic-children-using-bioSensors-and-python&hashtags=wip,machine-learning" target="_blank" title="Share on Twitter">Twitter</a>
     ❄
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/11/from-days-to-minutes-from-minutes-to-milliseconds-with-SQLAlchemy" target="_blank" title="Share on Facebook">Facebook</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//lee-w.github.io/pycon-note/posts/pycon-ca-2019/2019/12/understanding-autistic-children-using-bioSensors-and-python" target="_blank" title="Share on Facebook">Facebook</a>
     ❄
-    <a href="mailto:?subject=From%20days%20to%20minutes%2C%20from%20minutes%20to%20milliseconds%20with%20SQLAlchemy&amp;body=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/11/from-days-to-minutes-from-minutes-to-milliseconds-with-SQLAlchemy" target="_blank" title="Share via Email">Email</a>
+    <a href="mailto:?subject=Understanding%20autistic%20children%20using%20BioSensors%20and%20Python%21&amp;body=https%3A//lee-w.github.io/pycon-note/posts/pycon-ca-2019/2019/12/understanding-autistic-children-using-bioSensors-and-python" target="_blank" title="Share via Email">Email</a>
     </p>
 
             
@@ -143,8 +149,8 @@
             <aside>
             <nav>
             <ul class="articles-timeline">
-                <li class="previous-article">« <a href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/11/programmatic-notebooks-with-papermill" title="Previous: Programmatic Notebooks with papermill">Programmatic Notebooks with papermill</a></li>
-                <li class="next-article"><a href="https://lee-w.github.io/pycon-note/posts/pycon-ca-2019/2019/12/understanding-autistic-children-using-bioSensors-and-python" title="Next: Understanding autistic children using BioSensors and Python!">Understanding autistic children using BioSensors and Python!</a> »</li>
+                <li class="previous-article">« <a href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/11/from-days-to-minutes-from-minutes-to-milliseconds-with-SQLAlchemy" title="Previous: From days to minutes, from minutes to milliseconds with SQLAlchemy">From days to minutes, from minutes to milliseconds with SQLAlchemy</a></li>
+                <li class="next-article"><a href="https://lee-w.github.io/pycon-note/posts/pycon-ca-2019/2019/12/pyspark-avoiding-common-pitfalls-and-keeping-your-sanity" title="Next: PySpark: avoiding common pitfalls and keeping your sanity">PySpark: avoiding common pitfalls and keeping your sanity</a> »</li>
             </ul>
             </nav>
             </aside>
@@ -152,18 +158,18 @@
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
             <h4>Published</h4>
-            <time itemprop="dateCreated" datetime="2019-11-07T11:48:00+08:00">2019/11/07 - 四</time>
+            <time itemprop="dateCreated" datetime="2019-12-23T11:48:00+08:00">2019/12/23 - 一</time>
                 <h4>Read Time</h4>
                  1 min
             <h4>Category</h4>
-            <a class="category-link" href="https://lee-w.github.io/pycon-note/categories.html#pycon-us-2019-ref">PyCon US 2019</a>
+            <a class="category-link" href="https://lee-w.github.io/pycon-note/categories.html#pycon-ca-2019-ref">PyCon CA 2019</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
-                <li><a href="https://lee-w.github.io/pycon-note/tags.html#database-ref">database
+                <li><a href="https://lee-w.github.io/pycon-note/tags.html#machine-learning-ref">Machine Learning
                     <span>1</span>
 </a></li>
-                <li><a href="https://lee-w.github.io/pycon-note/tags.html#efficiency-ref">efficiency
-                    <span>1</span>
+                <li><a href="https://lee-w.github.io/pycon-note/tags.html#wip-ref">WIP
+                    <span>3</span>
 </a></li>
             </ul>
 <h4>Contact</h4>
