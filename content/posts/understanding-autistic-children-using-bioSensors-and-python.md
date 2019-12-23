@@ -25,7 +25,6 @@ Authors: Lee-W
 * Experiment
     * Play Emotional Video
 * [BioSPPy](https://biosppy.readthedocs.io/en/stable/): BioSingal Processing in Python
-
 * Q & A
     * How many people work on it?
         * Team of 2 computer science students

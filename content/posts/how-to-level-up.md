@@ -1,4 +1,4 @@
-Title: How to level up
+Title: How to Level Up
 Date: 2019-12-23 15:48
 Category: PyCon CA 2019
 Tags: Learning

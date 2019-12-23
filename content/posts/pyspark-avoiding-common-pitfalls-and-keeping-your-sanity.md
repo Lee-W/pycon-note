@@ -12,7 +12,6 @@ Jonathan
 * 25 minutes of sanity
     1. Improving code readability
     2. Understand the type dichotomy
-
 * Readability
     * Pipelining in PySpark via method chaining
 * Types dichotomy
