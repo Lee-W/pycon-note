@@ -9,18 +9,18 @@
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="dependencies, virtual environment, PyCon US 2018, " />
+<meta name="keywords" content="dependencies, PyCon DE 2018, " />
 
-<meta property="og:title" content="Pipenv: The Future of Python Dependency Management "/>
-<meta property="og:url" content="https://lee-w.github.io/pycon-note/posts/pycon-us-2018/2019/11/pipenv-the-future-of-python-dependency-management" />
-<meta property="og:description" content="Speaker Kenneth Reitz Material video Note Packaging History unzip and install from setup.py easy_install pip, virtualenv, requirements.txt Python has no lock files! Pipenv Pipfile TOML: easy to read/ write manually Two groups: [package], [dev-package] Pipfile.lock JSON: machine readible transitive dependencies pinned with all acceptable hashes for each …" />
+<meta property="og:title" content="Python Dependency Management "/>
+<meta property="og:url" content="https://lee-w.github.io/pycon-note/posts/pycon-de-2018/2019/12/python-dependency-management" />
+<meta property="og:description" content="Speaker Patrick Muehlbauer Material video Note Problems multiple tools for the whole workflow no real dependency resolution in pip multiple files needed for reproducible env (e.g., requirements.txt, dev-requirements.txt) Possible Solutions reproducible env Pipfile, Pipfile.lock distutils/setuptools limitations pyproject.toml Python dependency managers pipenv pip-tools poetry hatch …" />
 <meta property="og:site_name" content="PyCon Note" />
 <meta property="og:article:author" content="Lee-W" />
-<meta property="og:article:published_time" content="2019-11-06T13:21:00+08:00" />
-<meta name="twitter:title" content="Pipenv: The Future of Python Dependency Management ">
-<meta name="twitter:description" content="Speaker Kenneth Reitz Material video Note Packaging History unzip and install from setup.py easy_install pip, virtualenv, requirements.txt Python has no lock files! Pipenv Pipfile TOML: easy to read/ write manually Two groups: [package], [dev-package] Pipfile.lock JSON: machine readible transitive dependencies pinned with all acceptable hashes for each …">
+<meta property="og:article:published_time" content="2019-12-24T11:35:00+08:00" />
+<meta name="twitter:title" content="Python Dependency Management ">
+<meta name="twitter:description" content="Speaker Patrick Muehlbauer Material video Note Problems multiple tools for the whole workflow no real dependency resolution in pip multiple files needed for reproducible env (e.g., requirements.txt, dev-requirements.txt) Possible Solutions reproducible env Pipfile, Pipfile.lock distutils/setuptools limitations pyproject.toml Python dependency managers pipenv pip-tools poetry hatch …">
 
-        <title>Pipenv: The Future of Python Dependency Management  · PyCon Note
+        <title>Python Dependency Management  · PyCon Note
 </title>
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -71,8 +71,8 @@
 <div class="row-fluid">
     <header class="page-header span10 offset2">
         <h1>
-            <a href="https://lee-w.github.io/pycon-note/posts/pycon-us-2018/2019/11/pipenv-the-future-of-python-dependency-management">
-                Pipenv: The Future of Python Dependency Management
+            <a href="https://lee-w.github.io/pycon-note/posts/pycon-de-2018/2019/12/python-dependency-management">
+                Python Dependency Management
             </a>
         </h1>
     </header>
@@ -82,64 +82,83 @@
         <div class="span8 offset2 article-content">
             
             <h2 id="speaker">Speaker</h2>
-<p>Kenneth Reitz</p>
+<p>Patrick Muehlbauer</p>
 <h2 id="material">Material</h2>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=GBQAKldqgZs">video</a></li>
+<li><a href="https://www.youtube.com/watch?v=pA4XriRWVxQ">video</a></li>
 </ul>
 <h2 id="note">Note</h2>
 <ul>
-<li>Packaging History<ol>
-<li>unzip and install from <code>setup.py</code></li>
-<li><code>easy_install</code></li>
-<li><code>pip</code>, <code>virtualenv</code>, <code>requirements.txt</code></li>
-</ol>
-</li>
-<li>Python has no lock files!</li>
-<li><a href="https://pipenv-fork.readthedocs.io/en/latest/">Pipenv</a><ul>
-<li>Pipfile<ul>
-<li>TOML: easy to read/ write manually</li>
-<li>Two groups: <code>[package]</code>, <code>[dev-package]</code></li>
+<li>Problems<ul>
+<li>multiple tools for the whole workflow</li>
+<li>no real dependency resolution in pip</li>
+<li>multiple files needed for reproducible env (e.g., <code>requirements.txt</code>, <code>dev-requirements.txt</code>)</li>
 </ul>
 </li>
-<li>Pipfile.lock<ul>
-<li>JSON: machine readible</li>
-<li>transitive dependencies pinned with all acceptable hashes for each releases</li>
-<li>Two groups: <code>default</code>, <code>develop</code></li>
+<li>Possible Solutions<ul>
+<li>reproducible env<ul>
+<li>Pipfile, Pipfile.lock</li>
 </ul>
 </li>
-<li>Install packages concurrently</li>
-<li>Support multiple source</li>
-<li><code>pipenv --venv</code>: show you the venv created</li>
-<li><code>pipenv --graph</code>: show dependency tree</li>
-<li><code>pipenv check</code>: check the vulnerability of packages<ul>
-<li>e.g., <code>pipenv install django==1.4.2</code></li>
-</ul>
-</li>
-<li><code>pipenv install --deploy</code></li>
-<li><code>pipenv install --ignore-pipfile</code></li>
-<li><code>pipenv --python &lt;version&gt;</code>: automatically install certain python version if you have <a href="https://github.com/pyenv/pyenv">pyenv</a> installed</li>
-<li><code>pipenv lock -r</code>: generate <code>requirements.txt</code></li>
-<li>We should put the lock file on source control.</li>
-<li><code>pipenv uninstall</code> uninstall only the package. <code>pipenv sync</code> is needed to uninstall all its transitive dependencies.</li>
-<li>Pipenv finds created venv through path of the directory. Thus, if you move the directory, you'll have to create a new virtual environment.</li>
-<li>Pipenv won't be a replacement for <code>setup.py</code><ul>
-<li>Pipenv is for application.</li>
-<li><code>setup.py</code> is for lib.</li>
+<li>distutils/setuptools limitations<ul>
+<li>pyproject.toml</li>
 </ul>
 </li>
 </ul>
 </li>
+<li>Python dependency managers<ul>
+<li><a href="https://pipenv.kennethreitz.org/en/latest/">pipenv</a></li>
+<li><a href="https://www.google.com/search?q=pip+tools&amp;oq=pip+tools&amp;aqs=chrome..69i57j0l7.1384j0j1&amp;sourceid=chrome&amp;ie=UTF-8">pip-tools</a></li>
+<li><a href="https://python-poetry.org/">poetry</a></li>
+<li><a href="https://github.com/ofek/hatch">hatch</a></li>
+<li><a href="https://docs.conda.io/en/latest/">conda</a></li>
+<li><a href="https://cournape.github.io/Bento/">Bento</a></li>
+<li><a href="https://github.com/takluyver/flit">flit</a></li>
+<li><a href="https://www.pantsbuild.org/pex.html">pants/ pex</a></li>
+</ul>
+</li>
+<li>Which to choose?<ul>
+<li>It depends.</li>
+<li>Questions to ask<ul>
+<li>Are building a library or an application?</li>
+<li>Doest it fit my infra?</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="pip-tools">pip-tools</h3>
+<ul>
+<li><code>pip-compile</code>: generates <strong>requirements.txt</strong> from <strong>setup.py</strong> or <strong>requirements.in</strong></li>
+<li><code>pip-sync</code>: dependency synchronization</li>
+</ul>
+<h3 id="pipenv">Pipenv</h3>
+<ul>
+<li>wrapper around pip and virtual environments</li>
+<li>use <strong>Pipfile</strong>, <strong>Pipfile.lock</strong></li>
+<li>for <strong>applications</strong> rather than <strong>libraries</strong></li>
+<li>separate sections for dev and man dependencies</li>
+</ul>
+<h4>Poetry</h4>
+<ul>
+<li>tool to manage dependencies, build and publish packasge</li>
+<li>use <strong>pyproject.toml</strong>, <strong>poetry.lock</strong></li>
+</ul>
+<h3 id="hatch">hatch</h3>
+<ul>
+<li>simplifies development workflow</li>
+<li>warps multiple tools (<code>pip</code>, <code>virtualenv</code>, <code>twine</code>, <code>pytest</code>, <code>coverage.py</code>)</li>
+<li><strong>setup.py</strong>, <strong>requirements.txt</strong></li>
 </ul>
 
 
                 <p id="post-share-links">
     Share on:
-    <a href="https://twitter.com/intent/tweet?text=Pipenv%3A%20The%20Future%20of%20Python%20Dependency%20Management&url=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2018/2019/11/pipenv-the-future-of-python-dependency-management&hashtags=dependencies,virtual-environment" target="_blank" title="Share on Twitter">Twitter</a>
+    <a href="https://twitter.com/intent/tweet?text=Python%20Dependency%20Management&url=https%3A//lee-w.github.io/pycon-note/posts/pycon-de-2018/2019/12/python-dependency-management&hashtags=dependencies" target="_blank" title="Share on Twitter">Twitter</a>
     ❄
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2018/2019/11/pipenv-the-future-of-python-dependency-management" target="_blank" title="Share on Facebook">Facebook</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//lee-w.github.io/pycon-note/posts/pycon-de-2018/2019/12/python-dependency-management" target="_blank" title="Share on Facebook">Facebook</a>
     ❄
-    <a href="mailto:?subject=Pipenv%3A%20The%20Future%20of%20Python%20Dependency%20Management&amp;body=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2018/2019/11/pipenv-the-future-of-python-dependency-management" target="_blank" title="Share via Email">Email</a>
+    <a href="mailto:?subject=Python%20Dependency%20Management&amp;body=https%3A//lee-w.github.io/pycon-note/posts/pycon-de-2018/2019/12/python-dependency-management" target="_blank" title="Share via Email">Email</a>
     </p>
 
             
@@ -154,8 +173,7 @@
             <aside>
             <nav>
             <ul class="articles-timeline">
-                <li class="previous-article">« <a href="https://lee-w.github.io/pycon-note/posts/swiss-python-summit-2016/2019/11/pytest-rapid-simple-testing" title="Previous: Pytest: Rapid Simple Testing">Pytest: Rapid Simple Testing</a></li>
-                <li class="next-article"><a href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/11/life-is-better-painted-black-or-how-to-stop-worrying-and-embrace-auto-formatting" title="Next: Life Is Better Painted Black, or: How to Stop Worrying and Embrace Auto-Formatting">Life Is Better Painted Black, or: How to Stop Worrying and Embrace Auto-Formatting</a> »</li>
+                <li class="previous-article">« <a href="https://lee-w.github.io/pycon-note/posts/pycon-ca-2019/2019/12/how-to-level-up" title="Previous: How to Level Up">How to Level Up</a></li>
             </ul>
             </nav>
             </aside>
@@ -163,17 +181,14 @@
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
             <h4>Published</h4>
-            <time itemprop="dateCreated" datetime="2019-11-06T13:21:00+08:00">2019/11/06 - 三</time>
+            <time itemprop="dateCreated" datetime="2019-12-24T11:35:00+08:00">2019/12/24 - 二</time>
                 <h4>Read Time</h4>
                  1 min
             <h4>Category</h4>
-            <a class="category-link" href="https://lee-w.github.io/pycon-note/categories.html#pycon-us-2018-ref">PyCon US 2018</a>
+            <a class="category-link" href="https://lee-w.github.io/pycon-note/categories.html#pycon-de-2018-ref">PyCon DE 2018</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
                 <li><a href="https://lee-w.github.io/pycon-note/tags.html#dependencies-ref">dependencies
-                    <span>2</span>
-</a></li>
-                <li><a href="https://lee-w.github.io/pycon-note/tags.html#virtual-environment-ref">virtual environment
                     <span>2</span>
 </a></li>
             </ul>
