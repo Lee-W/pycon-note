@@ -9,18 +9,18 @@
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="dependencies, PyCon DE 2018, " />
+<meta name="keywords" content="keynote, PyCon US 2019, " />
 
-<meta property="og:title" content="Python Dependency Management "/>
-<meta property="og:url" content="https://lee-w.github.io/pycon-note/posts/pycon-de-2018/2019/12/python-dependency-management" />
-<meta property="og:description" content="Speaker Patrick Muehlbauer Material video Note Problems multiple tools for the whole workflow no real dependency resolution in pip multiple files needed for reproducible env (e.g., requirements.txt, dev-requirements.txt) Possible Solutions reproducible env Pipfile, Pipfile.lock distutils/setuptools limitations pyproject.toml Python dependency managers pipenv pip-tools poetry hatch …" />
+<meta property="og:title" content="Keynote - Russell Keith-Magee "/>
+<meta property="og:url" content="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/12/Keynote-Russell-Keith-Magee" />
+<meta property="og:description" content="Speaker Russell Keith-Magee Material video Where do you see Python in 10 years? Python&#39;s Black Swan Black Swan 1: Everyone uses a laptop? What happens to Python when laptop no longer exist? 2: Python can stay on the server 3: Installation is a solved problem 4: Code distribution doesn&#39;t matter …" />
 <meta property="og:site_name" content="PyCon Note" />
 <meta property="og:article:author" content="Lee-W" />
-<meta property="og:article:published_time" content="2019-12-24T11:35:00+08:00" />
-<meta name="twitter:title" content="Python Dependency Management ">
-<meta name="twitter:description" content="Speaker Patrick Muehlbauer Material video Note Problems multiple tools for the whole workflow no real dependency resolution in pip multiple files needed for reproducible env (e.g., requirements.txt, dev-requirements.txt) Possible Solutions reproducible env Pipfile, Pipfile.lock distutils/setuptools limitations pyproject.toml Python dependency managers pipenv pip-tools poetry hatch …">
+<meta property="og:article:published_time" content="2019-12-30T09:40:00+08:00" />
+<meta name="twitter:title" content="Keynote - Russell Keith-Magee ">
+<meta name="twitter:description" content="Speaker Russell Keith-Magee Material video Where do you see Python in 10 years? Python&#39;s Black Swan Black Swan 1: Everyone uses a laptop? What happens to Python when laptop no longer exist? 2: Python can stay on the server 3: Installation is a solved problem 4: Code distribution doesn&#39;t matter …">
 
-        <title>Python Dependency Management  · PyCon Note
+        <title>Keynote - Russell Keith-Magee  · PyCon Note
 </title>
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -71,8 +71,8 @@
 <div class="row-fluid">
     <header class="page-header span10 offset2">
         <h1>
-            <a href="https://lee-w.github.io/pycon-note/posts/pycon-de-2018/2019/12/python-dependency-management">
-                Python Dependency Management
+            <a href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/12/Keynote-Russell-Keith-Magee">
+                Keynote - Russell Keith-Magee
             </a>
         </h1>
     </header>
@@ -82,83 +82,59 @@
         <div class="span8 offset2 article-content">
             
             <h2 id="speaker">Speaker</h2>
-<p>Patrick Muehlbauer</p>
+<p>Russell Keith-Magee</p>
 <h2 id="material">Material</h2>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=pA4XriRWVxQ">video</a></li>
+<li><a href="https://www.youtube.com/watch?v=ftP5BQh1-YM&amp;t=1242s">video</a></li>
 </ul>
-<h2 id="note">Note</h2>
+<h3 id="where-do-you-see-python-in-10-years">Where do you see Python in 10 years?</h3>
 <ul>
-<li>Problems<ul>
-<li>multiple tools for the whole workflow</li>
-<li>no real dependency resolution in pip</li>
-<li>multiple files needed for reproducible env (e.g., <code>requirements.txt</code>, <code>dev-requirements.txt</code>)</li>
-</ul>
+<li>
+<p>Python's Black Swan</p>
 </li>
-<li>Possible Solutions<ul>
-<li>reproducible env<ul>
-<li>Pipfile, Pipfile.lock</li>
-</ul>
-</li>
-<li>distutils/setuptools limitations<ul>
-<li>pyproject.toml</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Python dependency managers<ul>
-<li><a href="https://pipenv.kennethreitz.org/en/latest/">pipenv</a></li>
-<li><a href="https://www.google.com/search?q=pip+tools&amp;oq=pip+tools&amp;aqs=chrome..69i57j0l7.1384j0j1&amp;sourceid=chrome&amp;ie=UTF-8">pip-tools</a></li>
-<li><a href="https://python-poetry.org/">poetry</a></li>
-<li><a href="https://github.com/ofek/hatch">hatch</a></li>
-<li><a href="https://docs.conda.io/en/latest/">conda</a></li>
-<li><a href="https://cournape.github.io/Bento/">Bento</a></li>
-<li><a href="https://github.com/takluyver/flit">flit</a></li>
-<li><a href="https://www.pantsbuild.org/pex.html">pants/ pex</a></li>
-</ul>
-</li>
-<li>Which to choose?<ul>
-<li>It depends.</li>
-<li>Questions to ask<ul>
-<li>Are building a library or an application?</li>
-<li>Doest it fit my infra?</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="pip-tools">pip-tools</h3>
+<li>
+<p>Black Swan</p>
 <ul>
-<li><code>pip-compile</code>: generates <strong>requirements.txt</strong> from <strong>setup.py</strong> or <strong>requirements.in</strong></li>
-<li><code>pip-sync</code>: dependency synchronization</li>
+<li>1: Everyone uses a laptop?<ul>
+<li>What happens to Python when laptop no longer exist?</li>
 </ul>
-<h3 id="pipenv">Pipenv</h3>
+</li>
+<li>2: Python can stay on the server</li>
+<li>3: Installation is a solved problem</li>
+<li>4: Code distribution doesn't matter</li>
+</ul>
+</li>
+</ul>
+<h3 id="america-cup">America Cup</h3>
 <ul>
-<li>wrapper around pip and virtual environments</li>
-<li>use <strong>Pipfile</strong>, <strong>Pipfile.lock</strong></li>
-<li>for <strong>applications</strong> rather than <strong>libraries</strong></li>
-<li>separate sections for dev and man dependencies</li>
+<li>Lesson 1: It's not enough to just follow the rules. You have to ensure the competition is fair.</li>
+<li>Lesson 2: Watch out for Black Swans<ul>
+<li><strong>Challenge the assumption</strong></li>
 </ul>
-<h4>Poetry</h4>
-<ul>
-<li>tool to manage dependencies, build and publish packasge</li>
-<li>use <strong>pyproject.toml</strong>, <strong>poetry.lock</strong></li>
+</li>
+<li>Lesson 3: The team matters</li>
+<li>Lesson 4: Money makes things happen<ul>
+<li>Expertise costs</li>
 </ul>
-<h3 id="hatch">hatch</h3>
-<ul>
-<li>simplifies development workflow</li>
-<li>warps multiple tools (<code>pip</code>, <code>virtualenv</code>, <code>twine</code>, <code>pytest</code>, <code>coverage.py</code>)</li>
-<li><strong>setup.py</strong>, <strong>requirements.txt</strong></li>
+</li>
 </ul>
+<h3 id="5-call-to-action">5 Call to action</h3>
+<ol>
+<li>Start thinking about Black swans (before it's too late)</li>
+<li>Improve resourcing of maintenance and R&amp;D efforts</li>
+<li>Value contributors and their contributions</li>
+<li><strong>Get out your wallet</strong> xD</li>
+<li>Contribute</li>
+</ol>
 
 
                 <p id="post-share-links">
     Share on:
-    <a href="https://twitter.com/intent/tweet?text=Python%20Dependency%20Management&url=https%3A//lee-w.github.io/pycon-note/posts/pycon-de-2018/2019/12/python-dependency-management&hashtags=dependencies" target="_blank" title="Share on Twitter">Twitter</a>
+    <a href="https://twitter.com/intent/tweet?text=Keynote%20-%20Russell%20Keith-Magee&url=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/12/Keynote-Russell-Keith-Magee&hashtags=keynote" target="_blank" title="Share on Twitter">Twitter</a>
     ❄
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//lee-w.github.io/pycon-note/posts/pycon-de-2018/2019/12/python-dependency-management" target="_blank" title="Share on Facebook">Facebook</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/12/Keynote-Russell-Keith-Magee" target="_blank" title="Share on Facebook">Facebook</a>
     ❄
-    <a href="mailto:?subject=Python%20Dependency%20Management&amp;body=https%3A//lee-w.github.io/pycon-note/posts/pycon-de-2018/2019/12/python-dependency-management" target="_blank" title="Share via Email">Email</a>
+    <a href="mailto:?subject=Keynote%20-%20Russell%20Keith-Magee&amp;body=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/12/Keynote-Russell-Keith-Magee" target="_blank" title="Share via Email">Email</a>
     </p>
 
             
@@ -173,8 +149,7 @@
             <aside>
             <nav>
             <ul class="articles-timeline">
-                <li class="previous-article">« <a href="https://lee-w.github.io/pycon-note/posts/pycon-ca-2019/2019/12/how-to-level-up" title="Previous: How to Level Up">How to Level Up</a></li>
-                <li class="next-article"><a href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/12/Keynote-Russell-Keith-Magee" title="Next: Keynote - Russell Keith-Magee">Keynote - Russell Keith-Magee</a> »</li>
+                <li class="previous-article">« <a href="https://lee-w.github.io/pycon-note/posts/pycon-de-2018/2019/12/python-dependency-management" title="Previous: Python Dependency Management">Python Dependency Management</a></li>
             </ul>
             </nav>
             </aside>
@@ -182,15 +157,15 @@
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
             <h4>Published</h4>
-            <time itemprop="dateCreated" datetime="2019-12-24T11:35:00+08:00">2019/12/24 - 二</time>
+            <time itemprop="dateCreated" datetime="2019-12-30T09:40:00+08:00">2019/12/30 - 一</time>
                 <h4>Read Time</h4>
                  1 min
             <h4>Category</h4>
-            <a class="category-link" href="https://lee-w.github.io/pycon-note/categories.html#pycon-de-2018-ref">PyCon DE 2018</a>
+            <a class="category-link" href="https://lee-w.github.io/pycon-note/categories.html#pycon-us-2019-ref">PyCon US 2019</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
-                <li><a href="https://lee-w.github.io/pycon-note/tags.html#dependencies-ref">dependencies
-                    <span>2</span>
+                <li><a href="https://lee-w.github.io/pycon-note/tags.html#keynote-ref">keynote
+                    <span>1</span>
 </a></li>
             </ul>
 <h4>Contact</h4>
