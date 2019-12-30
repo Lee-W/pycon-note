@@ -13,6 +13,7 @@ python-gettext = "*"
 ghp-import = "*"
 typogrify = "*"
 mdx-del-ins = {editable = true,git = "https://github.com/Lee-W/mdx_del_ins"}
+invoke = "*"
 
 [requires]
 python_version = "3.7"
