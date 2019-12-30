@@ -120,31 +120,31 @@
     <span class="sd">&quot;&quot;&quot;Print all the authors in this project&quot;&quot;&quot;</span>
 
     <span class="n">result</span> <span class="o">=</span> <span class="n">ctx</span><span class="o">.</span><span class="n">run</span><span class="p">(</span>
-        <span class="s2">&quot;git log --pretty=format:</span><span class="se">\&quot;</span><span class="s2">%an &lt;%ae&gt;</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;git log --pretty=format:</span><span class="se">\&quot;</span><span class="si">%a</span><span class="s2">n &lt;</span><span class="si">%a</span><span class="s2">e&gt;</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="p">,</span>
         <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">,</span>
-        <span class="n">hide</span><span class="o">=</span><span class="bp">True</span>
+        <span class="n">hide</span><span class="o">=</span><span class="kc">True</span>
     <span class="p">)</span>
 
     <span class="n">authors</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">splitlines</span><span class="p">())</span>
     <span class="n">authors</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">authors</span><span class="p">)</span>
 
     <span class="k">for</span> <span class="n">author</span> <span class="ow">in</span> <span class="n">authors</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="n">author</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">author</span><span class="p">)</span>
 
 
 <span class="nd">@task</span>
 <span class="k">def</span> <span class="nf">changelog</span><span class="p">(</span><span class="n">ctx</span><span class="p">,</span> <span class="n">since</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Print the changelog since given git ref&quot;&quot;&quot;</span>
     <span class="n">result</span> <span class="o">=</span> <span class="n">ctx</span><span class="o">.</span><span class="n">run</span><span class="p">(</span>
-        <span class="n">f</span><span class="s2">&quot;git log {since}..HEAD --format=</span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span>
+        <span class="sa">f</span><span class="s2">&quot;git log </span><span class="si">{since}</span><span class="s2">..HEAD --format=</span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span>
         <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">,</span>
-        <span class="n">hide</span><span class="o">=</span><span class="bp">True</span>
+        <span class="n">hide</span><span class="o">=</span><span class="kc">True</span>
     <span class="p">)</span>
     <span class="n">changes</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()</span>
 
-    <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;Changelog sine {since}:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Changelog sine </span><span class="si">{since}</span><span class="s2">:&quot;</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">change</span> <span class="ow">in</span> <span class="n">changes</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;- {change}&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;- </span><span class="si">{change}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 
 
@@ -178,7 +178,7 @@
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
             <h4>Published</h4>
-            <time itemprop="dateCreated" datetime="2019-08-13T15:20:00+08:00">2019/08/13 - 二</time>
+            <time itemprop="dateCreated" datetime="2019-08-13T15:20:00+08:00">2019/08/13 - Tue</time>
                 <h4>Read Time</h4>
                  1 min
             <h4>Category</h4>
