@@ -9,18 +9,18 @@
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="keynote, PyCon US 2019, " />
+<meta name="keywords" content="security, PyGotham 2019, " />
 
-<meta property="og:title" content="Keynote - Russell Keith-Magee "/>
-<meta property="og:url" content="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/12/Keynote-Russell-Keith-Magee" />
-<meta property="og:description" content="Speaker Russell Keith-Magee Material video Where do you see Python in 10 years? Python&#39;s Black Swan Black Swan 1: Everyone uses a laptop? What happens to Python when laptop no longer exist? 2: Python can stay on the server 3: Installation is a solved problem 4: Code distribution doesn&#39;t matter …" />
+<meta property="og:title" content="Improving PyPI&#39;s security with Two Factor Authentication "/>
+<meta property="og:url" content="https://lee-w.github.io/pycon-note/posts/pygotham-2019/2019/12/improving-pypi-s-security-with-two-factor-authentication" />
+<meta property="og:description" content="Speaker William Woodruff Material video Note PyPI now supports two factor authentication Two factor authentication First factor: your password or something you know Second Factor: something that you (and only you) have Why 2FA? Adding a second factor prevents/mitigates data leak but 2FA isn&#39;t panacea 2 FA methods SMS …" />
 <meta property="og:site_name" content="PyCon Note" />
 <meta property="og:article:author" content="Lee-W" />
-<meta property="og:article:published_time" content="2019-12-30T09:40:00+08:00" />
-<meta name="twitter:title" content="Keynote - Russell Keith-Magee ">
-<meta name="twitter:description" content="Speaker Russell Keith-Magee Material video Where do you see Python in 10 years? Python&#39;s Black Swan Black Swan 1: Everyone uses a laptop? What happens to Python when laptop no longer exist? 2: Python can stay on the server 3: Installation is a solved problem 4: Code distribution doesn&#39;t matter …">
+<meta property="og:article:published_time" content="2019-12-31T12:13:00+08:00" />
+<meta name="twitter:title" content="Improving PyPI&#39;s security with Two Factor Authentication ">
+<meta name="twitter:description" content="Speaker William Woodruff Material video Note PyPI now supports two factor authentication Two factor authentication First factor: your password or something you know Second Factor: something that you (and only you) have Why 2FA? Adding a second factor prevents/mitigates data leak but 2FA isn&#39;t panacea 2 FA methods SMS …">
 
-        <title>Keynote - Russell Keith-Magee  · PyCon Note
+        <title>Improving PyPI&#39;s security with Two Factor Authentication  · PyCon Note
 </title>
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -68,8 +68,8 @@
 <div class="row-fluid">
     <header class="page-header span10 offset2">
         <h1>
-            <a href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/12/Keynote-Russell-Keith-Magee">
-                Keynote - Russell Keith-Magee
+            <a href="https://lee-w.github.io/pycon-note/posts/pygotham-2019/2019/12/improving-pypi-s-security-with-two-factor-authentication">
+                Improving PyPI's security with Two Factor Authentication
             </a>
         </h1>
     </header>
@@ -79,61 +79,103 @@
         <div class="span8 offset2 article-content">
             
             <h2 id="speaker">Speaker</h2>
-<p>Russell Keith-Magee</p>
+<p>William Woodruff</p>
 <h2 id="material">Material</h2>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=ftP5BQh1-YM&amp;t=1242s">video</a></li>
+<li><a href="https://www.youtube.com/watch?v=xNZIxt-ABUs">video</a></li>
 </ul>
-<h3 id="where-do-you-see-python-in-10-years">Where do you see Python in 10 years?</h3>
+<h2 id="note">Note</h2>
 <ul>
-<li>
-<p>Python's Black Swan</p>
-</li>
-<li>
-<p>Black Swan</p>
-<ul>
-<li>1: Everyone uses a laptop?<ul>
-<li>What happens to Python when laptop no longer exist?</li>
+<li>PyPI now supports two factor authentication</li>
+<li>Two factor authentication<ul>
+<li>First factor: your password or something you know</li>
+<li>Second Factor: something that you (and only you) have</li>
 </ul>
 </li>
-<li>2: Python can stay on the server</li>
-<li>3: Installation is a solved problem</li>
-<li>4: Code distribution doesn't matter</li>
+<li>Why 2FA?<ul>
+<li>Adding a second factor prevents/mitigates data leak<ul>
+<li>but 2FA isn't panacea</li>
 </ul>
 </li>
 </ul>
-<h3 id="america-cup">America Cup</h3>
-<ul>
-<li>Lesson 1: It's not enough to just follow the rules. You have to ensure the competition is fair.</li>
-<li>Lesson 2: Watch out for Black Swans<ul>
-<li><strong>Challenge the assumption</strong></li>
+</li>
+<li>2 FA methods<ul>
+<li>SMS/voice <strong>Don't use it</strong><ul>
+<li>Problem: Nothing about the phone network is secure<ul>
+<li>e.g., SS7 attacks, SIM ports &amp; jacking, SMS interception</li>
 </ul>
 </li>
-<li>Lesson 3: The team matters</li>
-<li>Lesson 4: Money makes things happen<ul>
-<li>Expertise costs</li>
+<li>do not use it in new service</li>
+</ul>
+</li>
+<li>HOTP-based physical keys<ul>
+<li>Special device</li>
+<li>high cost</li>
+</ul>
+</li>
+<li>TOTP (Time-based one-time passwords ): your baseline 2FA<ul>
+<li>Symmetric cryptography with a single shared secret</li>
+<li>design suggestion<ul>
+<li>do:<ul>
+<li>require users to enter a TOTP code</li>
+<li>provide both a provisioning URI and a QR code</li>
+</ul>
+</li>
+<li>don't<ul>
+<li>use uncommon TOTP parameters (bad client support)</li>
+<li>nag users for TOTP codes on every single action</li>
 </ul>
 </li>
 </ul>
-<h3 id="5-call-to-action">5 Call to action</h3>
-<ol>
-<li>Start thinking about Black swans (before it's too late)</li>
-<li>Improve resourcing of maintenance and R&amp;D efforts</li>
-<li>Value contributors and their contributions</li>
-<li><strong>Get out your wallet</strong> xD</li>
-<li>Contribute</li>
-</ol>
+</li>
+</ul>
+</li>
+<li>WebAuthn (U2F)<ul>
+<li>Asymmetric, public-key crpyography</li>
+<li>Hardware agnostic</li>
+<li>Supported by most browser (W3C standard)</li>
+<li>design suggestion<ul>
+<li>do<ul>
+<li>allow anonymous attestation (ECDAA) (e.g., TouchID)</li>
+<li>support multiple WebAuthn keys per user</li>
+<li>force user to tag/label their keys</li>
+</ul>
+</li>
+<li>don't<ul>
+<li>make users choose between TOTP and WebAuthn → Let them do both</li>
+<li>use us2.js or any other pre-WebAuthn lib</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Conclusion<ul>
+<li>You should add 2FA to your services and phasing out SMS 2FA</li>
+<li>TOTP<ul>
+<li><a href="https://github.com/pyca/cryptography">pyca/crptography</a></li>
+</ul>
+</li>
+<li>WebAuthn<ul>
+<li><a href="https://github.com/duo-labs/py_webauthn">Py_webauthn</a> is a little rough, but production ready  </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
 
              
  
                 <p id="post-share-links">
     Share on:
-    <a href="https://twitter.com/intent/tweet?text=Keynote%20-%20Russell%20Keith-Magee&url=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/12/Keynote-Russell-Keith-Magee&hashtags=keynote" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
+    <a href="https://twitter.com/intent/tweet?text=Improving%20PyPI%27s%20security%20with%20Two%20Factor%20Authentication&url=https%3A//lee-w.github.io/pycon-note/posts/pygotham-2019/2019/12/improving-pypi-s-security-with-two-factor-authentication&hashtags=security" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
     ❄
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/12/Keynote-Russell-Keith-Magee" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//lee-w.github.io/pycon-note/posts/pygotham-2019/2019/12/improving-pypi-s-security-with-two-factor-authentication" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
     ❄
-    <a href="mailto:?subject=Keynote%20-%20Russell%20Keith-Magee&amp;body=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/12/Keynote-Russell-Keith-Magee" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
+    <a href="mailto:?subject=Improving%20PyPI%27s%20security%20with%20Two%20Factor%20Authentication&amp;body=https%3A//lee-w.github.io/pycon-note/posts/pygotham-2019/2019/12/improving-pypi-s-security-with-two-factor-authentication" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
     </p>
 
             
@@ -148,23 +190,22 @@
             <aside>
             <nav>
             <ul class="articles-timeline">
-                <li class="previous-article">« <a href="https://lee-w.github.io/pycon-note/posts/pycon-de-2018/2019/12/python-dependency-management" title="Previous: Python Dependency Management">Python Dependency Management</a></li>
-                <li class="next-article"><a href="https://lee-w.github.io/pycon-note/posts/pygotham-2019/2019/12/improving-pypi-s-security-with-two-factor-authentication" title="Next: Improving PyPI&#39;s security with Two Factor Authentication">Improving PyPI's security with Two Factor Authentication</a> »</li>
+                <li class="previous-article">« <a href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/12/Keynote-Russell-Keith-Magee" title="Previous: Keynote - Russell Keith-Magee">Keynote - Russell Keith-Magee</a></li>
             </ul>
             </nav>
             </aside>
         </div>
         <section id="article-sidebar" class="span2">
             <h4>Published</h4>
-            <time itemprop="dateCreated" datetime="2019-12-30T09:40:00+08:00">2019/12/30 - Mon</time>
+            <time itemprop="dateCreated" datetime="2019-12-31T12:13:00+08:00">2019/12/31 - Tue</time>
                 <h4>Read Time</h4>
                  1 min
             <h4>Category</h4>
-            <a class="category-link" href="https://lee-w.github.io/pycon-note/categories.html#pycon-us-2019-ref">PyCon US 2019</a>
+            <a class="category-link" href="https://lee-w.github.io/pycon-note/categories.html#pygotham-2019-ref">PyGotham 2019</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
-                <li><a href="https://lee-w.github.io/pycon-note/tags.html#keynote-ref">keynote
-                    <span>1</span>
+                <li><a href="https://lee-w.github.io/pycon-note/tags.html#security-ref">security
+                    <span>3</span>
 </a></li>
             </ul>
 <h4>Contact</h4>
