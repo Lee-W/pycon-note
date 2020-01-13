@@ -1,7 +1,7 @@
 Title: Elegant Solutions For Everyday Python Problems
-Date: 2020-01-08 11:00
+Date: 2020-01-13 10:16
 Category: PyCon US 2018
-Tags: test
+Tags: best practices
 Slug: elegant-solutions-for-everyday-python-problems
 Authors: Lee-W
 
