@@ -119,7 +119,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content><category term="community"></category></entry><entry><title>5 Steps to Build Python Native GUI Widgets for BeeWare</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2020/01/5-steps-to-build-python-native-GUI-widgets-for-BeeWare" rel="alternate"></link><published>2020-01-29T11:32:00+08:00</published><updated>2020-01-29T11:32:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2020-01-29:/pycon-note/posts/pycon-us-2019/2020/01/5-steps-to-build-python-native-GUI-widgets-for-BeeWare</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+&lt;/ul&gt;</content><category term="PyCon US 2019"></category><category term="community"></category></entry><entry><title>5 Steps to Build Python Native GUI Widgets for BeeWare</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2020/01/5-steps-to-build-python-native-GUI-widgets-for-BeeWare" rel="alternate"></link><published>2020-01-29T11:32:00+08:00</published><updated>2020-01-29T11:32:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2020-01-29:/pycon-note/posts/pycon-us-2019/2020/01/5-steps-to-build-python-native-GUI-widgets-for-BeeWare</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
 &lt;p&gt;Dan Yeaw&lt;/p&gt;
 &lt;h2 id="material"&gt;Material&lt;/h2&gt;
 &lt;ul&gt;
@@ -195,7 +195,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Step 5&lt;/strong&gt;: Implement TOGA_IMPL (Your platform)&lt;/li&gt;
-&lt;/ul&gt;</content><category term="GUI"></category></entry><entry><title>Wily Python: Writing simpler and more maintainable Python</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2020/01/wily-python-writing-simpler-and-more-maintainable-python" rel="alternate"></link><published>2020-01-07T15:30:00+08:00</published><updated>2020-01-07T15:30:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2020-01-07:/pycon-note/posts/pycon-us-2019/2020/01/wily-python-writing-simpler-and-more-maintainable-python</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+&lt;/ul&gt;</content><category term="PyCon US 2019"></category><category term="GUI"></category></entry><entry><title>Wily Python: Writing simpler and more maintainable Python</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2020/01/wily-python-writing-simpler-and-more-maintainable-python" rel="alternate"></link><published>2020-01-07T15:30:00+08:00</published><updated>2020-01-07T15:30:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2020-01-07:/pycon-note/posts/pycon-us-2019/2020/01/wily-python-writing-simpler-and-more-maintainable-python</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
 &lt;p&gt;Anthony Shaw&lt;/p&gt;
 &lt;h2 id="material"&gt;Material&lt;/h2&gt;
 &lt;ul&gt;
@@ -249,7 +249,7 @@
 &lt;li&gt;Divide and Conquer → Spread complexity&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content><category term="code quality"></category></entry><entry><title>Keynote - Russell Keith-Magee</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/12/Keynote-Russell-Keith-Magee" rel="alternate"></link><published>2019-12-30T09:40:00+08:00</published><updated>2019-12-30T09:40:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-12-30:/pycon-note/posts/pycon-us-2019/2019/12/Keynote-Russell-Keith-Magee</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+&lt;/ul&gt;</content><category term="PyCon US 2019"></category><category term="code quality"></category></entry><entry><title>Keynote - Russell Keith-Magee</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/12/Keynote-Russell-Keith-Magee" rel="alternate"></link><published>2019-12-30T09:40:00+08:00</published><updated>2019-12-30T09:40:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-12-30:/pycon-note/posts/pycon-us-2019/2019/12/Keynote-Russell-Keith-Magee</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
 &lt;p&gt;Russell Keith-Magee&lt;/p&gt;
 &lt;h2 id="material"&gt;Material&lt;/h2&gt;
 &lt;ul&gt;
@@ -313,7 +313,7 @@
 &lt;li&gt;Value contributors and their contributions&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Get out your wallet&lt;/strong&gt; xD&lt;/li&gt;
 &lt;li&gt;Contribute&lt;/li&gt;
-&lt;/ol&gt;</content><category term="keynote"></category></entry><entry><title>From days to minutes, from minutes to milliseconds with SQLAlchemy</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/11/from-days-to-minutes-from-minutes-to-milliseconds-with-SQLAlchemy" rel="alternate"></link><published>2019-11-07T11:48:00+08:00</published><updated>2019-11-07T11:48:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-11-07:/pycon-note/posts/pycon-us-2019/2019/11/from-days-to-minutes-from-minutes-to-milliseconds-with-SQLAlchemy</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+&lt;/ol&gt;</content><category term="PyCon US 2019"></category><category term="keynote"></category></entry><entry><title>From days to minutes, from minutes to milliseconds with SQLAlchemy</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/11/from-days-to-minutes-from-minutes-to-milliseconds-with-SQLAlchemy" rel="alternate"></link><published>2019-11-07T11:48:00+08:00</published><updated>2019-11-07T11:48:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-11-07:/pycon-note/posts/pycon-us-2019/2019/11/from-days-to-minutes-from-minutes-to-milliseconds-with-SQLAlchemy</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
 &lt;p&gt;Leonardo Rochael Almeida&lt;/p&gt;
 &lt;h2 id="material"&gt;Material&lt;/h2&gt;
 &lt;ul&gt;
@@ -379,7 +379,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content><category term="database"></category><category term="efficiency"></category></entry><entry><title>Programmatic Notebooks with papermill</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/11/programmatic-notebooks-with-papermill" rel="alternate"></link><published>2019-11-07T11:45:00+08:00</published><updated>2019-11-07T11:45:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-11-07:/pycon-note/posts/pycon-us-2019/2019/11/programmatic-notebooks-with-papermill</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+&lt;/ul&gt;</content><category term="PyCon US 2019"></category><category term="database"></category><category term="efficiency"></category></entry><entry><title>Programmatic Notebooks with papermill</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/11/programmatic-notebooks-with-papermill" rel="alternate"></link><published>2019-11-07T11:45:00+08:00</published><updated>2019-11-07T11:45:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-11-07:/pycon-note/posts/pycon-us-2019/2019/11/programmatic-notebooks-with-papermill</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
 &lt;p&gt;Matthew Seal&lt;/p&gt;
 &lt;h2 id="material"&gt;Material&lt;/h2&gt;
 &lt;ul&gt;
@@ -458,7 +458,7 @@
 &lt;li&gt;They're all component&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content><category term="data"></category><category term="jupyter"></category></entry><entry><title>Everything at Once: Python's Many Concurrency Models</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/11/everything-at-once-python-s-many-concurrency-models" rel="alternate"></link><published>2019-11-07T11:41:00+08:00</published><updated>2019-11-07T11:41:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-11-07:/pycon-note/posts/pycon-us-2019/2019/11/everything-at-once-python-s-many-concurrency-models</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+&lt;/ul&gt;</content><category term="PyCon US 2019"></category><category term="data"></category><category term="jupyter"></category></entry><entry><title>Everything at Once: Python's Many Concurrency Models</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/11/everything-at-once-python-s-many-concurrency-models" rel="alternate"></link><published>2019-11-07T11:41:00+08:00</published><updated>2019-11-07T11:41:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-11-07:/pycon-note/posts/pycon-us-2019/2019/11/everything-at-once-python-s-many-concurrency-models</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
 &lt;p&gt;Jess Shapiro&lt;/p&gt;
 &lt;h2 id="material"&gt;Material&lt;/h2&gt;
 &lt;ul&gt;
@@ -562,7 +562,7 @@
 &lt;li&gt;Multiple tasks run simultaneously&lt;/li&gt;
 &lt;li&gt;Global state totally independent&lt;/li&gt;
 &lt;li&gt;Central orchestrator&lt;/li&gt;
-&lt;/ul&gt;</content><category term="concurrency"></category></entry><entry><title>Does remote work really work?</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/11/does-remote-work-really-work" rel="alternate"></link><published>2019-11-07T11:35:00+08:00</published><updated>2019-11-07T11:35:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-11-07:/pycon-note/posts/pycon-us-2019/2019/11/does-remote-work-really-work</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+&lt;/ul&gt;</content><category term="PyCon US 2019"></category><category term="concurrency"></category></entry><entry><title>Does remote work really work?</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/11/does-remote-work-really-work" rel="alternate"></link><published>2019-11-07T11:35:00+08:00</published><updated>2019-11-07T11:35:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-11-07:/pycon-note/posts/pycon-us-2019/2019/11/does-remote-work-really-work</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
 &lt;p&gt;Lauren Schaefer&lt;/p&gt;
 &lt;h2 id="material"&gt;Material&lt;/h2&gt;
 &lt;ul&gt;
@@ -680,7 +680,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content><category term="remote"></category><category term="job"></category></entry><entry><title>Life Is Better Painted Black, or: How to Stop Worrying and Embrace Auto-Formatting</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/11/life-is-better-painted-black-or-how-to-stop-worrying-and-embrace-auto-formatting" rel="alternate"></link><published>2019-11-07T10:51:00+08:00</published><updated>2019-11-07T10:51:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-11-07:/pycon-note/posts/pycon-us-2019/2019/11/life-is-better-painted-black-or-how-to-stop-worrying-and-embrace-auto-formatting</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+&lt;/ul&gt;</content><category term="PyCon US 2019"></category><category term="remote"></category><category term="job"></category></entry><entry><title>Life Is Better Painted Black, or: How to Stop Worrying and Embrace Auto-Formatting</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/11/life-is-better-painted-black-or-how-to-stop-worrying-and-embrace-auto-formatting" rel="alternate"></link><published>2019-11-07T10:51:00+08:00</published><updated>2019-11-07T10:51:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-11-07:/pycon-note/posts/pycon-us-2019/2019/11/life-is-better-painted-black-or-how-to-stop-worrying-and-embrace-auto-formatting</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
 &lt;p&gt;Łukasz Langa&lt;/p&gt;
 &lt;h2 id="material"&gt;Material&lt;/h2&gt;
 &lt;ul&gt;
@@ -744,7 +744,7 @@
 &lt;li&gt;&lt;a href="https://pre-commit.com/"&gt;pre-commit&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content><category term="code quality"></category><category term="automation"></category></entry><entry><title>Python Security Tool</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/10/python-security-tool" rel="alternate"></link><published>2019-10-26T11:10:00+08:00</published><updated>2019-10-26T11:10:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-10-26:/pycon-note/posts/pycon-us-2019/2019/10/python-security-tool</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+&lt;/ul&gt;</content><category term="PyCon US 2019"></category><category term="code quality"></category><category term="automation"></category></entry><entry><title>Python Security Tool</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/10/python-security-tool" rel="alternate"></link><published>2019-10-26T11:10:00+08:00</published><updated>2019-10-26T11:10:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-10-26:/pycon-note/posts/pycon-us-2019/2019/10/python-security-tool</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
 &lt;p&gt;Terri Oda&lt;/p&gt;
 &lt;h2 id="material"&gt;Material&lt;/h2&gt;
 &lt;ul&gt;
@@ -834,7 +834,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Review secure coding guidelines for python to improve code reviews&lt;/li&gt;
-&lt;/ul&gt;</content><category term="security"></category></entry><entry><title>Ace Your Technical Interview Using Python</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/ace-your-technical-interview-using-python" rel="alternate"></link><published>2019-08-13T15:20:00+08:00</published><updated>2019-08-13T15:20:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-08-13:/pycon-note/posts/pycon-us-2019/2019/08/ace-your-technical-interview-using-python</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+&lt;/ul&gt;</content><category term="PyCon US 2019"></category><category term="security"></category></entry><entry><title>Ace Your Technical Interview Using Python</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/ace-your-technical-interview-using-python" rel="alternate"></link><published>2019-08-13T15:20:00+08:00</published><updated>2019-08-13T15:20:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-08-13:/pycon-note/posts/pycon-us-2019/2019/08/ace-your-technical-interview-using-python</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
 &lt;p&gt;Erin Allard&lt;/p&gt;
 &lt;h2 id="material"&gt;Material&lt;/h2&gt;
 &lt;ul&gt;
@@ -915,7 +915,7 @@
 &lt;li&gt;You don't need every company to want to hire you&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content><category term="job"></category></entry><entry><title>API Evolution the Right Way</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/api-evolution-the-right-way" rel="alternate"></link><published>2019-08-13T15:20:00+08:00</published><updated>2019-08-13T15:20:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-08-13:/pycon-note/posts/pycon-us-2019/2019/08/api-evolution-the-right-way</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+&lt;/ul&gt;</content><category term="PyCon US 2019"></category><category term="job"></category></entry><entry><title>API Evolution the Right Way</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/api-evolution-the-right-way" rel="alternate"></link><published>2019-08-13T15:20:00+08:00</published><updated>2019-08-13T15:20:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-08-13:/pycon-note/posts/pycon-us-2019/2019/08/api-evolution-the-right-way</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
 &lt;p&gt;A. Jesse Jiryu Davis&lt;/p&gt;
 &lt;h2 id="material"&gt;Material&lt;/h2&gt;
 &lt;ul&gt;
@@ -979,7 +979,7 @@
 &lt;li&gt;Phrase 3. Remove flag&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
-&lt;/ol&gt;</content><category term="api"></category></entry><entry><title>Break the Cycle: Three excellent Python tools to automate repetitive tasks</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/break-the-cycle-three-excellent-python-tools-to-automate-repetitive-tasks" rel="alternate"></link><published>2019-08-13T15:20:00+08:00</published><updated>2019-08-13T15:20:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-08-13:/pycon-note/posts/pycon-us-2019/2019/08/break-the-cycle-three-excellent-python-tools-to-automate-repetitive-tasks</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+&lt;/ol&gt;</content><category term="PyCon US 2019"></category><category term="api"></category></entry><entry><title>Break the Cycle: Three excellent Python tools to automate repetitive tasks</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/break-the-cycle-three-excellent-python-tools-to-automate-repetitive-tasks" rel="alternate"></link><published>2019-08-13T15:20:00+08:00</published><updated>2019-08-13T15:20:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-08-13:/pycon-note/posts/pycon-us-2019/2019/08/break-the-cycle-three-excellent-python-tools-to-automate-repetitive-tasks</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
 &lt;p&gt;Thea Flowers&lt;/p&gt;
 &lt;h2 id="material"&gt;Material&lt;/h2&gt;
 &lt;ul&gt;
@@ -1010,12 +1010,12 @@
 &lt;/li&gt;
 &lt;li&gt;invoke example&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;invoke&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;task&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;invoke&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;task&lt;/span&gt;
 
 
 &lt;span class="nd"&gt;@task&lt;/span&gt;
 &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;authors&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot;Print all the …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+    &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot;Print all the …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
 &lt;p&gt;Thea Flowers&lt;/p&gt;
 &lt;h2 id="material"&gt;Material&lt;/h2&gt;
 &lt;ul&gt;
@@ -1046,7 +1046,7 @@
 &lt;/li&gt;
 &lt;li&gt;invoke example&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;invoke&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;task&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;invoke&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;task&lt;/span&gt;
 
 
 &lt;span class="nd"&gt;@task&lt;/span&gt;
@@ -1079,7 +1079,7 @@
     &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Changelog sine &lt;/span&gt;&lt;span class="si"&gt;{since}&lt;/span&gt;&lt;span class="s2"&gt;:&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;change&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;changes&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
         &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;- &lt;/span&gt;&lt;span class="si"&gt;{change}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</content><category term="automation"></category></entry><entry><title>Escape from auto-manual testing with Hypothesis!</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/escape-from-auto-manual-testing-with-yypothesis" rel="alternate"></link><published>2019-08-13T15:20:00+08:00</published><updated>2019-08-13T15:20:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-08-13:/pycon-note/posts/pycon-us-2019/2019/08/escape-from-auto-manual-testing-with-yypothesis</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="PyCon US 2019"></category><category term="automation"></category></entry><entry><title>Escape from auto-manual testing with Hypothesis!</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/escape-from-auto-manual-testing-with-yypothesis" rel="alternate"></link><published>2019-08-13T15:20:00+08:00</published><updated>2019-08-13T15:20:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-08-13:/pycon-note/posts/pycon-us-2019/2019/08/escape-from-auto-manual-testing-with-yypothesis</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
 &lt;p&gt;Zac Hatfield-Dodds&lt;/p&gt;
 &lt;h2 id="material"&gt;Material&lt;/h2&gt;
 &lt;ul&gt;
@@ -1178,7 +1178,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Use &lt;code&gt;note()&lt;/code&gt; if you like print-debugging&lt;/li&gt;
-&lt;/ul&gt;</content><category term="test"></category></entry><entry><title>Getting Started Testing in Data Science</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/getting-started-testing-in-data-science" rel="alternate"></link><published>2019-08-13T15:20:00+08:00</published><updated>2019-08-13T15:20:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-08-13:/pycon-note/posts/pycon-us-2019/2019/08/getting-started-testing-in-data-science</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+&lt;/ul&gt;</content><category term="PyCon US 2019"></category><category term="test"></category></entry><entry><title>Getting Started Testing in Data Science</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/getting-started-testing-in-data-science" rel="alternate"></link><published>2019-08-13T15:20:00+08:00</published><updated>2019-08-13T15:20:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-08-13:/pycon-note/posts/pycon-us-2019/2019/08/getting-started-testing-in-data-science</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
 &lt;p&gt;Jes Ford&lt;/p&gt;
 &lt;h2 id="material"&gt;Material&lt;/h2&gt;
 &lt;ul&gt;
@@ -1249,7 +1249,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content><category term="data"></category></entry><entry><title>Practical decorators</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/practical-decorators" rel="alternate"></link><published>2019-08-13T15:20:00+08:00</published><updated>2019-08-13T15:20:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-08-13:/pycon-note/posts/pycon-us-2019/2019/08/practical-decorators</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+&lt;/ul&gt;</content><category term="PyCon US 2019"></category><category term="data"></category></entry><entry><title>Practical decorators</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/practical-decorators" rel="alternate"></link><published>2019-08-13T15:20:00+08:00</published><updated>2019-08-13T15:20:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-08-13:/pycon-note/posts/pycon-us-2019/2019/08/practical-decorators</id><content type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
 &lt;p&gt;Reuven M. Lerner&lt;/p&gt;
 &lt;h2 id="material"&gt;Material&lt;/h2&gt;
 &lt;ul&gt;
@@ -1264,22 +1264,7 @@
 &lt;li&gt;add class attribute (e.g., better &lt;code&gt;__repr__&lt;/code&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</summary><content type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
-&lt;p&gt;Reuven M. Lerner&lt;/p&gt;
-&lt;h2 id="material"&gt;Material&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=MjHpMCIvwsY"&gt;video&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="note"&gt;Note&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;usage examples&lt;ul&gt;
-&lt;li&gt;timing&lt;/li&gt;
-&lt;li&gt;limited call (e.g., function can be called once per minute)&lt;/li&gt;
-&lt;li&gt;memoization (i.e. caching)&lt;/li&gt;
-&lt;li&gt;add class attribute (e.g., better &lt;code&gt;__repr__&lt;/code&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</content><category term="api"></category></entry><entry><title>Scraping a Million Pokemon Battles: Distributed Systems By Example</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/scraping-a-million-pokemon-battles-distributed-systems-by-example" rel="alternate"></link><published>2019-08-13T15:20:00+08:00</published><updated>2019-08-13T15:20:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-08-13:/pycon-note/posts/pycon-us-2019/2019/08/scraping-a-million-pokemon-battles-distributed-systems-by-example</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+&lt;/ul&gt;</content><category term="PyCon US 2019"></category><category term="api"></category></entry><entry><title>Scraping a Million Pokemon Battles: Distributed Systems By Example</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/scraping-a-million-pokemon-battles-distributed-systems-by-example" rel="alternate"></link><published>2019-08-13T15:20:00+08:00</published><updated>2019-08-13T15:20:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-08-13:/pycon-note/posts/pycon-us-2019/2019/08/scraping-a-million-pokemon-battles-distributed-systems-by-example</id><content type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
 &lt;p&gt;Duy Nguyen&lt;/p&gt;
 &lt;h2 id="material"&gt;Material&lt;/h2&gt;
 &lt;ul&gt;
@@ -1306,46 +1291,13 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Correctness&lt;br&gt;
-&lt;img alt="Correctness" src="https://lee-w.github.io/pycon-note/images/post-images/scraping-a-million-pokemon-battles-distributed-systems-by-example/15647353098656.jpg"&gt;&lt;/p&gt;
+&lt;img alt="Correctness" src="/images/20190813-01-correctness.jpg"&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Resilience&lt;br&gt;
-&lt;img alt="Resilience" src="https://lee-w.github.io/pycon-note/images/post-images/scraping-a-million-pokemon-battles-distributed-systems-by-example/15647353190256.jpg"&gt;&lt;/p&gt;
+&lt;img alt="Resilience" src="/images/20190813-02-resilience.jpg"&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</summary><content type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
-&lt;p&gt;Duy Nguyen&lt;/p&gt;
-&lt;h2 id="material"&gt;Material&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=QvZqttX9uXc"&gt;video&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://docs.google.com/presentation/d/14v2huYsC5rJYUR3sWBXu0YN33b6tWRFraEgf9FwRPiE/edit#slide=id.g56f736b0fc_1_545"&gt;slide&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="note"&gt;Note&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Scalability and 3 "Pillars"&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Concurrency of Resources&lt;/li&gt;
-&lt;li&gt;Asserting for Correctness&lt;/li&gt;
-&lt;li&gt;Resilience against Failures&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;New Problems&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Loss of determinism&lt;/li&gt;
-&lt;li&gt;Long startup times (e.g., initialize message queue)&lt;/li&gt;
-&lt;li&gt;Increases flakiness&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Correctness&lt;br&gt;
-&lt;img alt="Correctness" src="https://lee-w.github.io/pycon-note/images/post-images/scraping-a-million-pokemon-battles-distributed-systems-by-example/15647353098656.jpg"&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Resilience&lt;br&gt;
-&lt;img alt="Resilience" src="https://lee-w.github.io/pycon-note/images/post-images/scraping-a-million-pokemon-battles-distributed-systems-by-example/15647353190256.jpg"&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</content><category term="core"></category></entry><entry><title>The Zen of Python Teams</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/the-zen-of-python-teams" rel="alternate"></link><published>2019-08-13T15:20:00+08:00</published><updated>2019-08-13T15:20:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-08-13:/pycon-note/posts/pycon-us-2019/2019/08/the-zen-of-python-teams</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+&lt;/ul&gt;</content><category term="PyCon US 2019"></category><category term="core"></category></entry><entry><title>The Zen of Python Teams</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/the-zen-of-python-teams" rel="alternate"></link><published>2019-08-13T15:20:00+08:00</published><updated>2019-08-13T15:20:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-08-13:/pycon-note/posts/pycon-us-2019/2019/08/the-zen-of-python-teams</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
 &lt;p&gt;Adrienne Lowe&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://leadingwithspoons.com"&gt;Leading with Spoons&lt;/a&gt;&lt;/li&gt;
@@ -1419,7 +1371,7 @@
 &lt;li&gt;Doing and being wrong is a lot better than not doing at all.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content><category term="team"></category></entry><entry><title>Time to take out the rubbish: garbage collector</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/time-to-take-out-the-rubbish-garbage-collector" rel="alternate"></link><published>2019-08-13T15:20:00+08:00</published><updated>2019-08-13T15:20:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-08-13:/pycon-note/posts/pycon-us-2019/2019/08/time-to-take-out-the-rubbish-garbage-collector</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+&lt;/ul&gt;</content><category term="PyCon US 2019"></category><category term="team"></category></entry><entry><title>Time to take out the rubbish: garbage collector</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/time-to-take-out-the-rubbish-garbage-collector" rel="alternate"></link><published>2019-08-13T15:20:00+08:00</published><updated>2019-08-13T15:20:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-08-13:/pycon-note/posts/pycon-us-2019/2019/08/time-to-take-out-the-rubbish-garbage-collector</id><content type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
 &lt;h2 id="material"&gt;Material&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=CLW5Lyc1FN8"&gt;video&lt;/a&gt;&lt;/li&gt;
@@ -1427,12 +1379,4 @@
 &lt;h2 id="note"&gt;Note&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;We do not use &lt;code&gt;__del__()&lt;/code&gt; to clean up. Use &lt;code&gt;with&lt;/code&gt; instead&lt;/li&gt;
-&lt;/ul&gt;</summary><content type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
-&lt;h2 id="material"&gt;Material&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=CLW5Lyc1FN8"&gt;video&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="note"&gt;Note&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;We do not use &lt;code&gt;__del__()&lt;/code&gt; to clean up. Use &lt;code&gt;with&lt;/code&gt; instead&lt;/li&gt;
-&lt;/ul&gt;</content><category term="core"></category></entry></feed>
+&lt;/ul&gt;</content><category term="PyCon US 2019"></category><category term="core"></category></entry></feed>

@@ -18,10 +18,10 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/mitsuhiko/pipsi"&gt;pipsi&lt;/a&gt; can be an option. But, it has not been updated for a while.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;mkdir -p ~/.local/bin ~/.local/venvs
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mkdir -p ~/.local/bin ~/.local/venvs
 python3 -m venv ~/.local/venvs/pipenv
 ~/.local/venvs/pipenv/bin/pip install pipenv
-ln -s …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+ln -s …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
 &lt;p&gt;Tzu-ping Chung&lt;/p&gt;
 &lt;h2 id="material"&gt;Material&lt;/h2&gt;
 &lt;ul&gt;
@@ -40,12 +40,12 @@ ln -s …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2 id="speak
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/mitsuhiko/pipsi"&gt;pipsi&lt;/a&gt; can be an option. But, it has not been updated for a while.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;mkdir -p ~/.local/bin ~/.local/venvs
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mkdir -p ~/.local/bin ~/.local/venvs
 python3 -m venv ~/.local/venvs/pipenv
 ~/.local/venvs/pipenv/bin/pip install pipenv
 ln -s ~/.local/venvs/pipenv/bin/pipenv ~/.local/bin
 pipenv --version
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;ul&gt;
@@ -72,4 +72,4 @@ pipenv --version
 &lt;li&gt;or use &lt;a href="https://github.com/uranusjr/pythonup-windows"&gt;pythonup&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content><category term="virtual environment"></category></entry></feed>
+&lt;/ul&gt;</content><category term="PyCon TW 2018"></category><category term="virtual environment"></category></entry></feed>

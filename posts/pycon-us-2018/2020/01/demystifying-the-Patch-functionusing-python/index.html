@@ -11,16 +11,16 @@
 
 <meta name="keywords" content="test, PyCon US 2018, " />
 
-<meta property="og:title" content="Demystifying the Patch Function "/>
+<meta property="og:title" content="Demystifying the Patch Function"/>
 <meta property="og:url" content="https://lee-w.github.io/pycon-note/posts/pycon-us-2018/2020/01/demystifying-the-Patch-functionusing-python" />
 <meta property="og:description" content="Speaker Lisa Roach Material video Note Patch: temporarily replace your target with MagicMock() Target: &#39;package.modeul.ClassName&#39; When should you mock? When you don&#39;t want to actually call an object e.g., database, system call What makes it so confusing? Identifying the target Multiple ways to call Patch Target must …" />
 <meta property="og:site_name" content="PyCon Note" />
 <meta property="og:article:author" content="Lee-W" />
 <meta property="og:article:published_time" content="2020-01-08T11:00:00+08:00" />
-<meta name="twitter:title" content="Demystifying the Patch Function ">
+<meta name="twitter:title" content="Demystifying the Patch Function">
 <meta name="twitter:description" content="Speaker Lisa Roach Material video Note Patch: temporarily replace your target with MagicMock() Target: &#39;package.modeul.ClassName&#39; When should you mock? When you don&#39;t want to actually call an object e.g., database, system call What makes it so confusing? Identifying the target Multiple ways to call Patch Target must …">
 
-        <title>Demystifying the Patch Function  · PyCon Note
+        <title>Demystifying the Patch Function · PyCon Note
 </title>
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -104,12 +104,12 @@
 <li>Target must be importable</li>
 <li><strong>Patch where the object is used</strong></li>
 </ul>
-<div class="highlight"><pre><span></span><span class="c1"># module.py</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># module.py</span>
 <span class="kn">from</span> <span class="nn">db</span> <span class="kn">import</span> <span class="n">db_write</span>
 
 <span class="c1"># test_module.py</span>
 <span class="nd">@patch</span><span class="p">(</span><span class="s2">&quot;module.db_write&quot;</span><span class="p">)</span>
-</pre></div>
+</code></pre></div>
 
 
 <ul>
@@ -179,8 +179,8 @@
 </ul>
 
 
-             
- 
+            
+
                 <p id="post-share-links">
     Share on:
     <a href="https://twitter.com/intent/tweet?text=Demystifying%20the%20Patch%20Function&url=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2018/2020/01/demystifying-the-Patch-functionusing-python&hashtags=test" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
