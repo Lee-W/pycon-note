@@ -36,7 +36,6 @@ STATIC_PATHS = ["images", "static"]
 # Theme Setting
 THEME = "theme/elegant"
 JINJA_ENVIRONMENT = {"extensions": ["jinja2.ext.i18n"]}
-EXTRA_PATH_METADATA = {"images": {"path": "images/"}}
 PYGMENTS_STYLE = "default"
 
 # Feed generation is usually not desired when developing
