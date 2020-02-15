@@ -2176,7 +2176,7 @@ pipenv --version
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="pylint-vs-flake8" src="/images/20190930-01-pylint-vs-flake8.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="pylint-vs-flake8" src="https://lee-w.github.io/pycon-note/images/post-images/automating-code-quality/15698391534086.jpg"&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Best practices&lt;ol&gt;
 &lt;li&gt;Always improve quality check&lt;/li&gt;
@@ -2641,11 +2641,11 @@ pipenv --version
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Correctness&lt;br&gt;
-&lt;img alt="Correctness" src="https://lee-w.github.io/pycon-note/posts/images/20190813-01-correctness.jpg"&gt;&lt;/p&gt;
+&lt;img alt="Correctness" src="https://lee-w.github.io/pycon-note/images/post-images/scraping-a-million-pokemon-battles-distributed-systems-by-example/15647353098656.jpg"&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Resilience&lt;br&gt;
-&lt;img alt="Resilience" src="https://lee-w.github.io/pycon-note/posts/images/20190813-02-resilience.jpg"&gt;&lt;/p&gt;
+&lt;img alt="Resilience" src="https://lee-w.github.io/pycon-note/images/post-images/scraping-a-million-pokemon-battles-distributed-systems-by-example/15647353190256.jpg"&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</content><category term="PyCon US 2019"></category><category term="core"></category></entry><entry><title>Solve Your Problem With Sloppy Python</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-au-2018/2019/08/solve-your-problem-with-sloppy-python" rel="alternate"></link><published>2019-08-13T15:20:00+08:00</published><updated>2019-08-13T15:20:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2019-08-13:/pycon-note/posts/pycon-au-2018/2019/08/solve-your-problem-with-sloppy-python</id><content type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
 &lt;p&gt;Larry Hastings&lt;/p&gt;
