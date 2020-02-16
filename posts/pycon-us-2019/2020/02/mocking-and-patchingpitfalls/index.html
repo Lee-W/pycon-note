@@ -11,16 +11,16 @@
 
 <meta name="keywords" content="test, PyCon US 2019, " />
 
-<meta property="og:title" content="Escape from auto-manual testing with Hypothesis!"/>
-<meta property="og:url" content="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/escape-from-auto-manual-testing-with-yypothesis" />
-<meta property="og:description" content="Speaker Zac Hatfield-Dodds Material video slide Note Property-based testing User Describes valid input Writes tests that passes for any valid input Strategies and Tactics strategies (st) values collections map and filter methods complicated data recursive strategies combine strategies builds(): custom object inferring strategies hypothesis.extra st.data() tactics: what do …" />
+<meta property="og:title" content="Mocking and Patching Pitfalls"/>
+<meta property="og:url" content="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2020/02/mocking-and-patchingpitfalls" />
+<meta property="og:description" content="Speaker Edwin Jung Material video Note Mock hell complex patch targets numerous mocks or patches mocks with brittle assertions mocks with complex setup deep mocks/recursive mocks/mocks returning mocks tests that test nothing using the debugger to reverse-engineer mocks mocks that prevent refactoring How to test without mock mocks …" />
 <meta property="og:site_name" content="PyCon Note" />
 <meta property="og:article:author" content="Lee-W" />
-<meta property="og:article:published_time" content="2019-08-13T15:20:00+08:00" />
-<meta name="twitter:title" content="Escape from auto-manual testing with Hypothesis!">
-<meta name="twitter:description" content="Speaker Zac Hatfield-Dodds Material video slide Note Property-based testing User Describes valid input Writes tests that passes for any valid input Strategies and Tactics strategies (st) values collections map and filter methods complicated data recursive strategies combine strategies builds(): custom object inferring strategies hypothesis.extra st.data() tactics: what do …">
+<meta property="og:article:published_time" content="2020-02-16T17:20:00+08:00" />
+<meta name="twitter:title" content="Mocking and Patching Pitfalls">
+<meta name="twitter:description" content="Speaker Edwin Jung Material video Note Mock hell complex patch targets numerous mocks or patches mocks with brittle assertions mocks with complex setup deep mocks/recursive mocks/mocks returning mocks tests that test nothing using the debugger to reverse-engineer mocks mocks that prevent refactoring How to test without mock mocks …">
 
-        <title>Escape from auto-manual testing with Hypothesis! · PyCon Note
+        <title>Mocking and Patching Pitfalls · PyCon Note
 </title>
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -68,8 +68,8 @@
 <div class="row-fluid">
     <header class="page-header span10 offset2">
         <h1>
-            <a href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/escape-from-auto-manual-testing-with-yypothesis">
-                Escape from auto-manual testing with Hypothesis!
+            <a href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2020/02/mocking-and-patchingpitfalls">
+                Mocking and Patching Pitfalls
             </a>
         </h1>
     </header>
@@ -79,71 +79,95 @@
         <div class="span8 offset2 article-content">
             
             <h2 id="speaker">Speaker</h2>
-<p>Zac Hatfield-Dodds</p>
+<p>Edwin Jung</p>
 <h2 id="material">Material</h2>
-<ul>
-<li><a href="https://www.youtube.com/watch?v=KcyGUVzL7HA">video</a></li>
-<li><a href="https://speakerdeck.com/pycon2019/zac-hatfield-dodds-escape-from-auto-manual-testing-with-hypothesis">slide</a></li>
-</ul>
+<p><a href="https://www.youtube.com/watch?v=Ldlz4V-UCFw">video</a></p>
 <h2 id="note">Note</h2>
-<h3 id="property-based-testing">Property-based testing</h3>
+<h3 id="mock-hell">Mock hell</h3>
+<ol>
+<li>complex patch targets</li>
+<li>numerous mocks or patches</li>
+<li>mocks with brittle assertions</li>
+<li>mocks with complex setup</li>
+<li>deep mocks/recursive mocks/mocks returning mocks</li>
+<li>tests that test nothing</li>
+<li>using the debugger to reverse-engineer mocks</li>
+<li>mocks that prevent refactoring</li>
+</ol>
+<h3 id="how-to-test-without-mock">How to test without mock</h3>
 <ul>
-<li>User<ul>
-<li>Describes valid input</li>
-<li>Writes tests that passes for any valid input</li>
-</ul>
+<li>
+<p>mocks aren't stubs</p>
+</li>
+<li>
+<p>test doubles</p>
 </li>
 </ul>
-<h3 id="strategies-and-tactics">Strategies and Tactics</h3>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mock</td>
+<td>records calls to the object</td>
+</tr>
+<tr>
+<td>stub</td>
+<td>returns canned data, no logic</td>
+</tr>
+<tr>
+<td>fake</td>
+<td>implements fake version of production logic</td>
+</tr>
+<tr>
+<td>dummy</td>
+<td>does nothing</td>
+</tr>
+<tr>
+<td>spy</td>
+<td>records and delegates to the real thing</td>
+</tr>
+</tbody>
+</table>
 <ul>
-<li>strategies (<code>st</code>)<ul>
-<li>values</li>
-<li>collections</li>
-<li>map and filter methods</li>
-<li>complicated data<ul>
-<li>recursive strategies</li>
-<li>combine strategies</li>
-<li><code>builds()</code>: custom object</li>
+<li>alternatives<ul>
+<li>fake patch</li>
+<li>fake injection</li>
 </ul>
 </li>
-<li>inferring strategies</li>
-<li><code>hypothesis.extra</code></li>
-<li><code>st.data()</code></li>
-</ul>
+<li>
+<p>tactical questions</p>
+<ol>
+<li>Which test doubles (mock or other)?</li>
+<li>Mockist or classical?</li>
+<li>Patch or inject?</li>
+</ol>
 </li>
-<li>tactics: what do we tests?<ul>
-<li>auto-manual testing: <code>output == expected</code></li>
-<li>oracle tests (full specification)</li>
-<li>partial specification</li>
-<li>"Does not crash"<ul>
-<li>Just call your function with valid input</li>
-</ul>
-</li>
-<li>Round trip<ul>
-<li>e.g., <code>json.dumps</code> / <code>json.loads</code></li>
-</ul>
-</li>
-<li>Metamorphic Relation<ul>
-<li>Although we don't know the relation between input and output, we might know how output should change.</li>
-</ul>
-</li>
-<li>Stateful Testing<ul>
-<li>(N)DFA</li>
-<li><code>RuleBasedStateMachine</code></li>
-</ul>
+<li>
+<p>tactics</p>
+<ol>
+<li>Find a Seam, Patch a Fake</li>
+<li>mock roles not objects</li>
+<li>Dependency Injection</li>
+<li>Inject the Collaborator</li>
+<li>Go Functional</li>
+</ol>
 </li>
 </ul>
-</li>
-</ul>
-<h3 id="observability">Observability</h3>
+<h3 id="conclusion">Conclusion</h3>
 <ul>
-<li><code>--hypothesis-show-statistics</code><ul>
-<li>timing stats</li>
-<li>perf breakdown</li>
-<li>exit reasons</li>
+<li>always be refactoring</li>
+<li>consider other test doubles</li>
+<li>patching should be rare, and the last tool you use</li>
+<li>mocks (if you use them)<ul>
+<li>should target roles and not objects</li>
+<li>are not just for test isolation</li>
 </ul>
 </li>
-<li>Use <code>note()</code> if you like print-debugging</li>
 </ul>
 
 
@@ -151,11 +175,11 @@
 
                 <p id="post-share-links">
     Share on:
-    <a href="https://twitter.com/intent/tweet?text=Escape%20from%20auto-manual%20testing%20with%20Hypothesis%21&url=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/escape-from-auto-manual-testing-with-yypothesis&hashtags=test" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
+    <a href="https://twitter.com/intent/tweet?text=Mocking%20and%20Patching%20Pitfalls&url=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2019/2020/02/mocking-and-patchingpitfalls&hashtags=test" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
     ❄
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/escape-from-auto-manual-testing-with-yypothesis" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2019/2020/02/mocking-and-patchingpitfalls" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
     ❄
-    <a href="mailto:?subject=Escape%20from%20auto-manual%20testing%20with%20Hypothesis%21&amp;body=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/escape-from-auto-manual-testing-with-yypothesis" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
+    <a href="mailto:?subject=Mocking%20and%20Patching%20Pitfalls&amp;body=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2019/2020/02/mocking-and-patchingpitfalls" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
     </p>
 
             
@@ -170,15 +194,14 @@
             <aside>
             <nav>
             <ul class="articles-timeline">
-                <li class="previous-article">« <a href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/getting-started-testing-in-data-science" title="Previous: Getting Started Testing in Data Science">Getting Started Testing in Data Science</a></li>
-                <li class="next-article"><a href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/break-the-cycle-three-excellent-python-tools-to-automate-repetitive-tasks" title="Next: Break the Cycle: Three excellent Python tools to automate repetitive tasks">Break the Cycle: Three excellent Python tools to automate repetitive tasks</a> »</li>
+                <li class="previous-article">« <a href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2020/02/maintaining-a-python-project-when-It-s-not-your-job" title="Previous: Maintaining a Python Project When It’s Not Your Job">Maintaining a Python Project When It’s Not Your Job</a></li>
             </ul>
             </nav>
             </aside>
         </div>
         <section id="article-sidebar" class="span2">
             <h4>Published</h4>
-            <time itemprop="dateCreated" datetime="2019-08-13T15:20:00+08:00">2019/08/13 - Tue</time>
+            <time itemprop="dateCreated" datetime="2020-02-16T17:20:00+08:00">2020/02/16 - Sun</time>
                 <h4>Read Time</h4>
                  1 min
             <h4>Category</h4>
