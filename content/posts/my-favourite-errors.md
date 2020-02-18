@@ -1,8 +1,9 @@
 Title: My Favourite Errors - Tales From The Ops Side
 Date: 2019-12-23 11:48
 Category: PyCon CA 2019
-Tags: WIP, Web
+Tags: Web
 Slug: my-favourite-errors
+Status: draft
 Authors: Lee-W
 
 ## Speaker

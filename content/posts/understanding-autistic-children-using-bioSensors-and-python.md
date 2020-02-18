@@ -3,12 +3,14 @@ Date: 2019-12-23 11:48
 Category: PyCon CA 2019
 Tags: WIP, Machine Learning
 Slug: understanding-autistic-children-using-bioSensors-and-python
+Status: draft
 Authors: Lee-W
 
 ## Speaker
 [Niharika Krishnan](https://twitter.com/nihaaarika)
 
-* [Her talk in PyCon India](https://in.pycon.org/cfp/posters-2019/proposals/autiglove-understanding-autistic-children-using-biosensors-and-python~b25Pa/)
+## Material
+* [Slide in PyCon India](https://docs.google.com/presentation/d/15wgc8x7voXss1uGUfWTq6-SllKQzc95yJo1NvnRQXqE/edit#slide=id.p1)
 
 ## Note
 * Emotion Recognition

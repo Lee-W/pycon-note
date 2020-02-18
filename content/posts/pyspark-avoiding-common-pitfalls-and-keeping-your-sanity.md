@@ -1,8 +1,9 @@
 Title: PySpark: avoiding common pitfalls and keeping your sanity
 Date: 2019-12-23 11:48
 Category: PyCon CA 2019
-Tags: WIP, Spark
+Tags: Spark
 Slug: pyspark-avoiding-common-pitfalls-and-keeping-your-sanity
+Status: draft
 Authors: Lee-W
 
 ## Speaker
