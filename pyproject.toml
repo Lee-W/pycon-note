@@ -12,7 +12,7 @@ info = "This is commit convention for my blog post"
 [[tool.commitizen.customize.questions]]
 type = "list"
 name = "change_type"
-choices = ["post", "post metadata", "typo", "config", "theme", "dependency"]
+choices = ["post","draft", "post metadata", "typo", "config", "theme", "dependency", "static page"]
 message = "What type of commit is it?"
 
 [[tool.commitizen.customize.questions]]
