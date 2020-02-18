@@ -9,18 +9,18 @@
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="WIP, Web, PyCon CA 2019, " />
+<meta name="keywords" content="Spark, PyCon CA 2019, " />
 
-<meta property="og:title" content="My Favourite Errors - Tales From The Ops Side"/>
-<meta property="og:url" content="https://lee-w.github.io/pycon-note/posts/pycon-ca-2019/2019/12/my-favourite-errors" />
-<meta property="og:description" content="Speaker Hany Fahim His talk in devops day Note Errors are a part of the job Various Network related errors TCP usually easier HTTP not that easy to debug A lots of HTTP error No errors &lt; timeout errors &lt; other errors" />
+<meta property="og:title" content="PySpark: avoiding common pitfalls and keeping your sanity"/>
+<meta property="og:url" content="https://lee-w.github.io/pycon-note/drafts/pyspark-avoiding-common-pitfalls-and-keeping-your-sanity.html" />
+<meta property="og:description" content="Speaker Jonathan Note 25 minutes of sanity Improving code readability Understand the type dichotomy Readability Pipelining in PySpark via method chaining Types dichotomy Prefer using IntegerType() or LongType() when dealing with integers unless you have a (very) good reason not to and are willing to test for overflow Take the …" />
 <meta property="og:site_name" content="PyCon Note" />
 <meta property="og:article:author" content="Lee-W" />
 <meta property="og:article:published_time" content="2019-12-23T11:48:00+08:00" />
-<meta name="twitter:title" content="My Favourite Errors - Tales From The Ops Side">
-<meta name="twitter:description" content="Speaker Hany Fahim His talk in devops day Note Errors are a part of the job Various Network related errors TCP usually easier HTTP not that easy to debug A lots of HTTP error No errors &lt; timeout errors &lt; other errors">
+<meta name="twitter:title" content="PySpark: avoiding common pitfalls and keeping your sanity">
+<meta name="twitter:description" content="Speaker Jonathan Note 25 minutes of sanity Improving code readability Understand the type dichotomy Readability Pipelining in PySpark via method chaining Types dichotomy Prefer using IntegerType() or LongType() when dealing with integers unless you have a (very) good reason not to and are willing to test for overflow Take the …">
 
-        <title>My Favourite Errors - Tales From The Ops Side · PyCon Note
+        <title>PySpark: avoiding common pitfalls and keeping your sanity · PyCon Note
 </title>
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -68,8 +68,8 @@
 <div class="row-fluid">
     <header class="page-header span10 offset2">
         <h1>
-            <a href="https://lee-w.github.io/pycon-note/posts/pycon-ca-2019/2019/12/my-favourite-errors">
-                My Favourite Errors - Tales From The Ops Side
+            <a href="https://lee-w.github.io/pycon-note/drafts/pyspark-avoiding-common-pitfalls-and-keeping-your-sanity.html">
+                PySpark: avoiding common pitfalls and keeping your sanity
             </a>
         </h1>
     </header>
@@ -79,36 +79,46 @@
         <div class="span8 offset2 article-content">
             
             <h2 id="speaker">Speaker</h2>
-<p><a href="https://twitter.com/iHandroid">Hany Fahim</a></p>
-<ul>
-<li><a href="https://devopsdays.org/events/2019-toronto/program/hany-fahim">His talk in devops day</a></li>
-</ul>
+<p>Jonathan</p>
 <h2 id="note">Note</h2>
 <ul>
-<li>Errors are a part of the job</li>
-<li>Various Network related errors<ul>
-<li>TCP usually easier</li>
-<li>HTTP not that easy to debug<ul>
-<li>A lots of HTTP error</li>
+<li>25 minutes of sanity<ol>
+<li>Improving code readability</li>
+<li>Understand the type dichotomy</li>
+</ol>
+</li>
+<li>Readability<ul>
+<li>Pipelining in PySpark via method chaining</li>
+</ul>
+</li>
+<li>Types dichotomy<ul>
+<li>Prefer using <code>IntegerType()</code> or <code>LongType()</code> when dealing with integers<ul>
+<li>unless you have a (very) good reason not to</li>
+<li>and are willing to test for overflow</li>
+</ul>
+</li>
+<li>Take the time to "type" your columns</li>
+<li>Use API doc to know the required type of the column<ul>
+<li>It's usually provided in the function description</li>
+</ul>
+</li>
+<li>Use Python's typing and PySpark's return type for UDFs</li>
+<li>Prefer schema-full data format(Parquet, Avro, ORC), avoid share CSV internally</li>
+</ul>
+</li>
+<li>Q &amp; A<ul>
+<li>Would you recommend using pyspark in small scale (e.g., a few GBs)?<ul>
+<li>Won't recommend.</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>No errors &lt; timeout errors &lt; other errors</li>
 </ul>
 
 
             
 
-                <p id="post-share-links">
-    Share on:
-    <a href="https://twitter.com/intent/tweet?text=My%20Favourite%20Errors%20-%20Tales%20From%20The%20Ops%20Side&url=https%3A//lee-w.github.io/pycon-note/posts/pycon-ca-2019/2019/12/my-favourite-errors&hashtags=wip,web" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
-    ❄
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//lee-w.github.io/pycon-note/posts/pycon-ca-2019/2019/12/my-favourite-errors" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
-    ❄
-    <a href="mailto:?subject=My%20Favourite%20Errors%20-%20Tales%20From%20The%20Ops%20Side&amp;body=https%3A//lee-w.github.io/pycon-note/posts/pycon-ca-2019/2019/12/my-favourite-errors" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
-    </p>
-
+            
             
             
 
@@ -118,14 +128,6 @@
 
 
             <hr/>
-            <aside>
-            <nav>
-            <ul class="articles-timeline">
-                <li class="previous-article">« <a href="https://lee-w.github.io/pycon-note/posts/pycon-ca-2019/2019/12/pyspark-avoiding-common-pitfalls-and-keeping-your-sanity" title="Previous: PySpark: avoiding common pitfalls and keeping your sanity">PySpark: avoiding common pitfalls and keeping your sanity</a></li>
-                <li class="next-article"><a href="https://lee-w.github.io/pycon-note/posts/pycon-ca-2019/2019/12/how-to-level-up" title="Next: How to Level Up">How to Level Up</a> »</li>
-            </ul>
-            </nav>
-            </aside>
         </div>
         <section id="article-sidebar" class="span2">
             <h4>Published</h4>
@@ -136,11 +138,7 @@
             <a class="category-link" href="https://lee-w.github.io/pycon-note/categories.html#pycon-ca-2019-ref">PyCon CA 2019</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
-                <li><a href="https://lee-w.github.io/pycon-note/tags.html#web-ref">Web
-                    <span>1</span>
-</a></li>
-                <li><a href="https://lee-w.github.io/pycon-note/tags.html#wip-ref">WIP
-                    <span>3</span>
+                <li><a href="https://lee-w.github.io/pycon-note/tags.html#spark-ref">Spark
 </a></li>
             </ul>
 <h4>Contact</h4>
