@@ -9,18 +9,18 @@
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="Speaking, Keynote, EuroPython 2019, " />
+<meta name="keywords" content="Package, EuroPython 2019, " />
 
-<meta property="og:title" content="Why You Should Pursue Public Speaking and How to Get There"/>
-<meta property="og:url" content="https://lee-w.github.io/pycon-note/posts/europython-2019/2020/02/why-you-should-pursue-public-speaking-and-how-to-get-there" />
-<meta property="og:description" content="Speaker Yenny Cheung Material video slide Note Why? Present better in front of the company Being a software engineer is much more than coding, its about good communication Getting better at crucial conversation Great trick for introverts to meet people Overcoming our fear nervous find your harbor forget something to …" />
+<meta property="og:title" content="Publish a (Perfect) Python Package on PyPI"/>
+<meta property="og:url" content="https://lee-w.github.io/pycon-note/posts/europython-2019/2020/03/publish-a-perfetc-python-package-on-pypi" />
+<meta property="og:description" content="Speaker Mark Smith Material video resource Note Basic Usage minimal setup.py from setuptools import setup setup( name=&#34;helloworld&#34;, version=&#34;0.0.1&#34;, description=&#34;Say hello!&#34;, py_modules=[&#34;helloworld&#34;], package_dir={&#39;&#39;: &#39;src&#39;}, ) build wheel python setup.py bdist_wheel test installation locally Links to the code instead of add it to site-packages pip …" />
 <meta property="og:site_name" content="PyCon Note" />
 <meta property="og:article:author" content="Lee-W" />
-<meta property="og:article:published_time" content="2020-02-28T15:30:00+08:00" />
-<meta name="twitter:title" content="Why You Should Pursue Public Speaking and How to Get There">
-<meta name="twitter:description" content="Speaker Yenny Cheung Material video slide Note Why? Present better in front of the company Being a software engineer is much more than coding, its about good communication Getting better at crucial conversation Great trick for introverts to meet people Overcoming our fear nervous find your harbor forget something to …">
+<meta property="og:article:published_time" content="2020-03-04T13:08:00+08:00" />
+<meta name="twitter:title" content="Publish a (Perfect) Python Package on PyPI">
+<meta name="twitter:description" content="Speaker Mark Smith Material video resource Note Basic Usage minimal setup.py from setuptools import setup setup( name=&#34;helloworld&#34;, version=&#34;0.0.1&#34;, description=&#34;Say hello!&#34;, py_modules=[&#34;helloworld&#34;], package_dir={&#39;&#39;: &#39;src&#39;}, ) build wheel python setup.py bdist_wheel test installation locally Links to the code instead of add it to site-packages pip …">
 
-        <title>Why You Should Pursue Public Speaking and How to Get There · PyCon Note
+        <title>Publish a (Perfect) Python Package on PyPI · PyCon Note
 </title>
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -68,92 +68,198 @@
 <div class="row-fluid">
     <header class="page-header span10 offset2">
         <h1>
-            <a href="https://lee-w.github.io/pycon-note/posts/europython-2019/2020/02/why-you-should-pursue-public-speaking-and-how-to-get-there">
-                Why You Should Pursue Public Speaking and How to Get There
+            <a href="https://lee-w.github.io/pycon-note/posts/europython-2019/2020/03/publish-a-perfetc-python-package-on-pypi">
+                Publish a (Perfect) Python Package on PyPI
             </a>
         </h1>
     </header>
 </div>
 
 <div class="row-fluid">
-        <div class="span8 offset2 article-content">
+    <div class="span2 table-of-content">
+        <nav>
+        <h4>Contents</h4>
+        <div class="toc">
+<ul>
+<li><a href="#speaker">Speaker</a></li>
+<li><a href="#material">Material</a></li>
+<li><a href="#note">Note</a><ul>
+<li><a href="#basic-usage">Basic Usage</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#dependencies">Dependencies</a></li>
+<li><a href="#source-distribution">Source Distribution</a></li>
+</ul>
+</li>
+<li><a href="#publish">Publish</a></li>
+<li><a href="#other-stuffs-to-add">Other Stuffs to add</a></li>
+<li><a href="#dont-do-any-thing-mention-above">Don't do any thing mention above</a></li>
+<li><a href="#things-are-changing">Things are changing</a></li>
+</ul>
+</div>
+        </nav>
+    </div>
+    <div class="span8 article-content">
             
-            <h2 id="speaker">Speaker</h2>
-<p><a href="https://twitter.com/yennycheung">Yenny Cheung</a></p>
+            
+<h2 id="speaker">Speaker</h2>
+<p>Mark Smith</p>
 <h2 id="material">Material</h2>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=a5WIMg5sunw">video</a></li>
-<li><a href="https://speakerdeck.com/yennycheung/ghc-why-you-should-pursue-public-speaking-and-how-to-get-there">slide</a></li>
+<li><a href="https://www.youtube.com/watch?v=-WDV0-OB4fE&amp;feature=youtu.be">video</a></li>
+<li><a href="https://github.com/judy2k/publishing_python_packages_talk">resource</a></li>
 </ul>
 <h2 id="note">Note</h2>
-<h3 id="why">Why?</h3>
+<h3 id="basic-usage">Basic Usage</h3>
 <ul>
-<li><strong>Present</strong> better in front of the company</li>
-<li>Being a software engineer is much more than coding, its about good <strong>communication</strong></li>
-<li>Getting better at <strong>crucial conversation</strong></li>
-<li>Great trick for <strong>introverts</strong> to meet people</li>
+<li>minimal <code>setup.py</code></li>
 </ul>
-<h3 id="overcoming-our-fear">Overcoming our fear</h3>
-<ol>
-<li>nervous<ul>
-<li>find your <strong>harbor</strong></li>
-</ul>
-</li>
-<li>forget something to say<ul>
-<li>practice your <strong>comeback</strong> if you forget what to say</li>
-<li>rehearse potential problem (e.g., projector not working)</li>
-<li>blank out on stage<ul>
-<li>"Let's skip this for now"</li>
-<li><strong>Drink water</strong></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>being exposed as a fraud<ul>
-<li>the art of saying "I don't know"</li>
-</ul>
-</li>
-<li>not being good enough<ul>
-<li>imposter syndrome</li>
-<li>But, how good is good enough?<ul>
-<li>Attend conference talks. You need reference.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-<h3 id="how-to-get-better">How to get better?</h3>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">setuptools</span> <span class="kn">import</span> <span class="n">setup</span>
+
+<span class="n">setup</span><span class="p">(</span>
+    <span class="n">name</span><span class="o">=</span><span class="s2">"helloworld"</span><span class="p">,</span>
+    <span class="n">version</span><span class="o">=</span><span class="s2">"0.0.1"</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s2">"Say hello!"</span><span class="p">,</span>
+    <span class="n">py_modules</span><span class="o">=</span><span class="p">[</span><span class="s2">"helloworld"</span><span class="p">],</span>
+    <span class="n">package_dir</span><span class="o">=</span><span class="p">{</span><span class="s1">''</span><span class="p">:</span> <span class="s1">'src'</span><span class="p">},</span>
+<span class="p">)</span>
+</code></pre></div>
 <ul>
-<li>
-<p><strong>The Lean Startup model</strong></p>
+<li>build wheel</li>
+</ul>
+<div class="highlight"><pre><span></span><code>python setup.py bdist_wheel
+</code></pre></div>
 <ul>
-<li>Build</li>
-<li>Measure</li>
-<li>Learn</li>
-<li>Repeat</li>
+<li>test installation locally<ul>
+<li>Links to the code instead of add it to <code>site-packages</code></li>
 </ul>
 </li>
-<li>
-<p>Building the proposal and the talk</p>
+</ul>
+<div class="highlight"><pre><span></span><code>pip install -e .
+</code></pre></div>
+<h3 id="documentation">Documentation</h3>
 <ul>
-<li>Pick topics you're truly <strong>interested</strong> in</li>
-<li>Check the <strong>call for proposal</strong> from first<ul>
-<li>also show how you can <strong>modify your talk for a short slot</strong></li>
+<li>Compare ReStructured Text and markdown</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ReStructured Text</th>
+<th>Markdown</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pythonic</td>
+<td>More Widespread</td>
+</tr>
+<tr>
+<td>Powerful</td>
+<td>Simply</td>
+</tr>
+<tr>
+<td><a href="https://www.sphinx-doc.org/en/master/">Sphinx</a></td>
+<td><a href="https://www.mkdocs.org/">mkdocs</a></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>keys added to <code>setup.py</code><ul>
+<li>classifiers</li>
+<li>long_description</li>
+<li>long_description_content_type="text/markdown"</li>
 </ul>
 </li>
-<li><strong>Who, what and how</strong></li>
-<li>tell about your own <strong>experience</strong></li>
-<li><strong>apply again</strong></li>
+</ul>
+<h3 id="dependencies">Dependencies</h3>
+<table>
+<thead>
+<tr>
+<th>install_required</th>
+<th>extras_require</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>production dependencies</td>
+<td>optional requirements</td>
+</tr>
+<tr>
+<td>relaxed versions (users can install without conflicts with other packages)</td>
+<td>specific versions (developers can have identical develop environment)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>keys added to <code>setup.py</code><ul>
+<li>install_requires</li>
+<li>extras_require<ul>
+<li>dev</li>
 </ul>
 </li>
-<li>Measure / Learn<ul>
-<li>Gather feedback from audience</li>
-<li>Watch your presentation</li>
-<li>Take notes on what questions are being asked. They're what people interested in.</li>
 </ul>
 </li>
-<li>Repeat<ul>
-<li>reuse your talk in different occasions</li>
+<li>install package with extras_require</li>
+</ul>
+<div class="highlight"><pre><span></span><code>pip install -e .<span class="o">[</span>dev<span class="o">]</span>
+</code></pre></div>
+<h3 id="source-distribution">Source Distribution</h3>
+<div class="highlight"><pre><span></span><code>python setup.py sdist
+</code></pre></div>
+<ul>
+<li>keys added to <code>setup.py</code><ul>
+<li>url</li>
+<li>author</li>
+<li>author_email</li>
+</ul>
+</li>
+<li>Ideally, everything should be included for source distribution<ul>
+<li>Use <a href="https://github.com/mgedmin/check-manifest">check-manifest</a><ul>
+<li><code>check-manifest --create</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="publish">Publish</h2>
+<div class="highlight"><pre><span></span><code>python setup.py bdist_wheel sdist
+twine upload dist/*
+</code></pre></div>
+<h2 id="other-stuffs-to-add">Other Stuffs to add</h2>
+<ul>
+<li>Must Do<ul>
+<li><a href="https://tox.readthedocs.io/en/latest/">tox</a></li>
+<li>Continuous Integration</li>
+</ul>
+</li>
+<li>Nice to have<ul>
+<li>badges<ul>
+<li>code coverage</li>
+<li>quality metrics</li>
+</ul>
+</li>
+<li>test on macOS &amp; windows</li>
+<li>more document<ul>
+<li>contributors section</li>
+<li>Code of Conduct</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="dont-do-any-thing-mention-above">Don't do any thing mention above</h2>
+<ul>
+<li><strong>Use cookiecutter</strong><ul>
+<li><a href="https://github.com/ionelmc/cookiecutter-pylibrary">cookiecutter-pylibrary</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="things-are-changing">Things are changing</h2>
+<ul>
+<li>move metadata from <code>setup.py</code> to <code>setup.cfg</code></li>
+<li>move to <code>pyprojec.toml</code><ul>
+<li><a href="https://python-poetry.org/">poetry</a></li>
+<li><a href="https://github.com/takluyver/flit">flit</a></li>
+<li><a href="https://github.com/ofek/hatch">hatch</a></li>
 </ul>
 </li>
 </ul>
@@ -163,11 +269,11 @@
 
                 <p id="post-share-links">
     Share on:
-    <a href="https://twitter.com/intent/tweet?text=Why%20You%20Should%20Pursue%20Public%20Speaking%20and%20How%20to%20Get%20There&url=https%3A//lee-w.github.io/pycon-note/posts/europython-2019/2020/02/why-you-should-pursue-public-speaking-and-how-to-get-there&hashtags=speaking,keynote" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
+    <a href="https://twitter.com/intent/tweet?text=Publish%20a%20%28Perfect%29%20Python%20Package%20on%20PyPI&url=https%3A//lee-w.github.io/pycon-note/posts/europython-2019/2020/03/publish-a-perfetc-python-package-on-pypi&hashtags=package" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
     ❄
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//lee-w.github.io/pycon-note/posts/europython-2019/2020/02/why-you-should-pursue-public-speaking-and-how-to-get-there" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//lee-w.github.io/pycon-note/posts/europython-2019/2020/03/publish-a-perfetc-python-package-on-pypi" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
     ❄
-    <a href="mailto:?subject=Why%20You%20Should%20Pursue%20Public%20Speaking%20and%20How%20to%20Get%20There&amp;body=https%3A//lee-w.github.io/pycon-note/posts/europython-2019/2020/02/why-you-should-pursue-public-speaking-and-how-to-get-there" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
+    <a href="mailto:?subject=Publish%20a%20%28Perfect%29%20Python%20Package%20on%20PyPI&amp;body=https%3A//lee-w.github.io/pycon-note/posts/europython-2019/2020/03/publish-a-perfetc-python-package-on-pypi" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
     </p>
 
             
@@ -182,25 +288,21 @@
             <aside>
             <nav>
             <ul class="articles-timeline">
-                <li class="previous-article">« <a href="https://lee-w.github.io/pycon-note/posts/northbay-python-2018/2020/02/recursion-for-beginners-a-beginner-s-guide-to-recursion" title="Previous: Recursion for Beginners: A Beginner&#39;s Guide to Recursion">Recursion for Beginners: A Beginner's Guide to Recursion</a></li>
-                <li class="next-article"><a href="https://lee-w.github.io/pycon-note/posts/europython-2019/2020/03/publish-a-perfetc-python-package-on-pypi" title="Next: Publish a (Perfect) Python Package on PyPI">Publish a (Perfect) Python Package on PyPI</a> »</li>
+                <li class="previous-article">« <a href="https://lee-w.github.io/pycon-note/posts/europython-2019/2020/02/why-you-should-pursue-public-speaking-and-how-to-get-there" title="Previous: Why You Should Pursue Public Speaking and How to Get There">Why You Should Pursue Public Speaking and How to Get There</a></li>
             </ul>
             </nav>
             </aside>
         </div>
         <section id="article-sidebar" class="span2">
             <h4>Published</h4>
-            <time itemprop="dateCreated" datetime="2020-02-28T15:30:00+08:00">2020/02/28 - Fri</time>
+            <time itemprop="dateCreated" datetime="2020-03-04T13:08:00+08:00">2020/03/04 - Wed</time>
                 <h4>Read Time</h4>
                  1 min
             <h4>Category</h4>
             <a class="category-link" href="https://lee-w.github.io/pycon-note/categories.html#europython-2019-ref">EuroPython 2019</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
-                <li><a href="https://lee-w.github.io/pycon-note/tags.html#keynote-ref">Keynote
-                    <span>2</span>
-</a></li>
-                <li><a href="https://lee-w.github.io/pycon-note/tags.html#speaking-ref">Speaking
+                <li><a href="https://lee-w.github.io/pycon-note/tags.html#package-ref">Package
                     <span>1</span>
 </a></li>
             </ul>
