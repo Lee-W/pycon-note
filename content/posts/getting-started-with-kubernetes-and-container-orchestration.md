@@ -52,9 +52,9 @@ Authors: Lee-W
 
 ### Kubernetes Architecture
 
-![Kubernetes Architecture 1](media/15776809076780.jpg)
+![Kubernetes Architecture 1](/images/post-images/getting-started-with-kubernetes-and-container-orchestration/15776809076780.jpg)
 
-![Kubernetes Architecture 2](media/15776812955752.jpg)
+![Kubernetes Architecture 2](/images/post-images/getting-started-with-kubernetes-and-container-orchestration/15776812955752.jpg)
 
 * Kubenetes Components
     * nodes
@@ -94,7 +94,7 @@ Authors: Lee-W
 * When we scale up, we can only scale up a pod but not container
 * One node can have more than one pod
 
-![Kubetnetes concetps](media/15776817907833.jpg)
+![Kubetnetes concetps](/images/post-images/getting-started-with-kubernetes-and-container-orchestration/15776817907833.jpg)
 
 
 ### Declarative vs imperative

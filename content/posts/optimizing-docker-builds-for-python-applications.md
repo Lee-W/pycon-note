@@ -16,7 +16,7 @@ Dmitry Figol
 
 * Docker Concept
 
-![-w817](/images/post-images/optimizing-docker-builds-for-python-applications/docker-concept.jpg)
+![-w817]({static}/images/post-images/optimizing-docker-builds-for-python-applications/docker-concept.jpg)
 
 * Optimize Goal
     1. Reducing image size
