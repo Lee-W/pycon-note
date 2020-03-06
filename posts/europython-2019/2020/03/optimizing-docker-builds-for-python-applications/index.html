@@ -9,18 +9,18 @@
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="Package, EuroPython 2019, " />
+<meta name="keywords" content="container, EuroPython 2019, " />
 
-<meta property="og:title" content="Publish a (Perfect) Python Package on PyPI"/>
-<meta property="og:url" content="https://lee-w.github.io/pycon-note/posts/europython-2019/2020/03/publish-a-perfetc-python-package-on-pypi" />
-<meta property="og:description" content="Speaker Mark Smith Material video resource Note Basic Usage minimal setup.py from setuptools import setup setup( name=&#34;helloworld&#34;, version=&#34;0.0.1&#34;, description=&#34;Say hello!&#34;, py_modules=[&#34;helloworld&#34;], package_dir={&#39;&#39;: &#39;src&#39;}, ) build wheel python setup.py bdist_wheel test installation locally Links to the code instead of add it to site-packages pip …" />
+<meta property="og:title" content="Optimizing Docker builds for Python applications"/>
+<meta property="og:url" content="https://lee-w.github.io/pycon-note/posts/europython-2019/2020/03/optimizing-docker-builds-for-python-applications" />
+<meta property="og:description" content="Speaker Dmitry Figol Material video slide Note Docker Concept Optimize Goal Reducing image size Reducing build time Priority Fast build during development → Use slim-stretch Small size during production → Use alpine build deps are only needed when compiling but not runtimeImprovement Use specific COPY statement instead of COPY .. .dockerignore delete build …" />
 <meta property="og:site_name" content="PyCon Note" />
 <meta property="og:article:author" content="Lee-W" />
-<meta property="og:article:published_time" content="2020-03-04T13:08:00+08:00" />
-<meta name="twitter:title" content="Publish a (Perfect) Python Package on PyPI">
-<meta name="twitter:description" content="Speaker Mark Smith Material video resource Note Basic Usage minimal setup.py from setuptools import setup setup( name=&#34;helloworld&#34;, version=&#34;0.0.1&#34;, description=&#34;Say hello!&#34;, py_modules=[&#34;helloworld&#34;], package_dir={&#39;&#39;: &#39;src&#39;}, ) build wheel python setup.py bdist_wheel test installation locally Links to the code instead of add it to site-packages pip …">
+<meta property="og:article:published_time" content="2020-03-06T13:15:00+08:00" />
+<meta name="twitter:title" content="Optimizing Docker builds for Python applications">
+<meta name="twitter:description" content="Speaker Dmitry Figol Material video slide Note Docker Concept Optimize Goal Reducing image size Reducing build time Priority Fast build during development → Use slim-stretch Small size during production → Use alpine build deps are only needed when compiling but not runtimeImprovement Use specific COPY statement instead of COPY .. .dockerignore delete build …">
 
-        <title>Publish a (Perfect) Python Package on PyPI · PyCon Note
+        <title>Optimizing Docker builds for Python applications · PyCon Note
 </title>
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -68,200 +68,79 @@
 <div class="row-fluid">
     <header class="page-header span10 offset2">
         <h1>
-            <a href="https://lee-w.github.io/pycon-note/posts/europython-2019/2020/03/publish-a-perfetc-python-package-on-pypi">
-                Publish a (Perfect) Python Package on PyPI
+            <a href="https://lee-w.github.io/pycon-note/posts/europython-2019/2020/03/optimizing-docker-builds-for-python-applications">
+                Optimizing Docker builds for Python applications
             </a>
         </h1>
     </header>
 </div>
 
 <div class="row-fluid">
-    <div class="span2 table-of-content">
-        <nav>
-        <h4>Contents</h4>
-        <div class="toc">
-<ul>
-<li><a href="#speaker">Speaker</a></li>
-<li><a href="#material">Material</a></li>
-<li><a href="#note">Note</a><ul>
-<li><a href="#basic-usage">Basic Usage</a></li>
-<li><a href="#documentation">Documentation</a></li>
-<li><a href="#dependencies">Dependencies</a></li>
-<li><a href="#source-distribution">Source Distribution</a></li>
-</ul>
-</li>
-<li><a href="#publish">Publish</a></li>
-<li><a href="#other-stuffs-to-add">Other Stuffs to add</a></li>
-<li><a href="#dont-do-any-thing-mention-above">Don't do any thing mention above</a></li>
-<li><a href="#things-are-changing">Things are changing</a></li>
-</ul>
-</div>
-        </nav>
-    </div>
-    <div class="span8 article-content">
+        <div class="span8 offset2 article-content">
             
-            
-<h2 id="speaker">Speaker</h2>
-<p>Mark Smith</p>
+            <h2 id="speaker">Speaker</h2>
+<p>Dmitry Figol</p>
 <h2 id="material">Material</h2>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=-WDV0-OB4fE&amp;feature=youtu.be">video</a></li>
-<li><a href="https://github.com/judy2k/publishing_python_packages_talk">resource</a></li>
+<li><a href="https://www.youtube.com/watch?v=eRzMJuwuYpU">video</a></li>
+<li><a href="https://slides.com/dmfigol/optimizing-docker-builds-for-python-applications">slide</a></li>
 </ul>
 <h2 id="note">Note</h2>
-<h3 id="basic-usage">Basic Usage</h3>
 <ul>
-<li>minimal <code>setup.py</code></li>
+<li>Docker Concept</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">setuptools</span> <span class="kn">import</span> <span class="n">setup</span>
-
-<span class="n">setup</span><span class="p">(</span>
-    <span class="n">name</span><span class="o">=</span><span class="s2">"helloworld"</span><span class="p">,</span>
-    <span class="n">version</span><span class="o">=</span><span class="s2">"0.0.1"</span><span class="p">,</span>
-    <span class="n">description</span><span class="o">=</span><span class="s2">"Say hello!"</span><span class="p">,</span>
-    <span class="n">py_modules</span><span class="o">=</span><span class="p">[</span><span class="s2">"helloworld"</span><span class="p">],</span>
-    <span class="n">package_dir</span><span class="o">=</span><span class="p">{</span><span class="s1">''</span><span class="p">:</span> <span class="s1">'src'</span><span class="p">},</span>
-<span class="p">)</span>
-</code></pre></div>
+<p><img alt="-w817" src="/images/post-images/optimizing-docker-builds-for-python-applications/docker-concept.jpg"></p>
 <ul>
-<li>build wheel</li>
+<li>Optimize Goal<ol>
+<li>Reducing image size</li>
+<li>Reducing build time</li>
+</ol>
+</li>
+<li>Priority<ul>
+<li>Fast build during development → Use slim-stretch</li>
+<li>Small size during production → Use alpine</li>
 </ul>
-<div class="highlight"><pre><span></span><code>python setup.py bdist_wheel
-</code></pre></div>
+</li>
+</ul>
+<h3 id="build-deps-are-only-needed-when-compiling-but-not-runtimeimprovement">build deps are only needed when compiling but not runtimeImprovement</h3>
 <ul>
-<li>test installation locally<ul>
-<li>Links to the code instead of add it to <code>site-packages</code></li>
+<li>Use specific <code>COPY</code> statement instead of <code>COPY ..</code></li>
+<li><code>.dockerignore</code></li>
 </ul>
-</li>
-</ul>
-<div class="highlight"><pre><span></span><code>pip install -e .
-</code></pre></div>
-<h3 id="documentation">Documentation</h3>
+<h3 id="delete-build-deps-doesnt-shrink-image-size">delete build deps doesn't shrink image size</h3>
 <ul>
-<li>Compare ReStructured Text and markdown</li>
+<li>Docker Layer<ul>
+<li>Instructions create read-only layers</li>
+<li>A new layer can't be smaller than the previous layer</li>
+<li>Layers are cached and can be re-used for subsequent builds</li>
+<li>Layers introduce some overhead</li>
 </ul>
-<table>
-<thead>
-<tr>
-<th>ReStructured Text</th>
-<th>Markdown</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Pythonic</td>
-<td>More Widespread</td>
-</tr>
-<tr>
-<td>Powerful</td>
-<td>Simply</td>
-</tr>
-<tr>
-<td><a href="https://www.sphinx-doc.org/en/master/">Sphinx</a></td>
-<td><a href="https://www.mkdocs.org/">mkdocs</a></td>
-</tr>
-</tbody>
-</table>
+</li>
+<li>Tips<ul>
+<li>Combine multiple <strong>RUN</strong> statements into one</li>
+<li>delete files in the same layer (instruction) where they were added</li>
+<li>arrangement statement from the least changing to the most changing (system-level -&gt; tools -&gt; Python deps -&gt; source code)</li>
+<li>don't save deps to cache<ul>
+<li>pip: <code>--no-cache-dir</code></li>
+<li>apk: <code>--no-cache</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="complicate-dockerfile-and-no-cache-during-build">complicate Dockerfile and no cache during build</h3>
 <ul>
-<li>keys added to <code>setup.py</code><ul>
-<li>classifiers</li>
-<li>long_description</li>
-<li>long_description_content_type="text/markdown"</li>
+<li>Docker multi-stage<ul>
+<li>Build an intermediate image with all build deps and install your app</li>
+<li>Copy the result to a fresh image</li>
 </ul>
 </li>
 </ul>
-<h3 id="dependencies">Dependencies</h3>
-<table>
-<thead>
-<tr>
-<th>install_required</th>
-<th>extras_require</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>production dependencies</td>
-<td>optional requirements</td>
-</tr>
-<tr>
-<td>relaxed versions (users can install without conflicts with other packages)</td>
-<td>specific versions (developers can have identical develop environment)</td>
-</tr>
-</tbody>
-</table>
+<h3 id="other-tips">Other Tips</h3>
 <ul>
-<li>keys added to <code>setup.py</code><ul>
-<li>install_requires</li>
-<li>extras_require<ul>
-<li>dev</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>install package with extras_require</li>
-</ul>
-<div class="highlight"><pre><span></span><code>pip install -e .<span class="o">[</span>dev<span class="o">]</span>
-</code></pre></div>
-<h3 id="source-distribution">Source Distribution</h3>
-<div class="highlight"><pre><span></span><code>python setup.py sdist
-</code></pre></div>
-<ul>
-<li>keys added to <code>setup.py</code><ul>
-<li>url</li>
-<li>author</li>
-<li>author_email</li>
-</ul>
-</li>
-<li>Ideally, everything should be included for source distribution<ul>
-<li>Use <a href="https://github.com/mgedmin/check-manifest">check-manifest</a><ul>
-<li><code>check-manifest --create</code></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="publish">Publish</h2>
-<div class="highlight"><pre><span></span><code>python setup.py bdist_wheel sdist
-twine upload dist/*
-</code></pre></div>
-<h2 id="other-stuffs-to-add">Other Stuffs to add</h2>
-<ul>
-<li>Must Do<ul>
-<li><a href="https://tox.readthedocs.io/en/latest/">tox</a></li>
-<li>Continuous Integration</li>
-</ul>
-</li>
-<li>Nice to have<ul>
-<li>badges<ul>
-<li>code coverage</li>
-<li>quality metrics</li>
-</ul>
-</li>
-<li>test on macOS &amp; windows</li>
-<li>more document<ul>
-<li>contributors section</li>
-<li>Code of Conduct</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="dont-do-any-thing-mention-above">Don't do any thing mention above</h2>
-<ul>
-<li><strong>Use cookiecutter</strong><ul>
-<li><a href="https://github.com/ionelmc/cookiecutter-pylibrary">cookiecutter-pylibrary</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="things-are-changing">Things are changing</h2>
-<ul>
-<li>move metadata from <code>setup.py</code> to <code>setup.cfg</code></li>
-<li>move to <code>pyprojec.toml</code><ul>
-<li><a href="https://python-poetry.org/">poetry</a></li>
-<li><a href="https://github.com/takluyver/flit">flit</a></li>
-<li><a href="https://github.com/ofek/hatch">hatch</a></li>
-</ul>
-</li>
+<li>Bind mount source code instead of COPY in local dev env</li>
+<li><code>PYTHONUNBUFFERED=1</code> -&gt; print to stdout without buffering</li>
+<li><code>PYTHONDONTWRITEBYTECODE=1</code> -&gt; no <code>*.pyc</code> files</li>
 </ul>
 
 
@@ -269,11 +148,11 @@ twine upload dist/*
 
                 <p id="post-share-links">
     Share on:
-    <a href="https://twitter.com/intent/tweet?text=Publish%20a%20%28Perfect%29%20Python%20Package%20on%20PyPI&url=https%3A//lee-w.github.io/pycon-note/posts/europython-2019/2020/03/publish-a-perfetc-python-package-on-pypi&hashtags=package" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
+    <a href="https://twitter.com/intent/tweet?text=Optimizing%20Docker%20builds%20for%20Python%20applications&url=https%3A//lee-w.github.io/pycon-note/posts/europython-2019/2020/03/optimizing-docker-builds-for-python-applications&hashtags=container" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
     ❄
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//lee-w.github.io/pycon-note/posts/europython-2019/2020/03/publish-a-perfetc-python-package-on-pypi" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//lee-w.github.io/pycon-note/posts/europython-2019/2020/03/optimizing-docker-builds-for-python-applications" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
     ❄
-    <a href="mailto:?subject=Publish%20a%20%28Perfect%29%20Python%20Package%20on%20PyPI&amp;body=https%3A//lee-w.github.io/pycon-note/posts/europython-2019/2020/03/publish-a-perfetc-python-package-on-pypi" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
+    <a href="mailto:?subject=Optimizing%20Docker%20builds%20for%20Python%20applications&amp;body=https%3A//lee-w.github.io/pycon-note/posts/europython-2019/2020/03/optimizing-docker-builds-for-python-applications" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
     </p>
 
             
@@ -288,22 +167,21 @@ twine upload dist/*
             <aside>
             <nav>
             <ul class="articles-timeline">
-                <li class="previous-article">« <a href="https://lee-w.github.io/pycon-note/posts/europython-2019/2020/02/why-you-should-pursue-public-speaking-and-how-to-get-there" title="Previous: Why You Should Pursue Public Speaking and How to Get There">Why You Should Pursue Public Speaking and How to Get There</a></li>
-                <li class="next-article"><a href="https://lee-w.github.io/pycon-note/posts/europython-2019/2020/03/optimizing-docker-builds-for-python-applications" title="Next: Optimizing Docker builds for Python applications">Optimizing Docker builds for Python applications</a> »</li>
+                <li class="previous-article">« <a href="https://lee-w.github.io/pycon-note/posts/europython-2019/2020/03/publish-a-perfetc-python-package-on-pypi" title="Previous: Publish a (Perfect) Python Package on PyPI">Publish a (Perfect) Python Package on PyPI</a></li>
             </ul>
             </nav>
             </aside>
         </div>
         <section id="article-sidebar" class="span2">
             <h4>Published</h4>
-            <time itemprop="dateCreated" datetime="2020-03-04T13:08:00+08:00">2020/03/04 - Wed</time>
+            <time itemprop="dateCreated" datetime="2020-03-06T13:15:00+08:00">2020/03/06 - Fri</time>
                 <h4>Read Time</h4>
                  1 min
             <h4>Category</h4>
             <a class="category-link" href="https://lee-w.github.io/pycon-note/categories.html#europython-2019-ref">EuroPython 2019</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
-                <li><a href="https://lee-w.github.io/pycon-note/tags.html#package-ref">Package
+                <li><a href="https://lee-w.github.io/pycon-note/tags.html#container-ref">container
                     <span>1</span>
 </a></li>
             </ul>
