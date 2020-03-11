@@ -1,5 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>PyCon Note</title><link href="https://lee-w.github.io/pycon-note/" rel="alternate"></link><link href="https://lee-w.github.io/pycon-note/feeds/all.atom.xml" rel="self"></link><id>https://lee-w.github.io/pycon-note/</id><updated>2020-03-06T13:15:00+08:00</updated><entry><title>Optimizing Docker builds for Python applications</title><link href="https://lee-w.github.io/pycon-note/posts/europython-2019/2020/03/optimizing-docker-builds-for-python-applications" rel="alternate"></link><published>2020-03-06T13:15:00+08:00</published><updated>2020-03-06T13:15:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2020-03-06:/pycon-note/posts/europython-2019/2020/03/optimizing-docker-builds-for-python-applications</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>PyCon Note</title><link href="https://lee-w.github.io/pycon-note/" rel="alternate"></link><link href="https://lee-w.github.io/pycon-note/feeds/all.atom.xml" rel="self"></link><id>https://lee-w.github.io/pycon-note/</id><updated>2020-03-11T09:52:00+08:00</updated><entry><title>Zen of Python Dependency Management ... and package release automation</title><link href="https://lee-w.github.io/pycon-note/posts/europython-2019/2020/03/zen-of-python-dependency-management" rel="alternate"></link><published>2020-03-11T09:52:00+08:00</published><updated>2020-03-11T09:52:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2020-03-11:/pycon-note/posts/europython-2019/2020/03/zen-of-python-dependency-management</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+&lt;p&gt;Justin Mayer&lt;/p&gt;
+&lt;h2 id="material"&gt;Material&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=asL0dbN6pAY&amp;amp;feature=youtu.be"&gt;video&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://justinmayer.com/talks/dependency-management-release-automation/assets/player/KeynoteDHTMLPlayer.html#0"&gt;slide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="note"&gt;Note&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Why is it important?&lt;ul&gt;
+&lt;li&gt;reproducible builds&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PEP 518: pyproject.toml&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;e.g.,&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;[build-system]&lt;/span&gt;
+&lt;span class="n"&gt;requires&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;[&amp;quot;setuptools&amp;quot;, &amp;quot;wheel&amp;quot;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;[build-system]&lt;/span&gt;
+&lt;span class="n"&gt;requires&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;[&amp;quot;poetry&amp;gt;=0.12&amp;quot;]&lt;/span&gt;
+&lt;span class="n"&gt;build-backend&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;poetry.mansonry.api&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;[tool.poerty.dependencies]&lt;/span&gt;
+&lt;span class="na"&gt;python&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;^3.7&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3 id="dependency-management-tools"&gt;Dependency Management Tools&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Release Early and Often&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;tools&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;pip-tools&lt;/li&gt;
+&lt;li&gt;pipenv&lt;/li&gt;
+&lt;li&gt;poetry&lt;/li&gt;
+&lt;li&gt;DepHell …&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+&lt;p&gt;Justin Mayer&lt;/p&gt;
+&lt;h2 id="material"&gt;Material&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=asL0dbN6pAY&amp;amp;feature=youtu.be"&gt;video&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://justinmayer.com/talks/dependency-management-release-automation/assets/player/KeynoteDHTMLPlayer.html#0"&gt;slide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="note"&gt;Note&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Why is it important?&lt;ul&gt;
+&lt;li&gt;reproducible builds&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PEP 518: pyproject.toml&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;e.g.,&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;[build-system]&lt;/span&gt;
+&lt;span class="n"&gt;requires&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;[&amp;quot;setuptools&amp;quot;, &amp;quot;wheel&amp;quot;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;[build-system]&lt;/span&gt;
+&lt;span class="n"&gt;requires&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;[&amp;quot;poetry&amp;gt;=0.12&amp;quot;]&lt;/span&gt;
+&lt;span class="n"&gt;build-backend&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;poetry.mansonry.api&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;[tool.poerty.dependencies]&lt;/span&gt;
+&lt;span class="na"&gt;python&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;^3.7&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3 id="dependency-management-tools"&gt;Dependency Management Tools&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Release Early and Often&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;tools&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;pip-tools&lt;/li&gt;
+&lt;li&gt;pipenv&lt;/li&gt;
+&lt;li&gt;poetry&lt;/li&gt;
+&lt;li&gt;DepHell&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="release-management"&gt;Release Management&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Auto-Publish Releases Upon PR Merge&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/autopub/autopub"&gt;AutoPub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="EuroPython 2019"></category><category term="dependencies"></category></entry><entry><title>Optimizing Docker builds for Python applications</title><link href="https://lee-w.github.io/pycon-note/posts/europython-2019/2020/03/optimizing-docker-builds-for-python-applications" rel="alternate"></link><published>2020-03-06T13:15:00+08:00</published><updated>2020-03-06T13:15:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2020-03-06:/pycon-note/posts/europython-2019/2020/03/optimizing-docker-builds-for-python-applications</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
 &lt;p&gt;Dmitry Figol&lt;/p&gt;
 &lt;h2 id="material"&gt;Material&lt;/h2&gt;
 &lt;ul&gt;
