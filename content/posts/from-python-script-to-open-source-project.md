@@ -10,6 +10,7 @@ Authors: Lee-W
 
 ## Material
 * [video](https://www.youtube.com/watch?v=25P5apB4XWM&feature=youtu.be)
+* [slide](https://speakerdeck.com/postrational/from-python-script-to-open-source-project)
 * [article](http://michal.karzynski.pl/blog/2019/05/26/python-project-maturity-checklist/)
 
 ## Note
