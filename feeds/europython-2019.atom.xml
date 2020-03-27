@@ -1,5 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>PyCon Note - EuroPython 2019</title><link href="https://lee-w.github.io/pycon-note/" rel="alternate"></link><link href="https://lee-w.github.io/pycon-note/feeds/europython-2019.atom.xml" rel="self"></link><id>https://lee-w.github.io/pycon-note/</id><updated>2020-03-12T11:44:00+08:00</updated><entry><title>From Python script to Open Source Project</title><link href="https://lee-w.github.io/pycon-note/posts/europython-2019/2020/03/from-python-script-to-open-source-project" rel="alternate"></link><published>2020-03-12T11:44:00+08:00</published><updated>2020-03-12T11:44:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2020-03-12:/pycon-note/posts/europython-2019/2020/03/from-python-script-to-open-source-project</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>PyCon Note - EuroPython 2019</title><link href="https://lee-w.github.io/pycon-note/" rel="alternate"></link><link href="https://lee-w.github.io/pycon-note/feeds/europython-2019.atom.xml" rel="self"></link><id>https://lee-w.github.io/pycon-note/</id><updated>2020-03-27T19:08:00+08:00</updated><entry><title>Static typing: beyond the basics of def foo(x: int) -str:</title><link href="https://lee-w.github.io/pycon-note/posts/europython-2019/2020/03/static-typing-beyond-the-basics-of-def-foo-x-int-str" rel="alternate"></link><published>2020-03-27T19:08:00+08:00</published><updated>2020-03-27T19:08:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2020-03-27:/pycon-note/posts/europython-2019/2020/03/static-typing-beyond-the-basics-of-def-foo-x-int-str</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+&lt;p&gt;Vita Smid&lt;/p&gt;
+&lt;h2 id="material"&gt;Material&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=UQo-ebJk4a4&amp;amp;feature=youtu.be"&gt;video&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://qntln.github.io/europython2019/#/"&gt;slide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="note"&gt;Note&lt;/h2&gt;
+&lt;h3 id="1-strategy-how-to-approach-a-large-code-base"&gt;1. Strategy: how to approach a large code base&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;try to start with strict configuration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# Ensure full coverage&lt;/span&gt;
+&lt;span class="na"&gt;disallow_untyped_calls&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;True&lt;/span&gt;
+&lt;span class="na"&gt;disallow_untyped_defs&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;True&lt;/span&gt;
+&lt;span class="na"&gt;disallow_imcomplete_defs&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;True&lt;/span&gt;
+&lt;span class="na"&gt;disallow_untyped_decorators&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;True&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Restrict dynamic typing&lt;/span&gt;
+&lt;span class="na"&gt;disallow_any_generics&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;True&lt;/span&gt;
+&lt;span class="na"&gt;disallow_subclassing_any&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;True&lt;/span&gt;
+&lt;span class="na"&gt;warn_return_any&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;True&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Know exactly what you&amp;#39;re doing&lt;/span&gt;
+&lt;span class="na"&gt;warn_redundant_casts&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;True …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+&lt;p&gt;Vita Smid&lt;/p&gt;
+&lt;h2 id="material"&gt;Material&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=UQo-ebJk4a4&amp;amp;feature=youtu.be"&gt;video&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://qntln.github.io/europython2019/#/"&gt;slide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="note"&gt;Note&lt;/h2&gt;
+&lt;h3 id="1-strategy-how-to-approach-a-large-code-base"&gt;1. Strategy: how to approach a large code base&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;try to start with strict configuration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# Ensure full coverage&lt;/span&gt;
+&lt;span class="na"&gt;disallow_untyped_calls&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;True&lt;/span&gt;
+&lt;span class="na"&gt;disallow_untyped_defs&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;True&lt;/span&gt;
+&lt;span class="na"&gt;disallow_imcomplete_defs&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;True&lt;/span&gt;
+&lt;span class="na"&gt;disallow_untyped_decorators&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;True&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Restrict dynamic typing&lt;/span&gt;
+&lt;span class="na"&gt;disallow_any_generics&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;True&lt;/span&gt;
+&lt;span class="na"&gt;disallow_subclassing_any&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;True&lt;/span&gt;
+&lt;span class="na"&gt;warn_return_any&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;True&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Know exactly what you&amp;#39;re doing&lt;/span&gt;
+&lt;span class="na"&gt;warn_redundant_casts&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;True&lt;/span&gt;
+&lt;span class="na"&gt;warn_unused_ignore&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;True&lt;/span&gt;
+&lt;span class="na"&gt;warn_unused_configs&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;True&lt;/span&gt;
+
+&lt;span class="c1"&gt;# imports&lt;/span&gt;
+&lt;span class="na"&gt;ignore_missing_imports&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;True&lt;/span&gt;
+&lt;span class="na"&gt;follow_imports&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;silent  # do not use &amp;#39;follow_import = skip&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;gradual coverage&lt;ul&gt;
+&lt;li&gt;opt-in: only explicitly listed modules are checked&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;tests&lt;ul&gt;
+&lt;li&gt;use &lt;code&gt;# type: ignore&lt;/code&gt; on mocks and monkey patching&lt;/li&gt;
+&lt;li&gt;don't give up on test code completely&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;[mypy-*.tests.*]&lt;/span&gt;
+&lt;span class="na"&gt;disallow_untyped_decorators&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;True # pytest decorators are untyped.&lt;/span&gt;
+&lt;span class="na"&gt;disallow_untyped_defs&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;False      # Properly typing *all* fixtures&lt;/span&gt;
+&lt;span class="na"&gt;disallow_incomplete_defs&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;False   # and tests is hard and noisy.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;your own pakcage&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;setup&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
+  &lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="n"&gt;package_data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="s1"&gt;&amp;#39;your_package&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;py.typed&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
+  &lt;span class="p"&gt;},&lt;/span&gt;
+  &lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;3rd party packages&lt;ul&gt;
+&lt;li&gt;explicitly ignore those are not typed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;[mypy-&amp;quot;package.to.ignore&amp;quot;]&lt;/span&gt;
+&lt;span class="na"&gt;ignore_missing_imports&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;True&lt;/span&gt;
+&lt;span class="na"&gt;follow_imports&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;silent&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3 id="2-tactics-dealing-with-complex-code"&gt;2. Tactics: Dealing with complex code&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Generics and type varaiables&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;TypeVar&lt;/code&gt; with restriction (e.g., &lt;code&gt;AlgebraType = TypeVar('AlgebraType', float, Decimal)&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;nominal typing v.s. structural typing&lt;ul&gt;
+&lt;li&gt;Structural typing: describe capabilities, not ancestry&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Defining you own types&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;NewType&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;write your own mypy plugin&lt;ul&gt;
+&lt;li&gt;e.g., &lt;a href="https://github.com/qntln/fastenum/blob/master/fastenum/mypy_plugin.py"&gt; github.com/qntln/fastenum/fastenum/mypy_plugin.py&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;overloading functions&lt;/li&gt;
+&lt;/ul&gt;</content><category term="EuroPython 2019"></category><category term="typing"></category></entry><entry><title>From Python script to Open Source Project</title><link href="https://lee-w.github.io/pycon-note/posts/europython-2019/2020/03/from-python-script-to-open-source-project" rel="alternate"></link><published>2020-03-12T11:44:00+08:00</published><updated>2020-03-12T11:44:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2020-03-12:/pycon-note/posts/europython-2019/2020/03/from-python-script-to-open-source-project</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://michal.karzynski.pl/"&gt;Michał Karzyński&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="material"&gt;Material&lt;/h2&gt;
 &lt;ul&gt;
