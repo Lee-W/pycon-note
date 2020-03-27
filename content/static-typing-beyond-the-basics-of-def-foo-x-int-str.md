@@ -1,5 +1,5 @@
 Title: Static typing: beyond the basics of def foo(x: int) -str:
-Date: 2020-03-27 18:30
+Date: 2020-03-27 19:08
 Category: EuroPython 2019
 Tags: typing
 Slug: static-typing-beyond-the-basics-of-def-foo-x-int-str
