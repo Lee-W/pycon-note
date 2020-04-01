@@ -2,7 +2,7 @@ Title: Dial M For Mentor
 Date: 2020-04-01 16:39
 Category: PyCon US 2017
 Tags: Learning
-Slug: static-typing-beyond-the-basics-of-def-foo-x-int-str
+Slug: dial-m-for-mentor
 Authors: Lee-W
 
 ## Speaker
