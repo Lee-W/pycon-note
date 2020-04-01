@@ -9,18 +9,18 @@
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="typing, EuroPython 2019, " />
+<meta name="keywords" content="Learning, PyCon US 2017, " />
 
-<meta property="og:title" content="Static typing: beyond the basics of def foo(x: int) -str:"/>
-<meta property="og:url" content="https://lee-w.github.io/pycon-note/./posts/europython-2019/2020/03/static-typing-beyond-the-basics-of-def-foo-x-int-str" />
-<meta property="og:description" content="Speaker Vita Smid Material video slide Note 1. Strategy: how to approach a large code base try to start with strict configuration # Ensure full coverage disallow_untyped_calls = True disallow_untyped_defs = True disallow_imcomplete_defs = True disallow_untyped_decorators = True # Restrict dynamic typing disallow_any_generics = True disallow_subclassing_any = True warn_return_any = True # Know exactly what you&#39;re doing warn_redundant_casts = True …" />
+<meta property="og:title" content="Dial M For Mentor"/>
+<meta property="og:url" content="https://lee-w.github.io/pycon-note/./posts/pycon-us-2017/2020/04/static-typing-beyond-the-basics-of-def-foo-x-int-str" />
+<meta property="og:description" content="Speaker Mariatta Wijaya Material video slide Note Myths Only newbies need help Nobody&#39;s perfect I&#39;m wasting people&#39;s time Mentors learn from you too I don&#39;t deserve any help Impostor Syndrome I&#39;m a failure for needing help Asking for help is not a failure Where to find mentors? Meetups and Python …" />
 <meta property="og:site_name" content="PyCon Note" />
 <meta property="og:article:author" content="Lee-W" />
-<meta property="og:article:published_time" content="2020-03-27T19:08:00+08:00" />
-<meta name="twitter:title" content="Static typing: beyond the basics of def foo(x: int) -str:">
-<meta name="twitter:description" content="Speaker Vita Smid Material video slide Note 1. Strategy: how to approach a large code base try to start with strict configuration # Ensure full coverage disallow_untyped_calls = True disallow_untyped_defs = True disallow_imcomplete_defs = True disallow_untyped_decorators = True # Restrict dynamic typing disallow_any_generics = True disallow_subclassing_any = True warn_return_any = True # Know exactly what you&#39;re doing warn_redundant_casts = True …">
+<meta property="og:article:published_time" content="2020-04-01T16:39:00+08:00" />
+<meta name="twitter:title" content="Dial M For Mentor">
+<meta name="twitter:description" content="Speaker Mariatta Wijaya Material video slide Note Myths Only newbies need help Nobody&#39;s perfect I&#39;m wasting people&#39;s time Mentors learn from you too I don&#39;t deserve any help Impostor Syndrome I&#39;m a failure for needing help Asking for help is not a failure Where to find mentors? Meetups and Python …">
 
-        <title>Static typing: beyond the basics of def foo(x: int) -str: · PyCon Note
+        <title>Dial M For Mentor · PyCon Note
 </title>
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -68,8 +68,8 @@
 <div class="row-fluid">
     <header class="page-header span10 offset2">
         <h1>
-            <a href="https://lee-w.github.io/pycon-note/./posts/europython-2019/2020/03/static-typing-beyond-the-basics-of-def-foo-x-int-str">
-                Static typing: beyond the basics of def foo(x: int) -str:
+            <a href="https://lee-w.github.io/pycon-note/./posts/pycon-us-2017/2020/04/static-typing-beyond-the-basics-of-def-foo-x-int-str">
+                Dial M For Mentor
             </a>
         </h1>
     </header>
@@ -79,104 +79,36 @@
         <div class="span8 offset2 article-content">
             <p id="list-of-translations">
 This post is also available in:
-    <a href="https://lee-w.github.io/pycon-note/./posts/pycon-us-2017/2020/04/static-typing-beyond-the-basics-of-def-foo-x-int-str">zh-tw</a></p>
+    <a href="https://lee-w.github.io/pycon-note/./posts/europython-2019/2020/03/static-typing-beyond-the-basics-of-def-foo-x-int-str">zh-tw</a></p>
 
             <h2 id="speaker">Speaker</h2>
-<p>Vita Smid</p>
+<p>Mariatta Wijaya</p>
 <h2 id="material">Material</h2>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=UQo-ebJk4a4&amp;feature=youtu.be">video</a></li>
-<li><a href="https://qntln.github.io/europython2019/#/">slide</a></li>
+<li><a href="https://www.youtube.com/watch?v=Wc1krFb5ifQ">video</a></li>
+<li><a href="https://noti.st/mariatta/Zjy4JG/slides">slide</a></li>
 </ul>
 <h2 id="note">Note</h2>
-<h3 id="1-strategy-how-to-approach-a-large-code-base">1. Strategy: how to approach a large code base</h3>
 <ul>
-<li>try to start with strict configuration</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="c1"># Ensure full coverage</span>
-<span class="na">disallow_untyped_calls</span> <span class="o">=</span> <span class="s">True</span>
-<span class="na">disallow_untyped_defs</span> <span class="o">=</span> <span class="s">True</span>
-<span class="na">disallow_imcomplete_defs</span> <span class="o">=</span> <span class="s">True</span>
-<span class="na">disallow_untyped_decorators</span> <span class="o">=</span> <span class="s">True</span>
-
-<span class="c1"># Restrict dynamic typing</span>
-<span class="na">disallow_any_generics</span> <span class="o">=</span> <span class="s">True</span>
-<span class="na">disallow_subclassing_any</span> <span class="o">=</span> <span class="s">True</span>
-<span class="na">warn_return_any</span> <span class="o">=</span> <span class="s">True</span>
-
-<span class="c1"># Know exactly what you&#39;re doing</span>
-<span class="na">warn_redundant_casts</span> <span class="o">=</span> <span class="s">True</span>
-<span class="na">warn_unused_ignore</span> <span class="o">=</span> <span class="s">True</span>
-<span class="na">warn_unused_configs</span> <span class="o">=</span> <span class="s">True</span>
-
-<span class="c1"># imports</span>
-<span class="na">ignore_missing_imports</span> <span class="o">=</span> <span class="s">True</span>
-<span class="na">follow_imports</span> <span class="o">=</span> <span class="s">silent  # do not use &#39;follow_import = skip&#39;</span>
-</code></pre></div>
-
-
-<ul>
-<li>gradual coverage<ul>
-<li>opt-in: only explicitly listed modules are checked</li>
+<li>Myths<ul>
+<li><del>Only newbies need help</del> Nobody's perfect</li>
+<li><del>I'm wasting people's time</del> Mentors learn from you too</li>
+<li><del>I don't deserve any help</del> Impostor Syndrome</li>
+<li><del>I'm a failure for needing help</del>  Asking for help is not a failure</li>
 </ul>
 </li>
-<li>tests<ul>
-<li>use <code># type: ignore</code> on mocks and monkey patching</li>
-<li>don't give up on test code completely</li>
+<li>Where to find mentors?<ul>
+<li>Meetups and Python User Group</li>
+<li>Open Source Project Maintainers</li>
+<li>Python Core Mentorship</li>
 </ul>
 </li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="k">[mypy-*.tests.*]</span>
-<span class="na">disallow_untyped_decorators</span> <span class="o">=</span> <span class="s">True # pytest decorators are untyped.</span>
-<span class="na">disallow_untyped_defs</span> <span class="o">=</span> <span class="s">False      # Properly typing *all* fixtures</span>
-<span class="na">disallow_incomplete_defs</span> <span class="o">=</span> <span class="s">False   # and tests is hard and noisy.</span>
-</code></pre></div>
-
-
-<ul>
-<li>your own pakcage</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="n">setup</span><span class="p">(</span>
-  <span class="o">...</span><span class="p">,</span>
-  <span class="n">package_data</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">&#39;your_package&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;py.typed&#39;</span><span class="p">],</span>
-  <span class="p">},</span>
-  <span class="o">...</span><span class="p">,</span>
-<span class="p">)</span>
-</code></pre></div>
-
-
-<ul>
-<li>3rd party packages<ul>
-<li>explicitly ignore those are not typed</li>
+<li>After finding a mentor<ul>
+<li>Commitment</li>
+<li>Respect</li>
 </ul>
 </li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="k">[mypy-&quot;package.to.ignore&quot;]</span>
-<span class="na">ignore_missing_imports</span> <span class="o">=</span> <span class="s">True</span>
-<span class="na">follow_imports</span> <span class="o">=</span> <span class="s">silent</span>
-</code></pre></div>
-
-
-<h3 id="2-tactics-dealing-with-complex-code">2. Tactics: Dealing with complex code</h3>
-<ul>
-<li>Generics and type varaiables<ul>
-<li><code>TypeVar</code> with restriction (e.g., <code>AlgebraType = TypeVar('AlgebraType', float, Decimal)</code>)</li>
-</ul>
-</li>
-<li>nominal typing v.s. structural typing<ul>
-<li>Structural typing: describe capabilities, not ancestry</li>
-</ul>
-</li>
-<li>Defining you own types<ul>
-<li><code>NewType</code></li>
-</ul>
-</li>
-<li>write your own mypy plugin<ul>
-<li>e.g., <a href="https://github.com/qntln/fastenum/blob/master/fastenum/mypy_plugin.py"> github.com/qntln/fastenum/fastenum/mypy_plugin.py</a></li>
-</ul>
-</li>
-<li>overloading functions</li>
+<li>Thank your mentor through mentoring others</li>
 </ul>
 
 
@@ -184,11 +116,11 @@ This post is also available in:
 
                 <p id="post-share-links">
     Share on:
-    <a href="https://twitter.com/intent/tweet?text=Static%20typing%3A%20beyond%20the%20basics%20of%20def%20foo%28x%3A%20int%29%20-str%3A&url=https%3A//lee-w.github.io/pycon-note/posts/europython-2019/2020/03/static-typing-beyond-the-basics-of-def-foo-x-int-str&hashtags=typing" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
+    <a href="https://twitter.com/intent/tweet?text=Dial%20M%20For%20Mentor&url=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2017/2020/04/static-typing-beyond-the-basics-of-def-foo-x-int-str&hashtags=learning" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
     ❄
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//lee-w.github.io/pycon-note/posts/europython-2019/2020/03/static-typing-beyond-the-basics-of-def-foo-x-int-str" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2017/2020/04/static-typing-beyond-the-basics-of-def-foo-x-int-str" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
     ❄
-    <a href="mailto:?subject=Static%20typing%3A%20beyond%20the%20basics%20of%20def%20foo%28x%3A%20int%29%20-str%3A&amp;body=https%3A//lee-w.github.io/pycon-note/posts/europython-2019/2020/03/static-typing-beyond-the-basics-of-def-foo-x-int-str" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
+    <a href="mailto:?subject=Dial%20M%20For%20Mentor&amp;body=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2017/2020/04/static-typing-beyond-the-basics-of-def-foo-x-int-str" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
     </p>
 
             
@@ -204,22 +136,22 @@ This post is also available in:
             <nav>
             <ul class="articles-timeline">
                 <li class="previous-article">« <a href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2020/03/the-black-magic-of-python-wheels" title="Previous: The Black Magic of Python Wheels">The Black Magic of Python Wheels</a></li>
-                <li class="next-article"><a href="https://lee-w.github.io/pycon-note/./posts/pycon-us-2017/2020/04/static-typing-beyond-the-basics-of-def-foo-x-int-str" title="Next: Dial M For Mentor">Dial M For Mentor</a> »</li>
+                <li class="next-article"><a href="https://lee-w.github.io/pycon-note/./posts/europython-2019/2020/03/static-typing-beyond-the-basics-of-def-foo-x-int-str" title="Next: Static typing: beyond the basics of def foo(x: int) -str:">Static typing: beyond the basics of def foo(x: int) -str:</a> »</li>
             </ul>
             </nav>
             </aside>
         </div>
         <section id="article-sidebar" class="span2">
             <h4>Published</h4>
-            <time itemprop="dateCreated" datetime="2020-03-27T19:08:00+08:00">2020/03/27 - Fri</time>
+            <time itemprop="dateCreated" datetime="2020-04-01T16:39:00+08:00">2020/04/01 - Wed</time>
                 <h4>Read Time</h4>
                  1 min
             <h4>Category</h4>
-            <a class="category-link" href="https://lee-w.github.io/pycon-note/categories.html#europython-2019-ref">EuroPython 2019</a>
+            <a class="category-link" href="https://lee-w.github.io/pycon-note/categories.html#pycon-us-2017-ref">PyCon US 2017</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
-                <li><a href="https://lee-w.github.io/pycon-note/tags.html#typing-ref">typing
-                    <span>1</span>
+                <li><a href="https://lee-w.github.io/pycon-note/tags.html#learning-ref">Learning
+                    <span>2</span>
 </a></li>
             </ul>
 <h4>Contact</h4>
