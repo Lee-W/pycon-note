@@ -21,7 +21,7 @@ Vita Smid
 # Ensure full coverage
 disallow_untyped_calls = True
 disallow_untyped_defs = True
-disallow_imcomplete_defs = True
+disallow_incomplete_defs = True
 disallow_untyped_decorators = True
 
 # Restrict dynamic typing
@@ -31,7 +31,7 @@ warn_return_any = True
 
 # Know exactly what you're doing
 warn_redundant_casts = True
-warn_unused_ignore = True
+warn_unused_ignores = True
 warn_unused_configs = True
 
 # imports
