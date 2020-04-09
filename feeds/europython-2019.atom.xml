@@ -48,7 +48,7 @@
 
 &lt;span class="c1"&gt;# Know exactly what you&amp;#39;re doing&lt;/span&gt;
 &lt;span class="na"&gt;warn_redundant_casts&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;True&lt;/span&gt;
-&lt;span class="na"&gt;warn_unused_ignore&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;True&lt;/span&gt;
+&lt;span class="na"&gt;warn_unused_ignores&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;True&lt;/span&gt;
 &lt;span class="na"&gt;warn_unused_configs&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;True&lt;/span&gt;
 
 &lt;span class="c1"&gt;# imports&lt;/span&gt;
