@@ -47,7 +47,7 @@ follow_imports = silent  # do not use 'follow_import = skip'
 
 ```ini
 [mypy-*.tests.*]
-disallow_untyped_decorators = True # pytest decorators are untyped.
+disallow_untyped_decorators = False  # pytest decorators are untyped.
 disallow_untyped_defs = False      # Properly typing *all* fixtures
 disallow_incomplete_defs = False   # and tests is hard and noisy.
 ```
