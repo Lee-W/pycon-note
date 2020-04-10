@@ -201,7 +201,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;[mypy-*.tests.*]&lt;/span&gt;
-&lt;span class="na"&gt;disallow_untyped_decorators&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;True # pytest decorators are untyped.&lt;/span&gt;
+&lt;span class="na"&gt;disallow_untyped_decorators&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;False  # pytest decorators are untyped.&lt;/span&gt;
 &lt;span class="na"&gt;disallow_untyped_defs&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;False      # Properly typing *all* fixtures&lt;/span&gt;
 &lt;span class="na"&gt;disallow_incomplete_defs&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;False   # and tests is hard and noisy.&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
