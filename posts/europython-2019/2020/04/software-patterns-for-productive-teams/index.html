@@ -9,18 +9,18 @@
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="team, PyCon US 2019, " />
+<meta name="keywords" content="team, EuroPython 2019, " />
 
-<meta property="og:title" content="The Zen of Python Teams"/>
-<meta property="og:url" content="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/the-zen-of-python-teams" />
-<meta property="og:description" content="Speaker Adrienne Lowe Leading with Spoons adriennefriend Material video Note Beautiful is better than ugly. Be kind Accelerate Explicit is better than implicit Documenting process makes it easier for others to join you. resource onboard guide how to contribute where to get help Keep your conversation about work in public …" />
+<meta property="og:title" content="Software patterns for productive teams"/>
+<meta property="og:url" content="https://lee-w.github.io/pycon-note/posts/europython-2019/2020/04/software-patterns-for-productive-teams" />
+<meta property="og:description" content="Speaker Radoslav Georgiev Material video Note Team Leader&#39;s perspective Productivity Confidence (keep product stable) Independence Well-being Less context switching Someone being blocked Morale Software Development constant regression constant merge conflicts split python modules by domain split big test files into test file per thing that you are testing local setup …" />
 <meta property="og:site_name" content="PyCon Note" />
 <meta property="og:article:author" content="Lee-W" />
-<meta property="og:article:published_time" content="2019-08-13T15:20:00+08:00" />
-<meta name="twitter:title" content="The Zen of Python Teams">
-<meta name="twitter:description" content="Speaker Adrienne Lowe Leading with Spoons adriennefriend Material video Note Beautiful is better than ugly. Be kind Accelerate Explicit is better than implicit Documenting process makes it easier for others to join you. resource onboard guide how to contribute where to get help Keep your conversation about work in public …">
+<meta property="og:article:published_time" content="2020-04-17T16:52:00+08:00" />
+<meta name="twitter:title" content="Software patterns for productive teams">
+<meta name="twitter:description" content="Speaker Radoslav Georgiev Material video Note Team Leader&#39;s perspective Productivity Confidence (keep product stable) Independence Well-being Less context switching Someone being blocked Morale Software Development constant regression constant merge conflicts split python modules by domain split big test files into test file per thing that you are testing local setup …">
 
-        <title>The Zen of Python Teams · PyCon Note
+        <title>Software patterns for productive teams · PyCon Note
 </title>
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -68,8 +68,8 @@
 <div class="row-fluid">
     <header class="page-header span10 offset2">
         <h1>
-            <a href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/the-zen-of-python-teams">
-                The Zen of Python Teams
+            <a href="https://lee-w.github.io/pycon-note/posts/europython-2019/2020/04/software-patterns-for-productive-teams">
+                Software patterns for productive teams
             </a>
         </h1>
     </header>
@@ -79,52 +79,82 @@
         <div class="span8 offset2 article-content">
             
             <h2 id="speaker">Speaker</h2>
-<p>Adrienne Lowe</p>
-<ul>
-<li><a href="https://leadingwithspoons.com">Leading with Spoons</a></li>
-<li><a href="https://twitter.com/adriennefriend">adriennefriend</a></li>
-</ul>
+<p>Radoslav Georgiev</p>
 <h2 id="material">Material</h2>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=WZ8FEB4J8-c">video</a></li>
+<li><a href="https://www.youtube.com/watch?v=fEy68VRmOeQ">video</a></li>
 </ul>
 <h2 id="note">Note</h2>
+<h3 id="team-leaders-perspective">Team Leader's perspective</h3>
+<ol>
+<li>Productivity</li>
+<li>Confidence (keep product stable)</li>
+<li>Independence</li>
+<li>Well-being</li>
+<li>Less context switching</li>
+<li>Someone being blocked</li>
+<li>Morale</li>
+</ol>
+<h3 id="software-development">Software Development</h3>
 <ul>
-<li>Beautiful is better than ugly.<ul>
-<li>Be kind</li>
-<li><a href="https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations-ebook/dp/B07B9F83WM/ref=tmm_kin_swatch_0?_encoding=UTF8&amp;qid=&amp;sr=">Accelerate</a></li>
+<li>constant regression</li>
+<li>constant merge conflicts<ul>
+<li>split python modules by domain</li>
+<li>split big test files into test file per thing that you are testing</li>
 </ul>
 </li>
-<li>Explicit is better than implicit<ul>
-<li>Documenting process makes it easier for others to join you.<ul>
-<li>resource</li>
-<li>onboard guide</li>
-<li>how to contribute</li>
-<li>where to get help</li>
+<li>local setup<ul>
+<li>accounts<ul>
+<li>make sure everyone has an account/access/keys for everything needed before they need it</li>
+<li>keep a spreadsheet of accounts &amp; 3td parties</li>
 </ul>
 </li>
-<li>Keep your conversation about work in public</li>
-<li>Document your peoeple<ul>
-<li>I enjoy working on ...</li>
-<li>I get excited by ...</li>
-<li>I struggle when ...</li>
-<li>I feel appreciated when ...</li>
-<li>Ask me for help with ...</li>
+<li>documentation<ul>
+<li>relentlessly document</li>
+<li>test it</li>
+<li><strong>onboarding new people is your final test</strong></li>
+</ul>
+</li>
+<li>setup scripts</li>
+</ul>
+</li>
+<li>speed of tests<ul>
+<li>pytest-xdist</li>
 </ul>
 </li>
 </ul>
-</li>
-<li>Simple is better than complex.<ul>
-<li>Build meaningful relationships with small interactions</li>
+<h3 id="features">Features</h3>
+<ul>
+<li>Clients often don't know the exact details of the things they want, so ask them a lot of questions!</li>
+<li>Make sure everyone on your team reads the features description fully, before starting to work.</li>
+</ul>
+<h3 id="explicit-is-better-than-implicit">Explicit is better than implicit</h3>
+<ul>
+<li>Bug<ul>
+<li>Have an explicitly "firefighter" for the week</li>
+<li>Rotate everyone on that position</li>
 </ul>
 </li>
-<li>Error should never pass silently<ul>
-<li>With humans, we have to rely on other humans to tell us when we broke them.</li>
+<li>Explicit Git &amp; GitHub workflows</li>
+<li>Refactoring PRs separated from feature PRs</li>
+<li>Team rules<ul>
+<li>Better visibility at explicit expeetation</li>
+<li>Onboard new people</li>
 </ul>
 </li>
-<li>In the face of ambiguity, refuse the temptation to guess.</li>
-<li>Now is better than never.<ul>
-<li>Doing and being wrong is a lot better than not doing at all.</li>
+<li>Have an explicit team lead<ul>
+<li>leads should focus on enabling their teams do their job well</li>
+<li>Rotate team leads every week, so everyone knows what its' like to be on that position.</li>
+</ul>
+</li>
+<li>Conflict<ul>
+<li>over communicate with all parties involved</li>
+<li>Read books on management &amp; leadership</li>
+</ul>
+</li>
+<li>Adapt<ul>
+<li>Establish processes but don't follow them blindly.</li>
+<li>Things change.</li>
 </ul>
 </li>
 </ul>
@@ -134,11 +164,11 @@
 
                 <p id="post-share-links">
     Share on:
-    <a href="https://twitter.com/intent/tweet?text=The%20Zen%20of%20Python%20Teams&url=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/the-zen-of-python-teams&hashtags=team" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
+    <a href="https://twitter.com/intent/tweet?text=Software%20patterns%20for%20productive%20teams&url=https%3A//lee-w.github.io/pycon-note/posts/europython-2019/2020/04/software-patterns-for-productive-teams&hashtags=team" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
     ❄
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/the-zen-of-python-teams" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//lee-w.github.io/pycon-note/posts/europython-2019/2020/04/software-patterns-for-productive-teams" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
     ❄
-    <a href="mailto:?subject=The%20Zen%20of%20Python%20Teams&amp;body=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/the-zen-of-python-teams" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
+    <a href="mailto:?subject=Software%20patterns%20for%20productive%20teams&amp;body=https%3A//lee-w.github.io/pycon-note/posts/europython-2019/2020/04/software-patterns-for-productive-teams" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
     </p>
 
             
@@ -153,19 +183,18 @@
             <aside>
             <nav>
             <ul class="articles-timeline">
-                <li class="previous-article">« <a href="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/time-to-take-out-the-rubbish-garbage-collector" title="Previous: Time to take out the rubbish: garbage collector">Time to take out the rubbish: garbage collector</a></li>
-                <li class="next-article"><a href="https://lee-w.github.io/pycon-note/posts/pycon-au-2018/2019/08/solve-your-problem-with-sloppy-python" title="Next: Solve Your Problem With Sloppy Python">Solve Your Problem With Sloppy Python</a> »</li>
+                <li class="previous-article">« <a href="https://lee-w.github.io/pycon-note/posts/pycon-us-2018/2020/04/what-is-python-core-developer" title="Previous: What is a Python Core Developer?">What is a Python Core Developer?</a></li>
             </ul>
             </nav>
             </aside>
         </div>
         <section id="article-sidebar" class="span2">
             <h4>Published</h4>
-            <time itemprop="dateCreated" datetime="2019-08-13T15:20:00+08:00">2019/08/13 - Tue</time>
+            <time itemprop="dateCreated" datetime="2020-04-17T16:52:00+08:00">2020/04/17 - Fri</time>
                 <h4>Read Time</h4>
                  1 min
             <h4>Category</h4>
-            <a class="category-link" href="https://lee-w.github.io/pycon-note/categories.html#pycon-us-2019-ref">PyCon US 2019</a>
+            <a class="category-link" href="https://lee-w.github.io/pycon-note/categories.html#europython-2019-ref">EuroPython 2019</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
                 <li><a href="https://lee-w.github.io/pycon-note/tags.html#team-ref">team
