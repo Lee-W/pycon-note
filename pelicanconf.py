@@ -9,7 +9,6 @@ AUTHOR = "Lee-W"
 SITENAME = "PyCon Note"
 SITEURL = "http://localhost:8000"
 SITETITLE = AUTHOR
-SITELOGO = None
 BROWSER_COLOR = "#333333"
 
 # Locale
