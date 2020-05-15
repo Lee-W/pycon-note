@@ -86,7 +86,6 @@
 <li><a href="https://speakerdeck.com/trallard/docker-and-python-making-them-play-nicely-and-securely-for-data-science-and-machine-learning">slide</a></li>
 </ul>
 <h2 id="note">Note</h2>
-<p><img alt="container-vs-vm" src="https://lee-w.github.io/pycon-note/images/post-images/15895158198481.jpg"></p>
 <ul>
 <li>common pain points in DS and ML<ul>
 <li>complex setup / deps</li>
@@ -136,10 +135,10 @@
 </ul>
 </li>
 <li>You do not want to use Alpine Linux (go for buster, stretch or the Jupyter stack)</li>
-<li>Always know what you are expecting: pin / version EVERYTHING (use pip- tools, conda, poetry or pipenv)</li>
+<li>pin / version EVERYTHING (use pip-tools, conda, poetry or pipenv)</li>
 <li>Leverage build cache</li>
 <li>Use one Dockerfile per project</li>
-<li>Use multi-stage builds - need to compile code? Need to reduce your image size?<ul>
+<li>Use multi-stage builds<ul>
 <li>fetch and manage secrets in an intermediate layer</li>
 <li>creates smaller image</li>
 </ul>
