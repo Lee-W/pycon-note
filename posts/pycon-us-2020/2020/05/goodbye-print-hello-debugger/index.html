@@ -15,18 +15,18 @@
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="data, container, PyCon US 2020, " />
+<meta name="keywords" content="debugger, PyCon US 2020, " />
 
-<meta property="og:title" content="Docker and Python: making them play nicely and securely for Data Science and ML"/>
-<meta property="og:url" content="https://lee-w.github.io/pycon-note/posts/pycon-us-2020/2020/05/docker-and-python-making-them-play-nicely-and-securely-for-data-science-and-ml" />
-<meta property="og:description" content="Speaker Tania Allard Material video slide Note common pain points in DS and ML complex setup / deps reliance on data / database fast evolving projects are containers secure enough? how is it different from web apps? not every deliverable is an app or a model relies on data Mixture of wheels …" />
+<meta property="og:title" content="Goodbye Print, Hello Debugger! #PyCon-US-2020"/>
+<meta property="og:url" content="https://lee-w.github.io/pycon-note/posts/pycon-us-2020/2020/05/goodbye-print-hello-debugger" />
+<meta property="og:description" content="Speaker Nina Zakharenko Material video post Note cli debuggers pdb ipdb export PYTHONBREAKPOINT=ipdb.set_trace (after Python 3.7) 5 most important commands l[ist] n[ext]: next line s[tep]: into c[ontinue]: util next breakpoint h[help] Tip and Tricks .pdbrc gotcha Don&#39;t use breakpoints in production code …" />
 <meta property="og:site_name" content="PyCon Note" />
 <meta property="og:article:author" content="Lee-W" />
-<meta property="og:article:published_time" content="2020-05-15T16:00:00+08:00" />
-<meta name="twitter:title" content="Docker and Python: making them play nicely and securely for Data Science and ML">
-<meta name="twitter:description" content="Speaker Tania Allard Material video slide Note common pain points in DS and ML complex setup / deps reliance on data / database fast evolving projects are containers secure enough? how is it different from web apps? not every deliverable is an app or a model relies on data Mixture of wheels …">
+<meta property="og:article:published_time" content="2020-05-20T09:50:00+08:00" />
+<meta name="twitter:title" content="Goodbye Print, Hello Debugger! #PyCon-US-2020">
+<meta name="twitter:description" content="Speaker Nina Zakharenko Material video post Note cli debuggers pdb ipdb export PYTHONBREAKPOINT=ipdb.set_trace (after Python 3.7) 5 most important commands l[ist] n[ext]: next line s[tep]: into c[ontinue]: util next breakpoint h[help] Tip and Tricks .pdbrc gotcha Don&#39;t use breakpoints in production code …">
 
-        <title>Docker and Python: making them play nicely and securely for Data Science and ML · PyCon Note
+        <title>Goodbye Print, Hello Debugger! #PyCon-US-2020 · PyCon Note
 </title>
         <link href="https://lee-w.github.io/pycon-note/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="PyCon Note - Full Atom Feed" />
 
@@ -68,8 +68,8 @@
 <div class="row-fluid">
     <header class="page-header span10 offset2">
         <h1>
-            <a href="https://lee-w.github.io/pycon-note/posts/pycon-us-2020/2020/05/docker-and-python-making-them-play-nicely-and-securely-for-data-science-and-ml">
-                Docker and Python: making them play nicely and securely for Data Science and ML
+            <a href="https://lee-w.github.io/pycon-note/posts/pycon-us-2020/2020/05/goodbye-print-hello-debugger">
+                Goodbye Print, Hello Debugger! #PyCon-US-2020
             </a>
         </h1>
     </header>
@@ -79,87 +79,51 @@
         <div class="span8 offset2 article-content">
             
             <h2 id="speaker">Speaker</h2>
-<p>Tania Allard</p>
+<p>Nina Zakharenko</p>
 <h2 id="material">Material</h2>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=Jq68axbKIbg&amp;feature=youtu.be">video</a></li>
-<li><a href="https://speakerdeck.com/trallard/docker-and-python-making-them-play-nicely-and-securely-for-data-science-and-machine-learning">slide</a></li>
+<li><a href="https://www.youtube.com/watch?v=5AYIe-3cD-s&amp;feature=youtu.be">video</a></li>
+<li><a href="https://speakerdeck.com/nnja/pycon-2020-goodbye-print-hello-debugger">post</a></li>
 </ul>
 <h2 id="note">Note</h2>
 <ul>
-<li>common pain points in DS and ML<ul>
-<li>complex setup / deps</li>
-<li>reliance on data / database</li>
-<li>fast evolving projects</li>
-<li>are containers secure enough?</li>
-</ul>
-</li>
-<li>how is it different from web apps?</li>
-<li>not every deliverable is an app or a model</li>
-<li>relies on data</li>
-<li>Mixture of wheels and compiled packages</li>
-<li>Security access levels - for data and software</li>
-<li>
-<p>Mixture of stakeholders:</p>
-<ul>
-<li>data scientists</li>
-<li>software engineers</li>
-<li>ML engineers</li>
-</ul>
-</li>
-<li>
-<p>best practices</p>
-<ul>
-<li>Split complex <code>RUN</code> statements and sort them</li>
-<li>Prefer <code>COPY</code> to add files</li>
-<li>install only necessary packages</li>
-<li>explicitly ignore files<ul>
-<li>documentations</li>
-<li>never add data</li>
-<li>secrets</li>
+<li>cli debuggers<ul>
+<li>pdb</li>
+<li>ipdb<ul>
+<li><code>export PYTHONBREAKPOINT=ipdb.set_trace</code> (after Python 3.7)</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>cookiecutter template<ul>
-<li><a href="https://github.com/docker-science/cookiecutter-docker-science">docker-science/cookiecutter-docker-science</a></li>
+<li>5 most important commands<ul>
+<li><strong>l</strong>[ist]</li>
+<li><strong>n</strong>[ext]: next line</li>
+<li><strong>s</strong>[tep]: into</li>
+<li><strong>c</strong>[ontinue]: util next breakpoint</li>
+<li><strong>h</strong>[help]</li>
+</ul>
+</li>
+<li>Tip and Tricks<ul>
+<li><code>.pdbrc</code></li>
+</ul>
+</li>
+<li>gotcha<ul>
+<li>Don't use breakpoints in production code<ul>
+<li>use <code>debug-statements</code> from <a href="https://github.com/pre-commit/pre-commit-hooks">pre-commit-hooks</a></li>
 </ul>
 </li>
 </ul>
-<h3 id="top-tips">Top Tips</h3>
-<ol>
-<li>Rebuild your images frequently - get security updates for system packages</li>
-<li>Never work as root / minimize the privileges<ul>
-<li>run as non-root user</li>
-<li>minimize capability</li>
-</ul>
 </li>
-<li>You do not want to use Alpine Linux (go for buster, stretch or the Jupyter stack)</li>
-<li>pin / version EVERYTHING (use pip-tools, conda, poetry or pipenv)</li>
-<li>Leverage build cache</li>
-<li>Use one Dockerfile per project</li>
-<li>Use multi-stage builds<ul>
-<li>fetch and manage secrets in an intermediate layer</li>
-<li>creates smaller image</li>
 </ul>
-</li>
-<li>Make your images identifiable (test, production, R&amp;D) - also be careful when accessing databases and using ENV variables / build variables<ul>
-<li>Provide context with <code>LABELS</code></li>
-</ul>
-</li>
-<li>Do not reinvent the wheel! Use repo2docker</li>
-<li>Automate - no need to build and push manually</li>
-<li>Use a linter</li>
-</ol>
 
 
             
 
                 <p id="post-share-links">
     Share on:
-      <a href="https://twitter.com/intent/tweet?text=Docker%20and%20Python%3A%20making%20them%20play%20nicely%20and%20securely%20for%20Data%20Science%20and%20ML&url=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2020/2020/05/docker-and-python-making-them-play-nicely-and-securely-for-data-science-and-ml&hashtags=data,container" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
- ❄       <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2020/2020/05/docker-and-python-making-them-play-nicely-and-securely-for-data-science-and-ml" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
- ❄       <a href="mailto:?subject=Docker%20and%20Python%3A%20making%20them%20play%20nicely%20and%20securely%20for%20Data%20Science%20and%20ML&amp;body=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2020/2020/05/docker-and-python-making-them-play-nicely-and-securely-for-data-science-and-ml" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
+      <a href="https://twitter.com/intent/tweet?text=Goodbye%20Print%2C%20Hello%20Debugger%21%20%23PyCon-US-2020&url=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2020/2020/05/goodbye-print-hello-debugger&hashtags=debugger" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
+ ❄       <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2020/2020/05/goodbye-print-hello-debugger" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
+ ❄       <a href="mailto:?subject=Goodbye%20Print%2C%20Hello%20Debugger%21%20%23PyCon-US-2020&amp;body=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2020/2020/05/goodbye-print-hello-debugger" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
 
             
             
@@ -174,24 +138,20 @@
             <aside>
             <nav>
             <ul class="articles-timeline">
-                <li class="previous-article">« <a href="https://lee-w.github.io/pycon-note/posts/pycon-us-2020/2020/05/static-typing-in-python" title="Previous: Static Typing in Python">Static Typing in Python</a></li>
-                <li class="next-article"><a href="https://lee-w.github.io/pycon-note/posts/pycon-us-2020/2020/05/goodbye-print-hello-debugger" title="Next: Goodbye Print, Hello Debugger! #PyCon-US-2020">Goodbye Print, Hello Debugger! #PyCon-US-2020</a> »</li>
+                <li class="previous-article">« <a href="https://lee-w.github.io/pycon-note/posts/pycon-us-2020/2020/05/docker-and-python-making-them-play-nicely-and-securely-for-data-science-and-ml" title="Previous: Docker and Python: making them play nicely and securely for Data Science and ML">Docker and Python: making them play nicely and securely for Data Science and ML</a></li>
             </ul>
             </nav>
             </aside>
         </div>
         <section id="article-sidebar" class="span2">
             <h4>Published</h4>
-            <time itemprop="dateCreated" datetime="2020-05-15T16:00:00+08:00">2020/05/15 - Fri</time>
+            <time itemprop="dateCreated" datetime="2020-05-20T09:50:00+08:00">2020/05/20 - Wed</time>
             <h4>Category</h4>
             <a class="category-link" href="https://lee-w.github.io/pycon-note/categories.html#pycon-us-2020-ref">PyCon US 2020</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
-                <li><a href="https://lee-w.github.io/pycon-note/tags.html#container-ref">container
-                    <span class="superscript">2</span>
-</a></li>
-                <li><a href="https://lee-w.github.io/pycon-note/tags.html#data-ref">data
-                    <span class="superscript">3</span>
+                <li><a href="https://lee-w.github.io/pycon-note/tags.html#debugger-ref">debugger
+                    <span class="superscript">1</span>
 </a></li>
             </ul>
 <h4>Contact</h4>
