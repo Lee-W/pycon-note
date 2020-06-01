@@ -11,7 +11,7 @@
 &lt;li&gt;assertion rewrite&lt;/li&gt;
 &lt;li&gt;parameterize&lt;/li&gt;
 &lt;li&gt;fixtures&lt;ul&gt;
-&lt;li&gt;build-in fixtures&lt;ul&gt;
+&lt;li&gt;built-in fixtures&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;tmpdir&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;monkeypatch&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;

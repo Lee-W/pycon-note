@@ -180,7 +180,7 @@
 
 
 &lt;ul&gt;
-&lt;li&gt;your own pakcage&lt;/li&gt;
+&lt;li&gt;your own package&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;setup&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
   &lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
@@ -206,7 +206,7 @@
 
 &lt;h3 id="2-tactics-dealing-with-complex-code"&gt;2. Tactics: Dealing with complex code&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Generics and type varaiables&lt;ul&gt;
+&lt;li&gt;Generics and type variables&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;TypeVar&lt;/code&gt; with restriction (e.g., &lt;code&gt;AlgebraType = TypeVar('AlgebraType', float, Decimal)&lt;/code&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;

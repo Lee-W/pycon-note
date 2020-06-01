@@ -150,7 +150,7 @@
 &lt;li&gt;conda&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;reproducible environement&lt;ul&gt;
+&lt;li&gt;reproducible environment&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;pipenv&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -341,7 +341,7 @@
 &lt;h2 id="note"&gt;Note&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Patch: temporarily replace your target with &lt;code&gt;MagicMock()&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Target: &lt;code&gt;'package.modeul.ClassName'&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Target: &lt;code&gt;'package.module.ClassName'&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;When should you mock?&lt;ul&gt;
 &lt;li&gt;When you don't want to actually call an object&lt;ul&gt;
 &lt;li&gt;e.g., database, system call&lt;/li&gt;
@@ -364,7 +364,7 @@
 &lt;h2 id="note"&gt;Note&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Patch: temporarily replace your target with &lt;code&gt;MagicMock()&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Target: &lt;code&gt;'package.modeul.ClassName'&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Target: &lt;code&gt;'package.module.ClassName'&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;When should you mock?&lt;ul&gt;
 &lt;li&gt;When you don't want to actually call an object&lt;ul&gt;
 &lt;li&gt;e.g., database, system call&lt;/li&gt;
@@ -429,7 +429,7 @@
 &lt;li&gt;However, &lt;code&gt;autospec&lt;/code&gt; can be dangerous. It will run the code that will be triggered when introspected.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;It doesn't know dynamicaly created attribute (including the ones in &lt;code&gt;__init__&lt;/code&gt;) → manually create it&lt;/li&gt;
+&lt;li&gt;It doesn't know dynamically created attribute (including the ones in &lt;code&gt;__init__&lt;/code&gt;) → manually create it&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;code&gt;spec_set=True&lt;/code&gt; prevent you from setting attribute that does not exist&lt;/li&gt;
@@ -477,7 +477,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Pipfile.lock&lt;ul&gt;
-&lt;li&gt;JSON: machine readible&lt;/li&gt;
+&lt;li&gt;JSON: machine readable&lt;/li&gt;
 &lt;li&gt;transitive dependencies pinned with all acceptable hashes for each …&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
 &lt;p&gt;Kenneth Reitz&lt;/p&gt;
 &lt;h2 id="material"&gt;Material&lt;/h2&gt;
@@ -500,7 +500,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Pipfile.lock&lt;ul&gt;
-&lt;li&gt;JSON: machine readible&lt;/li&gt;
+&lt;li&gt;JSON: machine readable&lt;/li&gt;
 &lt;li&gt;transitive dependencies pinned with all acceptable hashes for each releases&lt;/li&gt;
 &lt;li&gt;Two groups: &lt;code&gt;default&lt;/code&gt;, &lt;code&gt;develop&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;

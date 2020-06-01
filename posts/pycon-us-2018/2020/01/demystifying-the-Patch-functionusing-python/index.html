@@ -19,12 +19,12 @@
 
 <meta property="og:title" content="Demystifying the Patch Function"/>
 <meta property="og:url" content="https://lee-w.github.io/pycon-note/posts/pycon-us-2018/2020/01/demystifying-the-Patch-functionusing-python" />
-<meta property="og:description" content="Speaker Lisa Roach Material video Note Patch: temporarily replace your target with MagicMock() Target: &#39;package.modeul.ClassName&#39; When should you mock? When you don&#39;t want to actually call an object e.g., database, system call What makes it so confusing? Identifying the target Multiple ways to call Patch Target must …" />
+<meta property="og:description" content="Speaker Lisa Roach Material video Note Patch: temporarily replace your target with MagicMock() Target: &#39;package.module.ClassName&#39; When should you mock? When you don&#39;t want to actually call an object e.g., database, system call What makes it so confusing? Identifying the target Multiple ways to call Patch Target must …" />
 <meta property="og:site_name" content="PyCon Note" />
 <meta property="og:article:author" content="Lee-W" />
 <meta property="og:article:published_time" content="2020-01-08T11:00:00+08:00" />
 <meta name="twitter:title" content="Demystifying the Patch Function">
-<meta name="twitter:description" content="Speaker Lisa Roach Material video Note Patch: temporarily replace your target with MagicMock() Target: &#39;package.modeul.ClassName&#39; When should you mock? When you don&#39;t want to actually call an object e.g., database, system call What makes it so confusing? Identifying the target Multiple ways to call Patch Target must …">
+<meta name="twitter:description" content="Speaker Lisa Roach Material video Note Patch: temporarily replace your target with MagicMock() Target: &#39;package.module.ClassName&#39; When should you mock? When you don&#39;t want to actually call an object e.g., database, system call What makes it so confusing? Identifying the target Multiple ways to call Patch Target must …">
 
         <title>Demystifying the Patch Function · PyCon Note
 </title>
@@ -85,7 +85,7 @@
 <h2 id="note">Note</h2>
 <ul>
 <li>Patch: temporarily replace your target with <code>MagicMock()</code></li>
-<li>Target: <code>'package.modeul.ClassName'</code></li>
+<li>Target: <code>'package.module.ClassName'</code></li>
 <li>When should you mock?<ul>
 <li>When you don't want to actually call an object<ul>
 <li>e.g., database, system call</li>
@@ -150,7 +150,7 @@
 <li>However, <code>autospec</code> can be dangerous. It will run the code that will be triggered when introspected.</li>
 </ul>
 </li>
-<li>It doesn't know dynamicaly created attribute (including the ones in <code>__init__</code>) → manually create it</li>
+<li>It doesn't know dynamically created attribute (including the ones in <code>__init__</code>) → manually create it</li>
 </ul>
 </li>
 <li><code>spec_set=True</code> prevent you from setting attribute that does not exist</li>
