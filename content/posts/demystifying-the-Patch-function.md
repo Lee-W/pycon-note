@@ -13,7 +13,7 @@ Lisa Roach
 
 ## Note
 * Patch: temporarily replace your target with `MagicMock()`
-* Target: `'package.modeul.ClassName'`
+* Target: `'package.module.ClassName'`
 * When should you mock?
     * When you don't want to actually call an object
         * e.g., database, system call
@@ -59,7 +59,7 @@ from db import db_write
         * **We can now only get attribute that exists.**
         * It does not know the attribute of your attribute → `autospec=True`
             * However, `autospec` can be dangerous. It will run the code that will be triggered when introspected.
-        * It doesn't know dynamicaly created attribute (including the ones in `__init__`) → manually create it
+        * It doesn't know dynamically created attribute (including the ones in `__init__`) → manually create it
     * `spec_set=True` prevent you from setting attribute that does not exist
 
 ### Other arguments

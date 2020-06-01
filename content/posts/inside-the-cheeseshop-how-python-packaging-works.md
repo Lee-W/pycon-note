@@ -35,7 +35,7 @@ Authors: Lee-W
         * [pypa/sampleproject](https://github.com/pypa/sampleproject)
     * need more than Python
         * conda
-    * reproducible environement
+    * reproducible environment
         * `pipenv`
     * arbitrary code in `setup.py`
         * PEP 517 / 518

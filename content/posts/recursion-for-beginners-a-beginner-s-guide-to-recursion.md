@@ -1,7 +1,7 @@
 Title: Recursion for Beginners: A Beginner's Guide to Recursion
 Date: 2020-02-20 12:00
 Category: NorthBay Python 2018
-Tags: alogrithm
+Tags: algorithm
 Slug: recursion-for-beginners-a-beginner-s-guide-to-recursion
 Authors: Lee-W
 

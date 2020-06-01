@@ -8,7 +8,7 @@ Authors: Lee-W
 ## Speaker
 Hynek Schlawack
 
-## Materail
+## Material
 * [video](https://www.youtube.com/watch?v=9G2s1TN9QQY)
 * [slide](https://speakerdeck.com/hynek/maintaining-a-python-project-when-its-not-your-job)
 * [article (highly recommend)](https://hynek.me/talks/python-foss/)
@@ -25,7 +25,7 @@ Hynek Schlawack
 * `.github/CODE_OF_CONDUCT.rst`
     * Expectation in behavior
     * [GitHub - Adding a code of conduct to your project](https://help.github.com/en/github/building-a-strong-community/adding-a-code-of-conduct-to-your-project)
-* Run test through [tox](https://github.com/tox-dev/tox): test on different environemnt
+* Run test through [tox](https://github.com/tox-dev/tox): test on different environment
     * make sure that the user runs exactly the same test commands as the CI
 * Having a high test coverage
 * Checkers

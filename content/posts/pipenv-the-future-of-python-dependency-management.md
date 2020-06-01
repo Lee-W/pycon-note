@@ -22,7 +22,7 @@ Kenneth Reitz
         * TOML: easy to read/ write manually
         * Two groups: `[package]`, `[dev-package]`
     * Pipfile.lock
-        * JSON: machine readible
+        * JSON: machine readable
         * transitive dependencies pinned with all acceptable hashes for each releases
         * Two groups: `default`, `develop`
     * Install packages concurrently

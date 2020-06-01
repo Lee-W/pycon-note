@@ -12,7 +12,7 @@ Terri Oda
 * [video](https://www.youtube.com/watch?v=e7zzdl8OXCU)
 
 ### Detecting Known Vulnerability
-* [CVE](https://cve.mitre.org): database with known software vulerability
+* [CVE](https://cve.mitre.org): database with known software vulnerability
 * Tools
     * [safety](https://github.com/pyupio/safety)
         * Free db: update monthly

@@ -85,4 +85,4 @@ Through services that supports deployment through container
 
 ## Q & A
 * Q: pipenv, poetry or pip-tools
-    * A: Personal perference
+    * A: Personal preference

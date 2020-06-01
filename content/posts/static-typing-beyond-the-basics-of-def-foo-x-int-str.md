@@ -52,7 +52,7 @@ disallow_untyped_defs = False      # Properly typing *all* fixtures
 disallow_incomplete_defs = False   # and tests is hard and noisy.
 ```
 
-* your own pakcage
+* your own package
 
 ```python
 setup(
@@ -74,7 +74,7 @@ follow_imports = silent
 ```
 
 ### 2. Tactics: Dealing with complex code
-* Generics and type varaiables
+* Generics and type variables
     * `TypeVar` with restriction (e.g., `AlgebraType = TypeVar('AlgebraType', float, Decimal)`)
 * nominal typing v.s. structural typing
     * Structural typing: describe capabilities, not ancestry

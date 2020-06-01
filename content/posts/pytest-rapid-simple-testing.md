@@ -16,7 +16,7 @@ Florian Bruhin
     * assertion rewrite
     * parameterize
     * fixtures
-        * build-in fixtures
+        * built-in fixtures
             * `tmpdir`
             * `monkeypatch`
     * plugins
