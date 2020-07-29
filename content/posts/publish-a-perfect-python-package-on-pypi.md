@@ -1,7 +1,7 @@
 Title: Publish a (Perfect) Python Package on PyPI
 Date: 2020-03-04 13:08
 Category: EuroPython 2019
-Tags: Package
+Tags: packaging
 Slug: publish-a-perfetc-python-package-on-pypi
 Authors: Lee-W
 

@@ -1,7 +1,7 @@
 Title: Why You Should Pursue Public Speaking and How to Get There
 Date: 2020-02-28 15:30
 Category: EuroPython 2019
-Tags: Speaking, Keynote
+Tags: speaking, Keynote
 Slug: why-you-should-pursue-public-speaking-and-how-to-get-there
 Authors: Lee-W
 

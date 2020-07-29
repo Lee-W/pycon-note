@@ -1,7 +1,7 @@
 Title: Why you should care about types: How Python typing helped my team scale
 Date: 2019-08-13 15:20
 Category: PyCon AU 2018
-Tags: type annotation
+Tags: typing
 Slug: why-you-should-care-about-types
 Authors: Lee-W
 

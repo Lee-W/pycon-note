@@ -1,7 +1,7 @@
 Title: Dial M For Mentor
 Date: 2020-04-01 16:39
 Category: PyCon US 2017
-Tags: Learning
+Tags: learning
 Slug: dial-m-for-mentor
 Authors: Lee-W
 
