@@ -23,4 +23,4 @@ Leonardo Giordani
     * **what** something is.
 * [Clean Architectures in Python](https://leanpub.com/clean-architectures-in-python)
 
-![clean-artichecture]({static}/images/post-images/clean-architectures-in-python/clean-artichecture.jpg.jpg)
+![clean-artichecture]({static}/images/post-images/clean-architectures-in-python/clean-artichecture.jpg)
