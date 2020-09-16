@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>PyCon Note - PyCon US 2017</title><link href="https://lee-w.github.io/pycon-note/" rel="alternate"></link><link href="https://lee-w.github.io/pycon-note/feeds/pycon-us-2017.atom.xml" rel="self"></link><id>https://lee-w.github.io/pycon-note/</id><updated>2020-04-01T16:39:00+08:00</updated><entry><title>Dial M For Mentor</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2017/2020/04/dial-m-for-mentor" rel="alternate"></link><published>2020-04-01T16:39:00+08:00</published><updated>2020-04-01T16:39:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2020-04-01:/pycon-note/posts/pycon-us-2017/2020/04/dial-m-for-mentor</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>PyCon Note - PyCon US 2017</title><link href="https://lee-w.github.io/pycon-note/" rel="alternate"></link><link href="https://lee-w.github.io/pycon-note/feeds/pycon-us-2017.atom.xml" rel="self"></link><id>https://lee-w.github.io/pycon-note/</id><updated>2020-09-18T10:48:00+08:00</updated><entry><title>Yes, It's Time to Learn Regular Expressions</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2017/2020/09/yes-it's-time-to-learn-regular-expressions" rel="alternate"></link><published>2020-09-18T10:48:00+08:00</published><updated>2020-09-18T10:48:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2020-09-18:/pycon-note/posts/pycon-us-2017/2020/09/yes-it's-time-to-learn-regular-expressions</id><content type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+&lt;p&gt;Al Sweigart&lt;/p&gt;
+&lt;h2 id="material"&gt;Material&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=abrcJ9MpF60"&gt;video&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://speakerdeck.com/pycon2017/al-sweigart-yes-its-time-to-learn-regular-expressions"&gt;slide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="note"&gt;Note&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://regexr.com/"&gt;regexr&lt;/a&gt;&lt;br&gt;
+&lt;a href="http://www.pyregex.com/"&gt;PyRegex&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;compile -&amp;gt; search -&amp;gt; group&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.*&lt;/code&gt; (greedy) v.s. &lt;code&gt;.*?&lt;/code&gt; (not greedy)&lt;/li&gt;
+&lt;li&gt;What Regexs &lt;strong&gt;can't / shouldn't&lt;/strong&gt; do&lt;ul&gt;
+&lt;li&gt;don't parse html / json&lt;/li&gt;
+&lt;li&gt;strong password&lt;/li&gt;
+&lt;li&gt;matching nested parentheses&lt;ul&gt;
+&lt;li&gt;Regex is not Turing Complete&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content><category term="PyCon US 2017"></category><category term="regular expression"></category></entry><entry><title>Dial M For Mentor</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-us-2017/2020/04/dial-m-for-mentor" rel="alternate"></link><published>2020-04-01T16:39:00+08:00</published><updated>2020-04-01T16:39:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2020-04-01:/pycon-note/posts/pycon-us-2017/2020/04/dial-m-for-mentor</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
 &lt;p&gt;Mariatta Wijaya&lt;/p&gt;
 &lt;h2 id="material"&gt;Material&lt;/h2&gt;
 &lt;ul&gt;
