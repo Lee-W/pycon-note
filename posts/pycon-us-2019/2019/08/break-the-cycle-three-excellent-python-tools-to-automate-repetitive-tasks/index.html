@@ -17,16 +17,16 @@
 
 <meta name="keywords" content="automation, PyCon US 2019, " />
 
-<meta property="og:title" content="Break the Cycle: Three excellent Python tools to automate repetitive tasks"/>
+<meta property="og:title" content="Break the Cycle: Three excellent Python tools to automate repetitive tasks "/>
 <meta property="og:url" content="https://lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/break-the-cycle-three-excellent-python-tools-to-automate-repetitive-tasks" />
 <meta property="og:description" content="Speaker Thea Flowers Material video Note goal reduce toil (redundant boring stuff) tools tox for automating python package testing nox flexible test automation the configuration file is python noxfile.py invoke task execution tool a tool framework invoke example from invoke import task @task def authors(ctx): &#34;&#34;&#34;Print all the …" />
 <meta property="og:site_name" content="PyCon Note" />
 <meta property="og:article:author" content="Lee-W" />
 <meta property="og:article:published_time" content="2019-08-13T15:20:00+08:00" />
-<meta name="twitter:title" content="Break the Cycle: Three excellent Python tools to automate repetitive tasks">
+<meta name="twitter:title" content="Break the Cycle: Three excellent Python tools to automate repetitive tasks ">
 <meta name="twitter:description" content="Speaker Thea Flowers Material video Note goal reduce toil (redundant boring stuff) tools tox for automating python package testing nox flexible test automation the configuration file is python noxfile.py invoke task execution tool a tool framework invoke example from invoke import task @task def authors(ctx): &#34;&#34;&#34;Print all the …">
 
-        <title>Break the Cycle: Three excellent Python tools to automate repetitive tasks · PyCon Note
+        <title>Break the Cycle: Three excellent Python tools to automate repetitive tasks  · PyCon Note
 </title>
         <link href="https://lee-w.github.io/pycon-note/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="PyCon Note - Full Atom Feed" />
 
@@ -133,20 +133,20 @@
 <span class="k">def</span> <span class="nf">changelog</span><span class="p">(</span><span class="n">ctx</span><span class="p">,</span> <span class="n">since</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Print the changelog since given git ref&quot;&quot;&quot;</span>
     <span class="n">result</span> <span class="o">=</span> <span class="n">ctx</span><span class="o">.</span><span class="n">run</span><span class="p">(</span>
-        <span class="sa">f</span><span class="s2">&quot;git log </span><span class="si">{since}</span><span class="s2">..HEAD --format=</span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span>
+        <span class="sa">f</span><span class="s2">&quot;git log </span><span class="si">{</span><span class="n">since</span><span class="si">}</span><span class="s2">..HEAD --format=%s&quot;</span><span class="p">,</span>
         <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">,</span>
         <span class="n">hide</span><span class="o">=</span><span class="kc">True</span>
     <span class="p">)</span>
     <span class="n">changes</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Changelog sine </span><span class="si">{since}</span><span class="s2">:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Changelog sine </span><span class="si">{</span><span class="n">since</span><span class="si">}</span><span class="s2">:&quot;</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">change</span> <span class="ow">in</span> <span class="n">changes</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;- </span><span class="si">{change}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;- </span><span class="si">{</span><span class="n">change</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </code></pre></div>
 
 
-            
-
+             
+ 
                 <p id="post-share-links">
     Share on:
       <a href="https://twitter.com/intent/tweet?text=Break%20the%20Cycle%3A%20Three%20excellent%20Python%20tools%20to%20automate%20repetitive%20tasks&url=https%3A//lee-w.github.io/pycon-note/posts/pycon-us-2019/2019/08/break-the-cycle-three-excellent-python-tools-to-automate-repetitive-tasks&hashtags=automation" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
