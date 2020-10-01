@@ -15,18 +15,18 @@
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="command line, EuroPython 2019, " />
+<meta name="keywords" content="design pattern, EuroPython 2017, " />
 
-<meta property="og:title" content="Become a command line wizard "/>
-<meta property="og:url" content="https://lee-w.github.io/pycon-note/posts/europython-2019/2020/09/become-a-command-line-wizard" />
-<meta property="og:description" content="Speaker Sven-Hendrik Haase Material video slide Note This talk gives us a bunch of interesting command-line tools. These are the ones interests me. exa (ls, tree) exa -l --git --header exa --tree -l --git fd (find) fd [pattern] -e [extension] [source] git ignore by default ripgrep (grep) git ignore by …" />
+<meta property="og:title" content="Why you don&#39;t need design patterns in Python? "/>
+<meta property="og:url" content="https://lee-w.github.io/pycon-note/posts/europython-2017/2020/10/why-you-don't-need-design-patterns-in-python" />
+<meta property="og:description" content="Speaker Sebastian Buczyński Material video slide Note As the speaker stated in youtube comments, &#34;Why you don&#39;t need SOME design patterns in Python?&#34; could be a better title for this talk. Singleton Pattern using a module may be a better solution Facade Pattern Helpful to organize code, no need for …" />
 <meta property="og:site_name" content="PyCon Note" />
 <meta property="og:article:author" content="Lee-W" />
-<meta property="og:article:published_time" content="2020-09-24T11:23:00+08:00" />
-<meta name="twitter:title" content="Become a command line wizard ">
-<meta name="twitter:description" content="Speaker Sven-Hendrik Haase Material video slide Note This talk gives us a bunch of interesting command-line tools. These are the ones interests me. exa (ls, tree) exa -l --git --header exa --tree -l --git fd (find) fd [pattern] -e [extension] [source] git ignore by default ripgrep (grep) git ignore by …">
+<meta property="og:article:published_time" content="2020-10-01T12:03:00+08:00" />
+<meta name="twitter:title" content="Why you don&#39;t need design patterns in Python? ">
+<meta name="twitter:description" content="Speaker Sebastian Buczyński Material video slide Note As the speaker stated in youtube comments, &#34;Why you don&#39;t need SOME design patterns in Python?&#34; could be a better title for this talk. Singleton Pattern using a module may be a better solution Facade Pattern Helpful to organize code, no need for …">
 
-        <title>Become a command line wizard  · PyCon Note
+        <title>Why you don&#39;t need design patterns in Python?  · PyCon Note
 </title>
         <link href="https://lee-w.github.io/pycon-note/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="PyCon Note - Full Atom Feed" />
 
@@ -68,8 +68,8 @@
 <div class="row-fluid">
     <header class="page-header span10 offset2">
         <h1>
-            <a href="https://lee-w.github.io/pycon-note/posts/europython-2019/2020/09/become-a-command-line-wizard">
-                Become a command line wizard
+            <a href="https://lee-w.github.io/pycon-note/posts/europython-2017/2020/10/why-you-don't-need-design-patterns-in-python">
+                Why you don't need design patterns in Python?
             </a>
         </h1>
     </header>
@@ -79,37 +79,34 @@
         <div class="span8 offset2 article-content">
             
             <h2 id="speaker">Speaker</h2>
-<p>Sven-Hendrik Haase</p>
+<p>Sebastian Buczyński</p>
 <h2 id="material">Material</h2>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=dnzaIeUgH_4&amp;feature=youtu.be">video</a></li>
-<li><a href="https://ep2019.europython.eu/media/conference/slides/4mhUEPS-become-a-command-line-wizard.md">slide</a></li>
+<li><a href="https://www.youtube.com/watch?v=G5OeYHCJuv0">video</a></li>
+<li><a href="https://ep2017.europython.eu/media/conference/slides/why-you-dont-need-design-patterns-in-python.pdf">slide</a></li>
 </ul>
 <h2 id="note">Note</h2>
-<p>This talk gives us a bunch of interesting command-line tools. These are the ones interests me.</p>
+<p>As the speaker stated in youtube comments, <strong>"Why you don't need SOME design patterns in Python?"</strong> could be a better title for this talk.</p>
 <ul>
-<li><a href="https://github.com/ogham/exa">exa</a> (ls, tree)<ul>
-<li><code>exa  -l --git --header</code></li>
-<li><code>exa --tree -l --git</code></li>
+<li>Singleton Pattern<ul>
+<li>using a module may be a better solution</li>
 </ul>
 </li>
-<li><a href="https://github.com/sharkdp/fd">fd</a> (find)<ul>
-<li><code>fd [pattern] -e [extension] [source]</code></li>
-<li>git ignore by default</li>
+<li>Facade Pattern<ul>
+<li>Helpful to organize code, no need for a class</li>
 </ul>
 </li>
-<li><a href="https://github.com/BurntSushi/ripgrep">ripgrep</a> (grep)<ul>
-<li>git ignore by default</li>
-<li>ignore binary by default</li>
+<li>Command Pattern (object oriented callback)<ul>
+<li>just use plain function</li>
 </ul>
 </li>
-<li><a href="https://github.com/httpie/httpie">httpie</a> (curl)<ul>
-<li><code>http [URL]</code></li>
+<li>Visitor Pattern<ul>
+<li><code>getattr</code> or <code>from functools import singledispatch</code></li>
 </ul>
 </li>
-<li><a href="https://github.com/visit1985/mdp">mdp</a> (Powerpoint / Keynote)</li>
-<li><a href="https://github.com/svenstaro/genact">gencat</a> (😱)<ul>
-<li>Pretend to be busy or waiting for your computer when you should actually be doing real work!</li>
+<li>Decorator Pattern<ul>
+<li>Decorator pattern is not <code>@decorator</code></li>
+<li><code>def __getattr__(self)</code></li>
 </ul>
 </li>
 </ul>
@@ -119,9 +116,9 @@
  
                 <p id="post-share-links">
     Share on:
-      <a href="https://twitter.com/intent/tweet?text=Become%20a%20command%20line%20wizard&url=https%3A//lee-w.github.io/pycon-note/posts/europython-2019/2020/09/become-a-command-line-wizard&hashtags=command-line" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
- ❄       <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//lee-w.github.io/pycon-note/posts/europython-2019/2020/09/become-a-command-line-wizard" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
- ❄       <a href="mailto:?subject=Become%20a%20command%20line%20wizard&amp;body=https%3A//lee-w.github.io/pycon-note/posts/europython-2019/2020/09/become-a-command-line-wizard" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
+      <a href="https://twitter.com/intent/tweet?text=Why%20you%20don%27t%20need%20design%20patterns%20in%20Python%3F&url=https%3A//lee-w.github.io/pycon-note/posts/europython-2017/2020/10/why-you-don%27t-need-design-patterns-in-python&hashtags=design-pattern" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
+ ❄       <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//lee-w.github.io/pycon-note/posts/europython-2017/2020/10/why-you-don%27t-need-design-patterns-in-python" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
+ ❄       <a href="mailto:?subject=Why%20you%20don%27t%20need%20design%20patterns%20in%20Python%3F&amp;body=https%3A//lee-w.github.io/pycon-note/posts/europython-2017/2020/10/why-you-don%27t-need-design-patterns-in-python" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
 
             
             
@@ -136,20 +133,19 @@
             <aside>
             <nav>
             <ul class="articles-timeline">
-                <li class="previous-article">« <a href="https://lee-w.github.io/pycon-note/posts/pycon-us-2018/2020/09/how-to-write-deployment-friendly-applications" title="Previous: How to Write Deployment-friendly Applications">How to Write Deployment-friendly Applications</a></li>
-                <li class="next-article"><a href="https://lee-w.github.io/pycon-note/posts/europython-2017/2020/10/why-you-don't-need-design-patterns-in-python" title="Next: Why you don&#39;t need design patterns in Python?">Why you don't need design patterns in Python?</a> »</li>
+                <li class="previous-article">« <a href="https://lee-w.github.io/pycon-note/posts/europython-2019/2020/09/become-a-command-line-wizard" title="Previous: Become a command line wizard">Become a command line wizard</a></li>
             </ul>
             </nav>
             </aside>
         </div>
         <section id="article-sidebar" class="span2">
             <h4>Published</h4>
-            <time itemprop="dateCreated" datetime="2020-09-24T11:23:00+08:00">2020/09/24 - Thu</time>
+            <time itemprop="dateCreated" datetime="2020-10-01T12:03:00+08:00">2020/10/01 - Thu</time>
             <h4>Category</h4>
-            <a class="category-link" href="https://lee-w.github.io/pycon-note/categories.html#europython-2019-ref">EuroPython 2019</a>
+            <a class="category-link" href="https://lee-w.github.io/pycon-note/categories.html#europython-2017-ref">EuroPython 2017</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
-                <li><a href="https://lee-w.github.io/pycon-note/tags.html#command-line-ref">command line
+                <li><a href="https://lee-w.github.io/pycon-note/tags.html#design-pattern-ref">design pattern
                     <span class="superscript">1</span>
 </a></li>
             </ul>
