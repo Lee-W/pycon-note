@@ -81,5 +81,5 @@ follow_imports = silent
 * Defining you own types
     * `NewType`
 * write your own mypy plugin
-    * e.g., [ github.com/qntln/fastenum/fastenum/mypy_plugin.py](https://github.com/qntln/fastenum/blob/master/fastenum/mypy_plugin.py)
+    * e.g., [github.com/qntln/fastenum/fastenum/mypy_plugin.py](https://github.com/qntln/fastenum/blob/master/fastenum/mypy_plugin.py)
 * overloading functions

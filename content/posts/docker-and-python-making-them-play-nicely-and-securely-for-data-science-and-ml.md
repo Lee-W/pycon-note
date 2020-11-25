@@ -20,14 +20,14 @@ Tania Allard
     * fast evolving projects
     * are containers secure enough?
 * how is it different from web apps?
-   * not every deliverable is an app or a model
-   * relies on data
-   * Mixture of wheels and compiled packages
-   * Security access levels - for data and software
-   * Mixture of stakeholders:
-       * data scientists
-       * software engineers
-       * ML engineers
+    * not every deliverable is an app or a model
+    * relies on data
+    * Mixture of wheels and compiled packages
+    * Security access levels - for data and software
+    * Mixture of stakeholders:
+        * data scientists
+        * software engineers
+        * ML engineers
 
 * best practices
     * Split complex `RUN` statements and sort them

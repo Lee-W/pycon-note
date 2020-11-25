@@ -28,4 +28,4 @@ non-Python code
     * Users now can install pre-built Python wheels.
         * How to ship compiled Python extensions on many operating systems
             * [manylinux](https://github.com/pypa/manylinux) (Symbol Versioning)
-            * auditwheel[https://github.com/pypa/auditwheel] (Dependency Bundling)
+            * [auditwheel](https://github.com/pypa/auditwheel) (Dependency Bundling)

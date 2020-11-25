@@ -1,4 +1,4 @@
-Title: Build your Python Extensions with Rust! #EuroPython-2019
+Title: Build your Python Extensions with Rust!
 Date: 2020-10-07 10:47
 Category: EuroPython 2019
 Tags: rust
@@ -25,4 +25,3 @@ Paul Ganssle
     * `from msmodule._native import ffi`
 
 ![FFI v.s. API]({static}/images/post-images/build-your-python-extensions-with-rust/FFI v.s. API.jpg)
-

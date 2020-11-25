@@ -21,7 +21,7 @@ Mariatta Wijaya
         * Help contributors
         * Be the representative for Python
 * F.A.Q.
-   * How can I be involved in the community?
+    * How can I be involved in the community?
         * Help your local meetup
         * No meetup? Start one.
         * Blog about Python or your fav library

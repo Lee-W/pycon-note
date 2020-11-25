@@ -50,6 +50,6 @@ Victor Stinner
     * [PEP 545](https://www.python.org/dev/peps/pep-0545/)
     * GIL -> on lock per interpreter
     * Expectation
-        *  lower memory footprint
-        *  faster locks
-        *  limitation: python object cannot be shared between interpreters
+        * lower memory footprint
+        * faster locks
+        * limitation: python object cannot be shared between interpreters

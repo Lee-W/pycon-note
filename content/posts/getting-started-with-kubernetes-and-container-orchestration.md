@@ -9,8 +9,8 @@ Authors: Lee-W
 [TOC]
 
 ## Speaker
-*  Jérôme Petazzoni
-*  AJ Bowen
+* Jérôme Petazzoni
+* AJ Bowen
 
 ## Material
 * [video](https://www.youtube.com/watch?v=J08MrW2NC1Y)
@@ -95,7 +95,6 @@ Authors: Lee-W
 * One node can have more than one pod
 
 ![Kubetnetes concetps](/images/post-images/getting-started-with-kubernetes-and-container-orchestration/15776817907833.jpg)
-
 
 ### Declarative vs imperative
 * Declarative in Kubernetes
