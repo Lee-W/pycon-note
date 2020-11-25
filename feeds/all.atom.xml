@@ -1,5 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>PyCon Note</title><link href="https://lee-w.github.io/pycon-note/" rel="alternate"></link><link href="https://lee-w.github.io/pycon-note/feeds/all.atom.xml" rel="self"></link><id>https://lee-w.github.io/pycon-note/</id><updated>2020-10-07T10:47:00+08:00</updated><entry><title>Build your Python Extensions with Rust! #EuroPython-2019</title><link href="https://lee-w.github.io/pycon-note/posts/europython-2019/2020/10/build-your-python-extensions-with-rust" rel="alternate"></link><published>2020-10-07T10:47:00+08:00</published><updated>2020-10-07T10:47:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2020-10-07:/pycon-note/posts/europython-2019/2020/10/build-your-python-extensions-with-rust</id><content type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>PyCon Note</title><link href="https://lee-w.github.io/pycon-note/" rel="alternate"></link><link href="https://lee-w.github.io/pycon-note/feeds/all.atom.xml" rel="self"></link><id>https://lee-w.github.io/pycon-note/</id><updated>2020-11-25T16:00:00+08:00</updated><entry><title>Best practices for production-ready Docker packaging</title><link href="https://lee-w.github.io/pycon-note/posts/europython-2020/2020/11/best-practices-for-production-ready-docker-packaging" rel="alternate"></link><published>2020-11-25T16:00:00+08:00</published><updated>2020-11-25T16:00:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2020-11-25:/pycon-note/posts/europython-2020/2020/11/best-practices-for-production-ready-docker-packaging</id><summary type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+&lt;p&gt;Itamar Turner-Trauring&lt;/p&gt;
+&lt;h2 id="material"&gt;Material&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=H0UPw-ILiz4"&gt;video&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pythonspeed.com/europython2020/slides/#1"&gt;slide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pythonspeed.com/europython2020"&gt;resources&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="note"&gt;Note&lt;/h2&gt;
+&lt;h3 id="1-get-something-working"&gt;1. Get something working.&lt;/h3&gt;
+&lt;h3 id="2-security"&gt;2. Security.&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Don't run as root&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;RUN&lt;/span&gt; useradd --create-home appuser
+&lt;span class="k"&gt;USER&lt;/span&gt;&lt;span class="s"&gt; appuser&lt;/span&gt;
+&lt;span class="k"&gt;WORKDIR&lt;/span&gt;&lt;span class="s"&gt; /home/appuser&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3 id="3-running-in-ci"&gt;3. Running in CI.&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;GIT_BRANCH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;git rev-parse --abbrev-ref HEAD&lt;span class="k"&gt;)&lt;/span&gt;
+docker build -t &lt;span class="s2"&gt;&amp;quot;yourimage:&lt;/span&gt;&lt;span class="nv"&gt;$GIT_BRANCH&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; .
+docker push &lt;span class="s2"&gt;&amp;quot;yourimage:&lt;/span&gt;&lt;span class="nv"&gt;$GIT_BRANCH&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3 id="4-make-images-easy-to-identify-and-debug"&gt;4. Make images easy to …&lt;/h3&gt;</summary><content type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+&lt;p&gt;Itamar Turner-Trauring&lt;/p&gt;
+&lt;h2 id="material"&gt;Material&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=H0UPw-ILiz4"&gt;video&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pythonspeed.com/europython2020/slides/#1"&gt;slide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pythonspeed.com/europython2020"&gt;resources&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="note"&gt;Note&lt;/h2&gt;
+&lt;h3 id="1-get-something-working"&gt;1. Get something working.&lt;/h3&gt;
+&lt;h3 id="2-security"&gt;2. Security.&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Don't run as root&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;RUN&lt;/span&gt; useradd --create-home appuser
+&lt;span class="k"&gt;USER&lt;/span&gt;&lt;span class="s"&gt; appuser&lt;/span&gt;
+&lt;span class="k"&gt;WORKDIR&lt;/span&gt;&lt;span class="s"&gt; /home/appuser&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3 id="3-running-in-ci"&gt;3. Running in CI.&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;GIT_BRANCH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;git rev-parse --abbrev-ref HEAD&lt;span class="k"&gt;)&lt;/span&gt;
+docker build -t &lt;span class="s2"&gt;&amp;quot;yourimage:&lt;/span&gt;&lt;span class="nv"&gt;$GIT_BRANCH&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; .
+docker push &lt;span class="s2"&gt;&amp;quot;yourimage:&lt;/span&gt;&lt;span class="nv"&gt;$GIT_BRANCH&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3 id="4-make-images-easy-to-identify-and-debug"&gt;4. Make images easy to identify and debug.&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Tracebacks on crashes in C code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;ENV&lt;/span&gt; &lt;span class="nv"&gt;PYTHONFAULTHANDLER&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Pre-install useful debugging tools&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="5-improved-operational-correctness"&gt;5. Improved operational correctness.&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Python compiles source code .pyc for faster startup.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c"&gt;# Compile installed code:&lt;/span&gt;
+&lt;span class="k"&gt;RUN&lt;/span&gt; python -c &lt;span class="s2"&gt;&amp;quot;import compileall; compileall.compile_path(maxlevels=10)&amp;quot;&lt;/span&gt;
+&lt;span class="c"&gt;# Compile code in a directory:&lt;/span&gt;
+&lt;span class="k"&gt;RUN&lt;/span&gt; python -m compileall yourpackage/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Health checks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="6-reproducible-builds"&gt;6. Reproducible builds.&lt;/h3&gt;
+&lt;h3 id="7-faster-builds"&gt;7. Faster builds.&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Don't use Alpine Linux&lt;/li&gt;
+&lt;li&gt;COPY in files only when needed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="8-smaller-images"&gt;8. Smaller images.&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;RUN&lt;/span&gt; pip install --no-cache-dir -r requirements.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Add files to .dockerignore.&lt;/li&gt;
+&lt;/ul&gt;</content><category term="EuroPython 2020"></category><category term="container"></category></entry><entry><title>Build your Python Extensions with Rust!</title><link href="https://lee-w.github.io/pycon-note/posts/europython-2019/2020/10/build-your-python-extensions-with-rust" rel="alternate"></link><published>2020-10-07T10:47:00+08:00</published><updated>2020-10-07T10:47:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2020-10-07:/pycon-note/posts/europython-2019/2020/10/build-your-python-extensions-with-rust</id><content type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
 &lt;p&gt;Paul Ganssle&lt;/p&gt;
 &lt;h2 id="material"&gt;Material&lt;/h2&gt;
 &lt;ul&gt;
@@ -1170,10 +1262,12 @@
 &lt;li&gt;are containers secure enough?&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;how is it different from web apps?&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;how is it different from web apps?&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;not every deliverable is an app or a model&lt;/li&gt;
 &lt;li&gt;relies on data&lt;/li&gt;
-&lt;li&gt;Mixture of wheels …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+&lt;li&gt;Mixture of wheels …&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
 &lt;p&gt;Tania Allard&lt;/p&gt;
 &lt;h2 id="material"&gt;Material&lt;/h2&gt;
 &lt;ul&gt;
@@ -1189,17 +1283,19 @@
 &lt;li&gt;are containers secure enough?&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;how is it different from web apps?&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;how is it different from web apps?&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;not every deliverable is an app or a model&lt;/li&gt;
 &lt;li&gt;relies on data&lt;/li&gt;
 &lt;li&gt;Mixture of wheels and compiled packages&lt;/li&gt;
 &lt;li&gt;Security access levels - for data and software&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Mixture of stakeholders:&lt;/p&gt;
-&lt;ul&gt;
+&lt;li&gt;Mixture of stakeholders:&lt;ul&gt;
 &lt;li&gt;data scientists&lt;/li&gt;
 &lt;li&gt;software engineers&lt;/li&gt;
 &lt;li&gt;ML engineers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -1624,11 +1720,11 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;F.A.Q.&lt;/li&gt;
-&lt;li&gt;How can I be involved in the community?&lt;br&gt;
-        * Help your local meetup&lt;br&gt;
-        * No meetup? Start one.&lt;br&gt;
-        * Blog about …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+&lt;li&gt;F.A.Q.&lt;ul&gt;
+&lt;li&gt;How can I be involved in the community?&lt;ul&gt;
+&lt;li&gt;Help your local meetup&lt;/li&gt;
+&lt;li&gt;No meetup? Start one.&lt;/li&gt;
+&lt;li&gt;Blog about …&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
 &lt;p&gt;Mariatta Wijaya&lt;/p&gt;
 &lt;h2 id="material"&gt;Material&lt;/h2&gt;
 &lt;ul&gt;
@@ -1648,13 +1744,15 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;F.A.Q.&lt;/li&gt;
-&lt;li&gt;How can I be involved in the community?&lt;br&gt;
-        * Help your local meetup&lt;br&gt;
-        * No meetup? Start one.&lt;br&gt;
-        * Blog about Python or your fav library&lt;br&gt;
-        * Volunteer at conferences&lt;br&gt;
-        * Be open, considerate, and respectful&lt;ul&gt;
+&lt;li&gt;F.A.Q.&lt;ul&gt;
+&lt;li&gt;How can I be involved in the community?&lt;ul&gt;
+&lt;li&gt;Help your local meetup&lt;/li&gt;
+&lt;li&gt;No meetup? Start one.&lt;/li&gt;
+&lt;li&gt;Blog about Python or your fav library&lt;/li&gt;
+&lt;li&gt;Volunteer at conferences&lt;/li&gt;
+&lt;li&gt;Be open, considerate, and respectful&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;How can I contribute?&lt;ul&gt;
 &lt;li&gt;Join the communication channels&lt;/li&gt;
 &lt;li&gt;Report bugs&lt;/li&gt;
@@ -1852,7 +1950,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;write your own mypy plugin&lt;ul&gt;
-&lt;li&gt;e.g., &lt;a href="https://github.com/qntln/fastenum/blob/master/fastenum/mypy_plugin.py"&gt; github.com/qntln/fastenum/fastenum/mypy_plugin.py&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;e.g., &lt;a href="https://github.com/qntln/fastenum/blob/master/fastenum/mypy_plugin.py"&gt;github.com/qntln/fastenum/fastenum/mypy_plugin.py&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;overloading functions&lt;/li&gt;
@@ -1911,7 +2009,7 @@ non-Python code&lt;/li&gt;
 &lt;li&gt;Users now can install pre-built Python wheels.&lt;ul&gt;
 &lt;li&gt;How to ship compiled Python extensions on many operating systems&lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/pypa/manylinux"&gt;manylinux&lt;/a&gt; (Symbol Versioning)&lt;/li&gt;
-&lt;li&gt;auditwheel[https://github.com/pypa/auditwheel] (Dependency Bundling)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/pypa/auditwheel"&gt;auditwheel&lt;/a&gt; (Dependency Bundling)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

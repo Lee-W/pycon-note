@@ -105,7 +105,7 @@ non-Python code&lt;/li&gt;
 &lt;li&gt;Users now can install pre-built Python wheels.&lt;ul&gt;
 &lt;li&gt;How to ship compiled Python extensions on many operating systems&lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/pypa/manylinux"&gt;manylinux&lt;/a&gt; (Symbol Versioning)&lt;/li&gt;
-&lt;li&gt;auditwheel[https://github.com/pypa/auditwheel] (Dependency Bundling)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/pypa/auditwheel"&gt;auditwheel&lt;/a&gt; (Dependency Bundling)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
