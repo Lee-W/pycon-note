@@ -1,7 +1,7 @@
-Title:  Awesome Command Line Tools
+Title: Awesome Command Line Tools
 Date: 2020-01-21 13:10
 Category: PyCon US 2017
-Tags: cli
+Tags: command line
 Slug: awesome-command-line-tools
 Authors: Lee-W
 
