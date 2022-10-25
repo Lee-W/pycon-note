@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>PyCon Note - PyCon TW 2021</title><link href="https://lee-w.github.io/pycon-note/" rel="alternate"></link><link href="https://lee-w.github.io/pycon-note/feeds/pycon-tw-2021.atom.xml" rel="self"></link><id>https://lee-w.github.io/pycon-note/</id><updated>2022-10-25T16:52:00+08:00</updated><entry><title>Let’s Make Your Data Pipeline Robust With Great Expectations!</title><link href="https://lee-w.github.io/pycon-note/posts/pycon-tw-2021/2022/10/let-s-make-your-data-pipeline-robust-with-great-expectations" rel="alternate"></link><published>2022-10-25T16:52:00+08:00</published><updated>2022-10-25T16:52:00+08:00</updated><author><name>Lee-W</name></author><id>tag:lee-w.github.io,2022-10-25:/pycon-note/posts/pycon-tw-2021/2022/10/let-s-make-your-data-pipeline-robust-with-great-expectations</id><content type="html">&lt;h2 id="speaker"&gt;Speaker&lt;/h2&gt;
+&lt;p&gt;Keisuke Nishitani&lt;/p&gt;
+&lt;h2 id="material"&gt;Material&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=e8XhXG-NiWk"&gt;video&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.google.com/presentation/d/1ttwYJdFYLT9x87fusVAPBgcxZpEAE3g7AZ5eic34I7s/edit#slide=id.p"&gt;slide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="note"&gt;Note&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;main features&lt;ul&gt;
+&lt;li&gt;expectations&lt;/li&gt;
+&lt;li&gt;auto data profiling&lt;/li&gt;
+&lt;li&gt;data doc&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content><category term="PyCon TW 2021"></category><category term="Data"></category></entry></feed>
