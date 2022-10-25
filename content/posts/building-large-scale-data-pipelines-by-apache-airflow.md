@@ -2,7 +2,7 @@ Title: Building large scale data pipelines by Apache Airflow
 Date: 2022-09-12 18:05
 Category: PyCon APAC 2022
 Tags: data, pipeline, airflow
-Slug: distributing-your-pandas-ETL-job-using-ray-and-modin
+Slug: building-large-scale-data-pipelines-by-apache-airflow
 Authors: Lee-W
 
 ## Speaker
@@ -26,8 +26,8 @@ Authors: Lee-W
     * `pre_execute()`
     * `execute()`
     * `post_execute()`
-* use jinja template over Variable
-    * decouple logic from airflow → make unit test easier to write
+* use the jinja template over Variable
+    * decouple logic from airflow → make unit tests easier to write
 * DAG generator
     * extract similar parts among data pipelines
 
